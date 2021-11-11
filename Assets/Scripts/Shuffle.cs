@@ -26,7 +26,7 @@ public class Shuffle : MonoBehaviour
     // my attempt at using GSTU
 
     [HideInInspector]
-    public string associatedSheet = "1uxwDQh1tr7AC6m7us5B1D8opDVFbVgwZZZ-vpGO9iJE";
+    public string associatedSheet = "1j2oa0_JdgziSoeaz7UKm1lECYZQC0BFRXqOtgUMJvdw";
     [HideInInspector]
     public string associatedWorksheet = "Cards";
 

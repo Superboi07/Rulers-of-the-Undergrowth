@@ -25,20 +25,20 @@ public class Shuffle : MonoBehaviour
     // I have failed, thus I toil in repencence
 
     // the decks
-    public int[] SpindleDeck;
-    public int[] AnnahDeck;
+    public string[] SpindleDeck;
+    public string[] AnnahDeck;
 
     void Awake()
     {
         // code here to decide what decks are chosen
 
         // merging the decks the plays choose into Deck
-        int[] Deck = new int[SpindleDeck.Length + SpindleDeck.Length];
+        string[] Deck = new string[SpindleDeck.Length + SpindleDeck.Length];
         Array.Copy(SpindleDeck, Deck, SpindleDeck.Length);
         Array.Copy(SpindleDeck, 0, Deck, SpindleDeck.Length, SpindleDeck.Length);
 
         // shuffling Deck
-        int tempDeck;
+        string tempDeck;
         for (int i = 0; i < Deck.Length; i++)
         {
             int rnd = UnityEngine.Random.Range(0, Deck.Length);

@@ -172,11 +172,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -0.5
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -236,8 +236,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086267c0bc8c21a4b8671437cd45581d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpindleDeck: 04000000040000000400000004000000040000000400000004000000040000000400000004000000050000000500000005000000050000000500000006000000060000000700000007000000070000000800000008000000080000000900000009000000090000000a0000000a0000000a0000000b0000000b0000000b0000000c0000000c0000000c0000000d0000000d0000000e0000000e0000000f0000000f0000001000000010000000110000001100000012000000120000001300000013000000140000001400000015000000150000001600000016000000170000001700000018000000180000001900000019000000
-  AnnahDeck: 
+  SpindleDeck:
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Basic Spider
+  - Spinner Spider
+  - Spinner Spider
+  - Spinner Spider
+  - Spinner Spider
+  - Spinner Spider
+  - Trapdoor
+  - Trapdoor
+  - Digger Spider
+  - Digger Spider
+  - Digger Spider
+  - Jumper Spider
+  - Jumper Spider
+  - Jumper Spider
+  - Hunter Spider
+  - Hunter Spider
+  - Hunter Spider
+  - Toxic Spider
+  - Toxic Spider
+  - Toxic Spider
+  - Flier Spider
+  - Flier Spider
+  - Flier Spider
+  - Shooter Spider
+  - Shooter Spider
+  - Rocker Spider
+  - Rocker Spider
+  - Spotter Spider
+  - Spotter Spider
+  - Suicider Spider
+  - Suicider Spider
+  - Cannibalism
+  - Cannibalism
+  - Daddy Long Legs
+  - Daddy Long Legs
+  - Baller Spider
+  - Baller Spider
+  - Trap Laying
+  - Trap Laying
+  - Trapper Spider
+  - Trapper Spider
+  - Poison Spit
+  - Poison Spit
+  - Swarm
+  - Swarm
+  - Ball Curling
+  - Ball Curling
+  - Kill It With Fire!
+  - Kill It With Fire!
+  - Patience
+  - Patience
+  AnnahDeck: []
 --- !u!212 &1697706749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -297,8 +357,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697706747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3907063, y: -0.7663902, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -16, y: -0.1, z: 0}
+  m_LocalScale: {x: 2, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

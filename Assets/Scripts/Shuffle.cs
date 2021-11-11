@@ -3,23 +3,6 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-[Serializable]
-public class Card
-{
-    public int BioCost;
-    public int GeoCost;
-    public string Name;
-    public string Class;
-    public string Speices;
-    public int Duration;
-    public int HealthPoints;
-    public string[] Abilities;
-    public int[] AbilityPower;
-    public int[] AbilityRefresh; 
-    public string[] Traits;
-    public Sprite Image;
-}
-
 public class Shuffle : MonoBehaviour
 {
     // the decks

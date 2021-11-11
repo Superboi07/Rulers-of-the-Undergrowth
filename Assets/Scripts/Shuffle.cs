@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using GoogleSheetsToUnity;
 
 [Serializable]
 public class Card
@@ -22,6 +23,14 @@ public class Card
 
 public class Shuffle : MonoBehaviour
 {
+    // my attempt at using GSTU
+
+    [HideInInspector]
+    public string associatedSheet = "1uxwDQh1tr7AC6m7us5B1D8opDVFbVgwZZZ-vpGO9iJE";
+    [HideInInspector]
+    public string associatedWorksheet = "Cards";
+
+    // the decks
     public int[] SpindleDeck;
     public int[] AnnahDeck;
 
@@ -43,6 +52,17 @@ public class Shuffle : MonoBehaviour
             Deck[rnd] = Deck[i];
             Deck[i] = tempDeck;
         }
-        Debug.Log(Deck[0]);
+
+        // making sure nothing is broken
+        Debug.Log("first card that appears is number" + Deck[0]);
+
+        // looks that the sheet
+        SpreadsheetManager.Read(new GSTU_Search(associatedSheet, associatedWorksheet), FindCardValue);
+    }
+    
+    // SHOULD find values
+    void FindCardValue(GstuSpreadSheet spreadsheetRef)
+    {
+        Debug.Log(spreadsheetRef[" A2 "].value);
     }
 }

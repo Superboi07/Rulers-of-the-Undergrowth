@@ -7,26 +7,30 @@ public class GooCardScript : MonoBehaviour
     // calls my data objects
     public SpawnDeckList SpawnDeckList;
     public SpawnManagerScriptableObject SpawnManagerScriptableObject;
-    private SpawnManagerScriptableObject.Card PersonalStats;
 
     // temp variables
-    public bool[] Card = new bool[5];
+    public bool[] Player1Card = new bool[5];
     public int Player = 1;
+
+    // varibles for messaging
+    public int id;
 
     // Start is called before the first frame update
     void Start()
     {
         // temp variable definations
-        Card[1] = true;
-        Card[2] = true;
-        Card[3] = true;
-        Card[4] = true;
     }
 
-    void ReciveStats(SpawnManagerScriptableObject.Card Stats)
+    void ReciveStats(int[] Stats)
     {
-        Stats = PersonalStats;
-        // insert code to apply sprite and cost
+        if (Stats[0] == id)
+        {
+            SendMessageUpwards("GooFull", id);
+            // insert code to apply sprite and cost
+            Debug.Log("GooCard " + id + " tryed to send message upwards");
+            Debug.Log("GooCard " + id + " BioCost is " + SpawnManagerScriptableObject.CardList[Stats[1]].BioCost);
+            Debug.Log("GooCard " + id + " BioCost is " + SpawnManagerScriptableObject.CardList[Stats[1]].GeoCost);
+        }
     }
 
     // Update is called once per frame
@@ -36,17 +40,17 @@ public class GooCardScript : MonoBehaviour
         {
             if (Player == 1)
             {
-                if (Card[0] == false)
+                if (Player1Card[0] == false)
                 {
-                    // insert code to message Card1 with the stats
+                    // insert code to message Player1Card1 with the stats
                 }
-                else if (Card[1] == false) 
+                else if (Player1Card[1] == false) 
                 {
-                    // insert code to message Card2 with the stats
+                    // insert code to message Player1Card2 with the stats
                 }
-                else if (Card[2] == false) 
+                else if (Player1Card[2] == false) 
                 {
-                    // insert code to message Card3 with the info
+                    // insert code to message Player1Card3 with the info
                 }
                 else
                 {

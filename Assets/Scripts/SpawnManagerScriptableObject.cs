@@ -9,7 +9,7 @@ public class SpawnManagerScriptableObject : ScriptableObject
     [Serializable]
     public class Card
     {
-        // using ID so I both remember placement and name
+        // I have ID so I both remember placement and name
         public string ID;
         public string Name;
         public int BioCost;

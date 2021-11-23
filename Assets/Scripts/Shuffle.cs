@@ -6,22 +6,25 @@ using UnityEngine.Events;
 
 public class Shuffle : MonoBehaviour
 {
-
     // calls my data objects
     public SpawnDeckList SpawnDeckList;
     public SpawnManagerScriptableObject SpawnManagerScriptableObject;
 
     // temp variables
+    int eine = 1;
 
     // varibles for deck sorting
     int TopCard = 0;
-    int GooEmpty = 1;
+    int GooEmpty = 5;
 
     // varibles for messanging
     int[] TempStorage = new int[2];
     public bool[] GooCard = new bool[5];
 
-    // Start is called before the first frame update
+    // varibles for shuffling
+    int[] ShuffledDeck;
+
+    // *REMEMBER* Awake is when the object is inzlied, so DIFFERENT from Start
     void Awake()
     {
         // temp variable definations
@@ -43,18 +46,28 @@ public class Shuffle : MonoBehaviour
             Deck[i] = tempDeck;
         }
 
-        // making sure nothing is broken
-        Debug.Log("first cards that appear in the goo are numbers ");
-        for (int i = GooEmpty; i > 0; i -= 0)
+        ShuffledDeck = Deck;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        for (int one = eine; one == 1; one -= 1)
         {
-            Debug.Log(Deck[TopCard]);
-            MakeCard(Deck[TopCard]);
-            TopCard += 1;
-            GooEmpty -= 1;
-            i -= 1;
+            for (int i = GooEmpty; i > 0; i -= 0)
+            {
+                Debug.Log("The card id being sent is " + ShuffledDeck[TopCard] + " plus 1 (I gave up adding inside Debug.Log)");
+                Debug.Log("The top card id in ShuffledDeck is " + ShuffledDeck[TopCard]);
+                Debug.Log("The card id being sent means " + SpawnManagerScriptableObject.CardList[ShuffledDeck[TopCard] + 1].Name);
+                MakeCard(ShuffledDeck[TopCard] + 1);
+                TopCard += 1;
+                GooEmpty -= 1;
+                i -= 1;
+            }
+            Debug.Log("TopCard (how many cards have been sent to the Goo) is " + TopCard);
+            Debug.Log("GooEmpty (the amount of GooCards empty) is " + GooEmpty);
+            eine -= 1;
         }
-        Debug.Log("TopCard is " + TopCard);
-        Debug.Log("GooEmpty is " + GooEmpty);
     }
 
     // make the card with the stats
@@ -62,40 +75,35 @@ public class Shuffle : MonoBehaviour
     {
         TempStorage[1] = CardID;
 
-	    if (GooCard[0] == false)
-	    {
-            // insert code to message GooCard with the info
-            TempStorage[0] = 0;
-            BroadcastMessage("ReciveStats", TempStorage);
+        if (1 == 1)
+        {
+            if (GooCard[0] == false)
+            {
+                TempStorage[0] = 0;
+            }
+            else if (GooCard[1] == false)
+            {
+                TempStorage[0] = 1;
+            }
+            else if (GooCard[2] == false)
+            {
+                TempStorage[0] = 2;
+            }
+            else if (GooCard[3] == false)
+            {
+                TempStorage[0] = 3;
+            }
+            else if (GooCard[4] == false)
+            {
+                TempStorage[0] = 4;
+            }
+            else
+            {
+                Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty was mistakenly called, or at least one of the GooCards are listed as full when they aren’t");
+            }
         }
-	    else if (GooCard[1] == false)
-	    {
-            // insert code to message GooCard1 with the info
-            TempStorage[0] = 1;
-            BroadcastMessage("ReciveStats", TempStorage);
-        }
-	    else if (GooCard[2] == false)
-    	{
-            // insert code to message GooCard2 with the info
-            TempStorage[0] = 2;
-            BroadcastMessage("ReciveStats", TempStorage);
-        }
-    	else if (GooCard[3] == false)
-    	{
-            // insert code to message GooCard3 with the info
-            TempStorage[0] = 3;
-            BroadcastMessage("ReciveStats", TempStorage);
-        }
-    	else if (GooCard[4] == false)
-    	{
-            // insert code to message GooCard4 with the info
-            TempStorage[0] = 4;
-            BroadcastMessage("ReciveStats", TempStorage);
-        }
-    	else
-    	{
-    		Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty was mistakenly called, or at least one of the GooCards are listed as full when they aren’t");
-    	}
+
+        BroadcastMessage("ReciveStats", TempStorage);
     }
 
     // updates which GooCards are empty
@@ -105,9 +113,12 @@ public class Shuffle : MonoBehaviour
         Debug.Log("GooCard " + ID + " is full");
     }
 
-    // Update is called once per frame
-    void Update()
+    void GooNotFull(int ID)
     {
-        
+        GooCard[ID] = false;
+        Debug.Log("GooCard " + ID + " is empty");
+        GooEmpty += 1;
+        eine += 1;
     }
+
 }

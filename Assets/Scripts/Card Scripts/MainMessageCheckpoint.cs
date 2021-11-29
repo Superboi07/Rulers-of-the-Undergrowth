@@ -12,10 +12,10 @@ public class MainMessageCheckpoint : MonoBehaviour
     public Text Time;
 
     // global variables
-    int P1Bio;
-    int P1Geo;
-    int P2Bio;
-    int P2Geo;
+    int P1Bio = 5;
+    int P1Geo = 0;
+    int P2Bio = 5;
+    int P2Geo = 0;
     int Turn = 1;
     int Hour = 12;
     int AreThouSure;
@@ -50,6 +50,7 @@ public class MainMessageCheckpoint : MonoBehaviour
             Turn = 2;
             Debug.Log("P1 Passed, and must learn to face the coniquenises");
             PlayerTurn.text = "Player " + Turn + "'s Turn";
+            BroadcastMessage("Turn", Turn);
         }
 
         if (P2Passed == true && Turn == 2)
@@ -57,6 +58,7 @@ public class MainMessageCheckpoint : MonoBehaviour
             Turn = 1;
             Debug.Log("P2 Passed, and must learn to face the coniquenises");
             PlayerTurn.text = "Player " + Turn + "'s Turn";
+            BroadcastMessage("Turn", Turn);
         }
 
         if (Input.GetKeyDown("return"))
@@ -89,6 +91,7 @@ public class MainMessageCheckpoint : MonoBehaviour
             {
                 Debug.Log("Turn != 1 && Turn != 0, Woof");
             }
+            BroadcastMessage("Turn", Turn);
         }
     }
 
@@ -118,6 +121,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Debug.Log("ChangeGeo was sent, but they forgot to dicide player");
         }
+        BroadcastMessage("ChangeGooGeo", change);
     }
 
     void ChangeBio(int[] change)
@@ -136,8 +140,9 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Debug.Log("ChangeBio was sent, but they forgot to dicide player");
         }
+        BroadcastMessage("ChangeGooGeo", change);
     }
-
+    
     void PassTurn(int[] change)
     {
         if (change[0] == 1)

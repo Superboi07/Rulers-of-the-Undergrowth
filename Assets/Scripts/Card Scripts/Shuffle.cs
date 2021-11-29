@@ -16,6 +16,8 @@ public class Shuffle : MonoBehaviour
     // varibles for deck sorting
     int TopCard = 0;
     int GooEmpty = 5;
+    int[] P1Deck;
+    int[] P2Deck;
 
     // varibles for messanging
     int[] TempStorage = new int[2];
@@ -29,12 +31,25 @@ public class Shuffle : MonoBehaviour
     {
         // temp variable definations
 
-        // code here to decide what decks are chosen
+        #region code here to decide what decks are chosen
+        #region P1Deck
+        if (TweenSceneManager.P1Deck == "Spindle")
+        {
+            P1Deck = SpawnDeckList.SpindleDeck;
+        }
+        #endregion
+        #region P1Deck
+        if (TweenSceneManager.P2Deck == "Spindle")
+        {
+            P2Deck = SpawnDeckList.SpindleDeck;
+        }
+        #endregion
+        #endregion
 
         // merging the decks the plays choose into Deck
-        int[] Deck = new int[SpawnDeckList.SpindleDeck.Length + SpawnDeckList.SpindleDeck.Length];
-        Array.Copy(SpawnDeckList.SpindleDeck, Deck, SpawnDeckList.SpindleDeck.Length);
-        Array.Copy(SpawnDeckList.SpindleDeck, 0, Deck, SpawnDeckList.SpindleDeck.Length, SpawnDeckList.SpindleDeck.Length);
+        int[] Deck = new int[P1Deck.Length + P2Deck.Length];
+        Array.Copy(P1Deck, Deck, P1Deck.Length);
+        Array.Copy(P2Deck, 0, Deck, P1Deck.Length, P2Deck.Length);
 
         // shuffling Deck
         int tempDeck;

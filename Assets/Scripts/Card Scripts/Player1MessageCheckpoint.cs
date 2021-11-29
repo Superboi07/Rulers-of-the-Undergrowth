@@ -21,8 +21,8 @@ public class Player1MessageCheckpoint : MonoBehaviour
 
     void ApplyStatsP1(int[] TempStorage)
     {
-        if (1 == 1)
-        {
+        #region my "solution"
+
             if (Player1Card[0] == false)
             {
                 TempStorage[0] = 0;
@@ -507,7 +507,7 @@ public class Player1MessageCheckpoint : MonoBehaviour
             {
                 Debug.LogError("<color=red>Error:</color> Either I messed up the script or you somehow have 120 cards on one side and you want more");
             }
-        }
+        #endregion
 
         Player1Card[TempStorage[0]] = true;
 

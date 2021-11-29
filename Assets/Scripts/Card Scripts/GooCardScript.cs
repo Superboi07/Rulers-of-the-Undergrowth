@@ -11,25 +11,73 @@ public class GooCardScript : MonoBehaviour
 
     // calls my text boxes
     public Text CurentCard;
+    public Text Cost;
+    public Text HP;
 
     // temp variables
-    public int Player = 1;
 
     // varibles for messaging
     int[] TempStorage = new int[2];
+    int[] TempResourceStorage = new int[2];
     public bool[] Player1Card = new bool[120];
     public int id;
+    int P1Bio = 5;
+    int P1Geo = 0;
+    int P2Bio = 5;
+    int P2Geo = 0;
+    public int Player = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         // temp variable definations
+
+        // message variable definations
+        TempResourceStorage[0] = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    void Turn(int turn)
+    {
+        Player = turn;
+        TempResourceStorage[0] = turn;
+    }
+
+    void ChangeGooGeo(int[] change)
+    {
+        if (change[0] == 1)
+        {
+            P1Geo += change[1];
+        }
+        else if (change[0] == 2)
+        {
+            P2Geo += change[1];
+        }
+        else
+        {
+            Debug.Log("ChangeGeo was sent, but they forgot to dicide player");
+        }
+    }
+
+    void ChangeGooBio(int[] change)
+    {
+        if (change[0] == 1)
+        {
+            P1Bio += change[1];
+        }
+        else if (change[0] == 2)
+        {
+            P2Bio += change[1];
+        }
+        else
+        {
+            Debug.Log("ChangeBio was sent, but they forgot to dicide player");
+        }
     }
 
     // message funtions
@@ -56,18 +104,60 @@ public class GooCardScript : MonoBehaviour
     {
         if (Player == 1)
         {
-            SendMessageUpwards("SendApplyStatsP1", TempStorage);
+            if (P1Bio >= SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost)
+            {
+                if (P1Geo >= SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost)
+                {
+                    SendMessageUpwards("SendApplyStatsP1", TempStorage);
+                    SendMessageUpwards("GooNotFull", id);
+                    TempResourceStorage[1] = -SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost;
+                    SendMessageUpwards("ChangeBio", TempResourceStorage);
+                    TempResourceStorage[1] = -SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost;
+                    SendMessageUpwards("ChangeGeo", TempResourceStorage);
+                }
+                else
+                {
+                    Debug.Log("Player 1 does not have enough Geo; if it is player 2's turn, I am going to cry");
+                }
+            }
+            else
+            {
+                Debug.Log("Player 1 does not have enough Bio; if it is player 2's turn, I am going to cry");
+            }
         }
-        if (Player == 2)
+        else if (Player == 2)
         {
-            SendMessageUpwards("SendApplyStatsP2", TempStorage);
+            if (P2Bio >= SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost)
+            {
+                if (P2Geo >= SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost)
+                {
+                    SendMessageUpwards("SendApplyStatsP2", TempStorage);
+                    SendMessageUpwards("GooNotFull", id);
+                    TempResourceStorage[1] = -SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost;
+                    SendMessageUpwards("ChangeBio", TempResourceStorage);
+                    TempResourceStorage[1] = -SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost;
+                    SendMessageUpwards("ChangeGeo", TempResourceStorage);
+                }
+                else
+                {
+                    Debug.Log("Player 2 does not have enough Geo; if it is player 1's turn, I am going to cry");
+                }
+            }
+            else
+            {
+                Debug.Log("Player 2 does not have enough Bio; if it is player 1's turn, I am going to cry");
+            }
         }
-
-        SendMessageUpwards("GooNotFull", id);
+        else
+        {
+            Debug.Log("Player != 1 && Player != 2");
+        }
     }
 
     void OnMouseOver()
     {
-        CurentCard.text = "Card: " + "\n" + SpawnManagerScriptableObject.CardList[TempStorage[1]].Name;
+        CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[TempStorage[1]].Name;
+        Cost.text = "Bio Cost: " + SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost + "\n" + "Geo Cost: "  + SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost;
+        HP.text = "HP: " + SpawnManagerScriptableObject.CardList[TempStorage[1]].HealthPoints;
     }
 }

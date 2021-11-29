@@ -15,6 +15,7 @@ public class Player2CardScript : MonoBehaviour
     // varibles for messaging
     public int id;
     int[] PlayerAndStats = new int[2];
+    int Player = 1;
 
     // varibles for Abilites
     int AbilityStats;
@@ -22,6 +23,11 @@ public class Player2CardScript : MonoBehaviour
 
     // varibles for stats
     int CardListNumber;
+
+    void Turn(int turn)
+    {
+        Player = turn;
+    }
 
     void ReciveGooStats(int[] Stats)
     {
@@ -35,19 +41,26 @@ public class Player2CardScript : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length > 0)
+        if (Player == 2)
         {
-            LeftClicked = true;
+            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length > 0)
+            {
+                LeftClicked = true;
+            }
+            else
+            {
+                Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
+            }
         }
         else
         {
-            Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
+            Debug.Log("It is not player 2's turn, it is player " + Player + "'s turn; if that just so happened to be a 2, god help me");
         }
     }
 
     void OnMouseOver()
     {
-        CurentCard.text = "Card: " + "\n" + SpawnManagerScriptableObject.CardList[CardListNumber].Name;
+        CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[CardListNumber].Name;
 
         if (LeftClicked == true)
         {

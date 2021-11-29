@@ -63,6 +63,7 @@ public class AbilityManager : MonoBehaviour
     void DealDam(int[] Stats)
     {
         Debug.Log("DealDam" + " is attempting to exicute");
+        SendMessageUpwards("MinusHealth", Stats);
     }
 
     void SacPrev(int[] Stats)

@@ -95,6 +95,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         }
     }
 
+    #region Making Cards
     void SendApplyStatsP2(int[] TempStorage)
     {
         BroadcastMessage("ApplyStatsP2", TempStorage);
@@ -160,4 +161,12 @@ public class MainMessageCheckpoint : MonoBehaviour
             Debug.Log("PassTurn was sent, but they forgot to dicide player");
         }
     }
+    #endregion
+
+    #region Abiblites
+    void MinusHealth(int[] Stats)
+    {
+        BroadcastMessage("SubtractHealth", Stats);
+    }
+    #endregion
 }

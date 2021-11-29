@@ -21,9 +21,11 @@ public class Player1CardScript : MonoBehaviour
     // varibles for Abilites
     int AbilityStats;
     bool LeftClicked;
+    bool Open;
 
     // varibles for stats
     int CardListNumber;
+    int HeP;
 
     void Turn(int turn)
     {
@@ -37,6 +39,7 @@ public class Player1CardScript : MonoBehaviour
             // insert code to apply sprite
             Debug.Log("Player1Card (" + id + ") is " + SpawnManagerScriptableObject.CardList[Stats[1]].Name);
             CardListNumber = Stats[1];
+            HeP = SpawnManagerScriptableObject.CardList[Stats[1]].HealthPoints;
         }
     }
 
@@ -62,7 +65,7 @@ public class Player1CardScript : MonoBehaviour
     void OnMouseOver()
     {
         CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[CardListNumber].Name;
-        HP.text = "HP: " + SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints;
+        HP.text = "HP: " + HeP;
 
         if (LeftClicked == true)
         {
@@ -107,6 +110,13 @@ public class Player1CardScript : MonoBehaviour
             }
         }
     }
+
+    #region Abiblites
+    void SubtractHealth(int[] Stats)
+    {
+        HeP -= Stats[1];
+    }
+    #endregion
 
     // Start is called before the first frame update
     void Start()

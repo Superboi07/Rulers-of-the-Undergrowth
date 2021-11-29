@@ -38,7 +38,7 @@ public class Shuffle : MonoBehaviour
             P1Deck = SpawnDeckList.SpindleDeck;
         }
         #endregion
-        #region P1Deck
+        #region P2Deck
         if (TweenSceneManager.P2Deck == "Spindle")
         {
             P2Deck = SpawnDeckList.SpindleDeck;

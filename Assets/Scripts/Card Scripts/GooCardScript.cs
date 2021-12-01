@@ -20,12 +20,11 @@ public class GooCardScript : MonoBehaviour
     int[] TempStorage = new int[2];
     int[] TempResourceStorage = new int[2];
     public bool[] Player1Card = new bool[120];
+    public bool[] Player2Card = new bool[120];
     public int id;
-    int P1Bio = 5;
-    int P1Geo = 0;
-    int P2Bio = 5;
-    int P2Geo = 0;
     public int Player = 1;
+    int[] one = new int[1];
+    int[] two = new int[1];
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +33,8 @@ public class GooCardScript : MonoBehaviour
 
         // message variable definations
         TempResourceStorage[0] = 1;
+        one[0] = 1; // I need these as an array
+        two[0] = 2;
     }
 
     // Update is called once per frame
@@ -46,38 +47,6 @@ public class GooCardScript : MonoBehaviour
     {
         Player = turn;
         TempResourceStorage[0] = turn;
-    }
-
-    void ChangeGooGeo(int[] change)
-    {
-        if (change[0] == 1)
-        {
-            P1Geo += change[1];
-        }
-        else if (change[0] == 2)
-        {
-            P2Geo += change[1];
-        }
-        else
-        {
-            Debug.Log("ChangeGeo was sent, but they forgot to dicide player");
-        }
-    }
-
-    void ChangeGooBio(int[] change)
-    {
-        if (change[0] == 1)
-        {
-            P1Bio += change[1];
-        }
-        else if (change[0] == 2)
-        {
-            P2Bio += change[1];
-        }
-        else
-        {
-            Debug.Log("ChangeBio was sent, but they forgot to dicide player");
-        }
     }
 
     // message funtions
@@ -94,19 +63,13 @@ public class GooCardScript : MonoBehaviour
         }
     }
 
-    void Player1Full(int ID)
-    {
-        Player1Card[ID] = true;
-        Debug.Log("GooCard " + ID + " is full");
-    }
-
     void OnMouseDown()
     {
         if (Player == 1)
         {
-            if (P1Bio >= SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost)
+            if (MainMessageCheckpoint.P1Bio >= SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost)
             {
-                if (P1Geo >= SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost)
+                if (MainMessageCheckpoint.P1Geo >= SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost)
                 {
                     SendMessageUpwards("SendApplyStatsP1", TempStorage);
                     SendMessageUpwards("GooNotFull", id);
@@ -114,22 +77,23 @@ public class GooCardScript : MonoBehaviour
                     SendMessageUpwards("ChangeBio", TempResourceStorage);
                     TempResourceStorage[1] = -SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost;
                     SendMessageUpwards("ChangeGeo", TempResourceStorage);
+                    SendMessageUpwards("PassTurn", one);
                 }
                 else
                 {
-                    Debug.Log("Player 1 does not have enough Geo; if it is player 2's turn, I am going to cry");
+                    Debug.Log("Player " + Player + " does not have enough Geo; if it is player 2's turn, I am going to cry");
                 }
             }
             else
             {
-                Debug.Log("Player 1 does not have enough Bio; if it is player 2's turn, I am going to cry");
+                Debug.Log("Player " + Player + " does not have enough Bio; if it is player 2's turn, I am going to cry");
             }
         }
         else if (Player == 2)
         {
-            if (P2Bio >= SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost)
+            if (MainMessageCheckpoint.P2Bio >= SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost)
             {
-                if (P2Geo >= SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost)
+                if (MainMessageCheckpoint.P2Geo >= SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost)
                 {
                     SendMessageUpwards("SendApplyStatsP2", TempStorage);
                     SendMessageUpwards("GooNotFull", id);
@@ -137,20 +101,21 @@ public class GooCardScript : MonoBehaviour
                     SendMessageUpwards("ChangeBio", TempResourceStorage);
                     TempResourceStorage[1] = -SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost;
                     SendMessageUpwards("ChangeGeo", TempResourceStorage);
+                    SendMessageUpwards("PassTurn", two);
                 }
                 else
                 {
-                    Debug.Log("Player 2 does not have enough Geo; if it is player 1's turn, I am going to cry");
+                    Debug.Log("Player " + Player + " does not have enough Geo; if it is player 1's turn, I am going to cry");
                 }
             }
             else
             {
-                Debug.Log("Player 2 does not have enough Bio; if it is player 1's turn, I am going to cry");
+                Debug.Log("Player " + Player + " does not have enough Bio; if it is player 1's turn, I am going to cry");
             }
         }
         else
         {
-            Debug.Log("Player != 1 && Player != 2");
+            Debug.Log("Player != 1 && Player != 2, Player = " + Player);
         }
     }
 

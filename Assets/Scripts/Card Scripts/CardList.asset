@@ -69,7 +69,7 @@ MonoBehaviour:
     HealthPoints: 10
     Abilities:
     - DealDam
-    AbilityStats: 01000000
+    AbilityStats: 0a000000
     AbilityRefresh: 03000000
     Traits: []
     Image: {fileID: 0}
@@ -100,8 +100,8 @@ MonoBehaviour:
     - AbsorbDam
     - InhabitBasicSpider
     - InhabCounter
-    AbilityStats: 010000000010000000200000
-    AbilityRefresh: 050000000000000000000000
+    AbilityStats: 0a0000000100000014000000
+    AbilityRefresh: 000000000000000000000000
     Traits:
     - Stealth
     Image: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
     HealthPoints: 10
     Abilities:
     - DealDam
-    AbilityStats: 01000000
+    AbilityStats: 0a000000
     AbilityRefresh: 03000000
     Traits:
     - Reaching
@@ -145,7 +145,7 @@ MonoBehaviour:
     HealthPoints: 20
     Abilities:
     - DealDam
-    AbilityStats: 01000000
+    AbilityStats: 0a000000
     AbilityRefresh: 02000000
     Traits: []
     Image: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
     HealthPoints: 10
     Abilities:
     - DealDam
-    AbilityStats: 01000000
+    AbilityStats: 0a000000
     AbilityRefresh: 03000000
     Traits:
     - Flying
@@ -191,7 +191,7 @@ MonoBehaviour:
     HealthPoints: 10
     Abilities:
     - DealDam
-    AbilityStats: 01000000
+    AbilityStats: 0a000000
     AbilityRefresh: 03000000
     Traits:
     - Range
@@ -207,7 +207,7 @@ MonoBehaviour:
     Abilities:
     - DealDam
     - Armor
-    AbilityStats: 0300000000100000
+    AbilityStats: 1e0000000a000000
     AbilityRefresh: 0300000000000000
     Traits: []
     Image: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
     Abilities:
     - DealDam
     - Spot
-    AbilityStats: 0100000000100000
+    AbilityStats: 0a00000001000000
     AbilityRefresh: 0300000006000000
     Traits: []
     Image: {fileID: 0}
@@ -237,7 +237,7 @@ MonoBehaviour:
     Abilities:
     - DealDam
     - Suicide
-    AbilityStats: 0100000000600000
+    AbilityStats: 0a0000003c000000
     AbilityRefresh: 0300000006000000
     Traits: []
     Image: {fileID: 0}
@@ -267,7 +267,7 @@ MonoBehaviour:
     - InhabitBasicSpider
     - InhabDealDam
     - InhabMultiHit
-    AbilityStats: 010000000100000000200000
+    AbilityStats: 010000000a00000002000000
     AbilityRefresh: 000000000200000000000000
     Traits:
     - Reaching
@@ -282,7 +282,7 @@ MonoBehaviour:
     HealthPoints: 60
     Abilities:
     - DealDam
-    AbilityStats: 06000000
+    AbilityStats: 3c000000
     AbilityRefresh: 06000000
     Traits:
     - Overkill
@@ -368,9 +368,10 @@ MonoBehaviour:
     Species: Inst
     Duration: -1
     HealthPoints: -1
-    Abilities: []
+    Abilities:
+    - Burn___
     AbilityStats: 01000000
-    AbilityRefresh: 
+    AbilityRefresh: 00000000
     Traits: []
     Image: {fileID: 0}
   - ID: Patience 23

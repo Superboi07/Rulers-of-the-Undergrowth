@@ -11,6 +11,7 @@ public class Player2CardScript : MonoBehaviour
 
     // calls my text boxes
     public Text CurentCard;
+    public Text HP;
 
     // varibles for messaging
     public int id;
@@ -20,9 +21,23 @@ public class Player2CardScript : MonoBehaviour
     // varibles for Abilites
     int AbilityStats;
     bool LeftClicked;
+    bool Open; // I don't know what this does, there isn't a error, and I fear the consiquences of removing it
 
     // varibles for stats
     int CardListNumber;
+    int HeP = -1;
+    #region abilities
+    int[] HealthChange;
+    #endregion
+    #region ability OpenTo___
+    bool OpenToAttack;
+    #endregion
+
+    void Closed()
+    {
+        // set all varibles in ability OpenTo___ to false
+        OpenToAttack = false;
+    }
 
     void Turn(int turn)
     {
@@ -36,12 +51,38 @@ public class Player2CardScript : MonoBehaviour
             // insert code to apply sprite
             Debug.Log("Player2Card (" + id + ") is " + SpawnManagerScriptableObject.CardList[Stats[1]].Name);
             CardListNumber = Stats[1];
+            HeP = SpawnManagerScriptableObject.CardList[Stats[1]].HealthPoints;
         }
     }
 
     void OnMouseDown()
     {
-        if (Player == 2)
+        #region Abilites
+        if (MainMessageCheckpoint.HammerTime == true)
+        {
+            if (OpenToAttack == true)
+            {
+                if (HeP <= HealthChange[1])
+                {
+                    HeP = 0;
+                }
+                else
+                {
+                    HeP -= HealthChange[1];
+                }
+                SendMessageUpwards("SendClosed");
+            }
+            else if (1 == 0)
+            {
+                // placeholder
+            }
+            else
+            {
+                Debug.Log("Card " + id + " is not open to being a/e ffected by the ability, use the ability before doing ANYTING else");
+            }
+        }
+        #endregion
+        else if (Player == 2)
         {
             if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length > 0)
             {
@@ -61,6 +102,7 @@ public class Player2CardScript : MonoBehaviour
     void OnMouseOver()
     {
         CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[CardListNumber].Name;
+        HP.text = "HP: " + HeP;
 
         if (LeftClicked == true)
         {
@@ -106,6 +148,14 @@ public class Player2CardScript : MonoBehaviour
         }
     }
 
+    #region Abiblites
+    void SubtractHealth(int[] Stats)
+    {
+        HealthChange = Stats;
+        OpenToAttack = true;
+    }
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -115,6 +165,11 @@ public class Player2CardScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (HeP == 0)
+        {
+            CardListNumber = 0;
+            SendMessageUpwards("Player2NotFull", id);
+            HeP = -1;
+        }
     }
 }

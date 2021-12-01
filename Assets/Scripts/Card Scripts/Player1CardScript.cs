@@ -21,11 +21,23 @@ public class Player1CardScript : MonoBehaviour
     // varibles for Abilites
     int AbilityStats;
     bool LeftClicked;
-    bool Open;
+    bool Open; // I don't know what this does, there isn't a error, and I fear the consiquences of removing it
 
     // varibles for stats
-    int CardListNumber;
-    int HeP;
+    int CardListNumber = 0;
+    int HeP = -1;
+    #region abilities
+    int[] HealthChange;
+    #endregion
+    #region ability OpenTo___
+    bool OpenToAttack;
+    #endregion
+
+    void Closed()
+    {
+        // set all varibles in ability OpenTo___ to false
+        OpenToAttack = false;
+    }
 
     void Turn(int turn)
     {
@@ -45,7 +57,32 @@ public class Player1CardScript : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (Player == 1)
+        #region Abilites
+        if (MainMessageCheckpoint.HammerTime == true)
+        {
+            if (OpenToAttack == true)
+            {
+                if (HeP <= HealthChange[1])
+                {
+                    HeP = 0;
+                }
+                else
+                {
+                    HeP -= HealthChange[1];
+                }
+                SendMessageUpwards("SendClosed");
+            }
+            else if (1 == 0)
+            {
+                // placeholder
+            }
+            else
+            {
+                Debug.Log("Card " + id + " is not open to being a/e ffected by the ability, use the ability before doing ANYTING else");
+            } 
+        }
+        #endregion
+        else if (Player == 1)
         {
             if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length > 0)
             {
@@ -114,7 +151,8 @@ public class Player1CardScript : MonoBehaviour
     #region Abiblites
     void SubtractHealth(int[] Stats)
     {
-        HeP -= Stats[1];
+        HealthChange = Stats;
+        OpenToAttack = true;
     }
     #endregion
 
@@ -127,6 +165,11 @@ public class Player1CardScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (HeP == 0)
+        {
+            CardListNumber = 0;
+            SendMessageUpwards("Player1NotFull", id);
+            HeP = -1;
+        }
     }
 }

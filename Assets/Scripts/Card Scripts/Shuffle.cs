@@ -90,32 +90,17 @@ public class Shuffle : MonoBehaviour
     {
         TempStorage[1] = CardID;
 
-        if (1 == 1)
+        for (int x = 0; x <= 4; x += 1)
         {
-            if (GooCard[0] == false)
+            if (GooCard[x] == false)
             {
-                TempStorage[0] = 0;
+                TempStorage[0] = x;
             }
-            else if (GooCard[1] == false)
-            {
-                TempStorage[0] = 1;
-            }
-            else if (GooCard[2] == false)
-            {
-                TempStorage[0] = 2;
-            }
-            else if (GooCard[3] == false)
-            {
-                TempStorage[0] = 3;
-            }
-            else if (GooCard[4] == false)
-            {
-                TempStorage[0] = 4;
-            }
-            else
+            else if (x == 4)
             {
                 Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty was mistakenly called, or at least one of the GooCards are listed as full when they aren’t");
             }
+            Debug.Log(x);
         }
 
         BroadcastMessage("ReciveStats", TempStorage);

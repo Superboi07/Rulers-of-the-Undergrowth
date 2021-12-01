@@ -9,15 +9,21 @@ public class MainMessageCheckpoint : MonoBehaviour
     public Text P1BioGeo;
     public Text P2BioGeo;
     public Text PlayerTurn;
-    public Text Time;
+    public Text TimeText;
 
     // global variables
-    int P1Bio = 5;
-    int P1Geo = 0;
-    int P2Bio = 5;
-    int P2Geo = 0;
-    int Turn = 1;
-    int Hour = 12;
+    public int StartingBio;
+    public int StartingGeo;
+    public static int P1Bio;
+    public static int P1Geo;
+    public static int P2Bio;
+    public static int P2Geo;
+    public static int Turn = 1;
+    public static int[] ArrayTurn = new int[1]; // for when turn needs to be an array
+    public static int Hour = 12;
+    public static bool HammerTime;
+
+    // variables for turn passing
     int AreThouSure;
     bool P1Passed;
     bool P2Passed;
@@ -25,12 +31,20 @@ public class MainMessageCheckpoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        P1Bio = StartingBio;
+        P1Geo = StartingGeo;
+        P2Bio = StartingBio;
+        P2Geo = StartingGeo;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Time.frameCount % 3 == 0)
+        {
+            ArrayTurn[0] = Turn;
+        }
+
         if (P1Passed == true && P2Passed == true)
         {
             Hour += 1;
@@ -40,7 +54,7 @@ public class MainMessageCheckpoint : MonoBehaviour
                 Hour = 1;
             }
 
-            Time.text = "It is " + Hour + "'o Clock";
+            TimeText.text = "It is " + Hour + "'o Clock";
             P1Passed = false;
             P2Passed = false;
         }
@@ -84,7 +98,7 @@ public class MainMessageCheckpoint : MonoBehaviour
                     Debug.Log("Turn != 1 && Turn != 0, Yet AreThouSure == 1, BIG Woof");
                 }
 
-                Time.text = "It is " + Hour + "'o Clock";
+                TimeText.text = "It is " + Hour + "'o Clock";
                 AreThouSure = 0;
             }
             else
@@ -122,7 +136,6 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Debug.Log("ChangeGeo was sent, but they forgot to dicide player");
         }
-        BroadcastMessage("ChangeGooGeo", change);
     }
 
     void ChangeBio(int[] change)
@@ -141,20 +154,22 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Debug.Log("ChangeBio was sent, but they forgot to dicide player");
         }
-        BroadcastMessage("ChangeGooGeo", change);
     }
     
     void PassTurn(int[] change)
     {
+
         if (change[0] == 1)
         {
             Turn = 2;
             PlayerTurn.text = "Player " + Turn + "'s Turn";
+            BroadcastMessage("Turn", Turn);
         }
         else if (change[0] == 2)
         {
             Turn = 1;
             PlayerTurn.text = "Player " + Turn + "'s Turn";
+            BroadcastMessage("Turn", Turn);
         }
         else
         {
@@ -164,8 +179,15 @@ public class MainMessageCheckpoint : MonoBehaviour
     #endregion
 
     #region Abiblites
+    void SendClosed ()
+    {
+        BroadcastMessage("Closed");
+        PassTurn(ArrayTurn);
+        HammerTime = false;
+    }
     void MinusHealth(int[] Stats)
     {
+        HammerTime = true;
         BroadcastMessage("SubtractHealth", Stats);
     }
     #endregion

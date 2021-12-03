@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
@@ -90,20 +90,34 @@ public class Shuffle : MonoBehaviour
     {
         TempStorage[1] = CardID;
 
-        for (int x = 0; x <= 4; x += 1)
-        {
-            if (GooCard[x] == false)
+        #region God Hates Me
+            if (GooCard[0] == false)
             {
-                TempStorage[0] = x;
+                TempStorage[0] = 0;
             }
-            else if (x == 4)
+            else if (GooCard[1] == false)
             {
-                Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty was mistakenly called, or at least one of the GooCards are listed as full when they aren’t");
+                TempStorage[0] = 1;
             }
-            Debug.Log(x);
-        }
+            else if (GooCard[2] == false)
+            {
+                TempStorage[0] = 2;
+            }
+            else if (GooCard[3] == false)
+            {
+                TempStorage[0] = 3;
+            }
+            else if (GooCard[4] == false)
+            {
+                TempStorage[0] = 4;
+            }
+            else
+            {
+                Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty was mistakenly called, or at least one of the GooCards are listed as full when they arenï¿½t");
+            }
+        #endregion
 
-        BroadcastMessage("ReciveStats", TempStorage);
+    BroadcastMessage("ReciveStats", TempStorage);
     }
 
     // updates which GooCards are empty

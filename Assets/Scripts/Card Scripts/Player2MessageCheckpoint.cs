@@ -4,12 +4,29 @@ using UnityEngine;
 
 public class Player2MessageCheckpoint : MonoBehaviour
 {
+    // calls my data objects
+    public SpawnDeckList SpawnDeckList;
+    public SpawnManagerScriptableObject SpawnManagerScriptableObject;
+
     public bool[] Player2Card = new bool[120];
 
-    // Start is called before the first frame update
-    void Start()
+    // temp
+    int[] StorageTemp = new int[2];
+
+    // *REMEMBER* Awake is when the object is inzlied, so DIFFERENT from Start
+    void Awake()
     {
-        
+        if (DeckChooser.P2Deck == "Spindle")
+        {
+            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[0] + 1;
+            ApplyStatsP2(StorageTemp);
+            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[1] + 1;
+            ApplyStatsP2(StorageTemp);
+            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[2] + 1;
+            ApplyStatsP2(StorageTemp);
+            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[3] + 1;
+            ApplyStatsP2(StorageTemp);
+        }
     }
 
     // Update is called once per frame
@@ -22,6 +39,11 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         Player2Card[ID] = false;
         Debug.Log("Player2Card " + ID + " is not full");
+    }
+
+    void SendBlock(int OriginID)
+    {
+        BroadcastMessage("Block", OriginID);
     }
 
     void ApplyStatsP2(int[] TempStorage)
@@ -513,4 +535,13 @@ public class Player2MessageCheckpoint : MonoBehaviour
 
         BroadcastMessage("ReciveGooStats", TempStorage);
     }
+
+    #region Abilities
+    void Spawn___(int id)
+    {
+        StorageTemp[1] = id + 1;
+        ApplyStatsP2(StorageTemp);
+        SendMessageUpwards("LazyPassTurn");
+    }
+    #endregion
 }

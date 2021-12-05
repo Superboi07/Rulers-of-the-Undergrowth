@@ -13,26 +13,40 @@ public class AbilityManager : MonoBehaviour
 
     void GainBio(int[] Stats)
     {
-        Debug.Log("GainBio" + " is attempting to exicute");
-        SendMessageUpwards("ChangeBio", Stats);
-        SendMessageUpwards("PassTurn", Stats);
+        if (Stats[0] != -1)
+        {
+            Debug.Log("GainBio" + " is attempting to exicute");
+            SendMessageUpwards("ChangeBio", Stats);
+            SendMessageUpwards("PassTurn", Stats);
+        }
     }
 
     void GainGeo(int[] Stats)
     {
-        Debug.Log("GainGeo" + " is attempting to exicute");
-        SendMessageUpwards("ChangeGeo", Stats);
-        SendMessageUpwards("PassTurn", Stats);
+        if (Stats[0] != -1)
+        {
+            Debug.Log("GainGeo" + " is attempting to exicute");
+            SendMessageUpwards("ChangeGeo", Stats);
+            SendMessageUpwards("PassTurn", Stats);
+        }
     }
 
     void NegateAttack(int[] Stats)
     {
-        Debug.Log("NegateAttack" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("NegateAttack" + " is attempting to exicute");
+        }
     }
 
-    void Spawn___(int[] Stats)
+    void SpawnWeb(int[] Stats)
     {
-        Debug.Log("Spawn___" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            int zero = 0;
+            Debug.Log("SpawnWeb" + " is attempting to exicute");
+            SendMessageUpwards("Spawn___", zero);
+        }
     }
 
     void PoisonDam(int[] Stats)
@@ -45,25 +59,49 @@ public class AbilityManager : MonoBehaviour
         Debug.Log("PoisonWeak" + " is attempting to exicute");
     }
 
-    void Inhabit___(int[] Stats)
+    void InhabitBasicSpider(int[] Stats)
     {
-        Debug.Log("Inhabit___" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("InhabitBasicSpider" + " is attempting to exicute");
+        }
     }
 
-    void Absorb(int[] Stats)
+    void InhabCounter(int[] Stats)
     {
-        Debug.Log("Absorb" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("InhabitBasicSpider" + " is attempting to exicute");
+        }
+    }
+
+    void AbsorbDam(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("AbsorbDam is not triggerble");
+        }
+        else
+        {
+            Debug.Log("AbsorbDam" + " is attempting to exicute");
+        }
     }
 
     void Counter(int[] Stats)
     {
-        Debug.Log("Counter" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("Counter" + " is attempting to exicute");
+        }
     }
 
     void DealDam(int[] Stats)
     {
-        Debug.Log("DealDam" + " is attempting to exicute");
-        SendMessageUpwards("MinusHealth", Stats);
+        if (Stats[0] != -1)
+        {
+            Debug.Log("DealDam" + " is attempting to exicute");
+            SendMessageUpwards("MinusHealth", Stats);
+        }
     }
 
     void SacPrev(int[] Stats)
@@ -146,5 +184,53 @@ public class AbilityManager : MonoBehaviour
         Debug.Log("Stun___" + " is attempting to exicute");
     }
 
+    #endregion
+
+    #region Traits 
+    void Nocturnal(int[] PlayerAndID)
+    {
+        // do thing
+    }
+    void Cowardly(int[] PlayerAndID)
+    {
+        Debug.Log("Cowardly");
+    }
+    void Stealth(int[] PlayerAndID)
+    { 
+        // dpp thing
+    }
+    void Rush(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Toxic(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Flying(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Reaching(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Range(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Overkill(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Taunt(int[] PlayerAndID)
+    {
+        //thing do
+    }
+    void Unphased(int[] PlayerAndID)
+    {
+        //thing do
+        //thing do
+    }
     #endregion
 }

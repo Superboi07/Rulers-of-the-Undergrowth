@@ -120,6 +120,50 @@ public class MainMessageCheckpoint : MonoBehaviour
         BroadcastMessage("ApplyStatsP1", TempStorage);
     }
 
+    void Exchange()
+    {
+        if (Turn == 1)
+        {
+            if (P1Bio >= 10)
+            {
+                P1Bio -= 10;
+                P1Geo += 1;
+                P1BioGeo.text = "P1 Bio: " + P1Bio + "\n" + "Geo: " + P1Geo;
+                PassTurn(ArrayTurn);
+            }
+            else if (P1Bio < 10)
+            {
+                Debug.Log("yuo do not have enough bio");
+            }
+            else
+            {
+                Debug.Log("how is your bio nither >= 10 nor < 10????????????");
+            }
+        }
+        else if (Turn == 2)
+        {
+            if (P2Bio >= 10)
+            {
+                P2Bio -= 10;
+                P2Geo += 1;
+                P2BioGeo.text = "P2 Bio: " + P2Bio + "\n" + "Geo: " + P2Geo;
+                PassTurn(ArrayTurn);
+            }
+            else if (P2Bio < 10)
+            {
+                Debug.Log("yuo do not have enough bio");
+            }
+            else
+            {
+                Debug.Log("how is your bio nither >= 10 nor < 10????????????");
+            }
+        }
+        else
+        {
+            Debug.Log("It is not player 1 turn yet not player 2 turn");
+        }
+    }
+
     void ChangeGeo(int[] change)
     {
         if (change[0] == 1)
@@ -179,7 +223,7 @@ public class MainMessageCheckpoint : MonoBehaviour
     #endregion
 
     #region Abiblites
-    void SendClosed ()
+    void SendClosed()
     {
         BroadcastMessage("Closed");
         PassTurn(ArrayTurn);
@@ -191,4 +235,9 @@ public class MainMessageCheckpoint : MonoBehaviour
         BroadcastMessage("SubtractHealth", Stats);
     }
     #endregion
+
+    void LazyPassTurn()
+    {
+        PassTurn(ArrayTurn);
+    }
 }

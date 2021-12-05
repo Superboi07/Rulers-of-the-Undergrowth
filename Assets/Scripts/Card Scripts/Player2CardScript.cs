@@ -16,18 +16,27 @@ public class Player2CardScript : MonoBehaviour
     // varibles for messaging
     public int id;
     int[] PlayerAndStats = new int[2];
+    int[] PlayerAndID = new int[2];
     int Player = 1;
 
     // varibles for Abilites
     int AbilityStats;
     bool LeftClicked;
+    bool Wait = true;
+    bool Prompt;
     bool Open; // I don't know what this does, there isn't a error, and I fear the consiquences of removing it
 
     // varibles for stats
-    int CardListNumber;
+    bool BlockBool;
+    int OriginID;
+    int CardListNumber = 0;
     int HeP = -1;
     #region abilities
     int[] HealthChange;
+    int DamAbsorb;
+    #endregion
+    #region traits
+    bool HasStealth;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
@@ -52,6 +61,8 @@ public class Player2CardScript : MonoBehaviour
             Debug.Log("Player2Card (" + id + ") is " + SpawnManagerScriptableObject.CardList[Stats[1]].Name);
             CardListNumber = Stats[1];
             HeP = SpawnManagerScriptableObject.CardList[Stats[1]].HealthPoints;
+            Abilities();
+            Traits();
         }
     }
 
@@ -62,15 +73,94 @@ public class Player2CardScript : MonoBehaviour
         {
             if (OpenToAttack == true)
             {
-                if (HeP <= HealthChange[1])
+                #region Triats that effect a card's capability of being attacked
+                bool IHateThis = false;
+                if (BlockBool == false && IHateThis == false)
                 {
-                    HeP = 0;
+                    if (HasStealth == true)
+                    {
+                        Debug.Log("Sorry mate, but you cant see this card");
+                    }
+                    else if (1 == 0)
+                    {
+                        // placeholder
+                    }
+                    else
+                    {
+                        IHateThis = true;
+                    }
                 }
-                else
+                else 
                 {
-                    HeP -= HealthChange[1];
+                    IHateThis = true;
                 }
-                SendMessageUpwards("SendClosed");
+                #endregion
+                if (IHateThis == true)
+                {
+                    if (BlockBool == true)
+                    {
+                        if (OriginID == id)
+                        {
+                            Debug.Log("You cant block with the same card, if you misclicked [y], too bad, so sad");
+                        }
+                        else
+                        {
+                            Wait = false;
+                        }
+                    }
+                    if (Wait == true)
+                    {
+                        Debug.Log("Do you want to block using another card? [Y] [N] ps. if you click another card, I think everything will break, so please don't");
+                        Prompt = true;
+                    }
+                    else if (Wait == false)
+                    {
+                        string God = "alive";
+                        #region things that adjust damage caulculation
+                        if (HealthChange[1] > DamAbsorb)
+                        {
+                            HealthChange[1] -= DamAbsorb;
+                            God = "dead";
+                        }
+                        else if (DamAbsorb != 0)
+                        {
+                            DamAbsorb = HealthChange[1];
+                            HealthChange[1] = 0;
+                            God = "very dead";
+                        }
+
+                        if (God == "dead" || God == "very dead" && DamAbsorb != 0)
+                        {
+                            HeP -= HealthChange[1];
+                            HeP += DamAbsorb;
+
+                            if (HeP <= 0)
+                            {
+                                HeP = 0;
+                            }
+
+                            if (God == "very dead")
+                            {
+                                Debug.Log("The damge was less than the attacked card's AbsorbDam, loser");
+                            }
+                        }
+                        #endregion
+                        if (HeP <= HealthChange[1] && God == "alive")
+                        {
+                            HeP = 0;
+                        }
+                        else if (God != "dead" || God != "very dead")
+                        {
+                            HeP -= HealthChange[1];
+                        }
+                        SendMessageUpwards("SendClosed");
+                        Wait = true;
+                    }
+                    else
+                    {
+                        Debug.Log("Can a bool be nither true nor false? if you are seeing this, then it can");
+                    }
+                }
             }
             else if (1 == 0)
             {
@@ -154,17 +244,122 @@ public class Player2CardScript : MonoBehaviour
         HealthChange = Stats;
         OpenToAttack = true;
     }
+
+    void AbsorbDam(int[] Stats)
+    {
+        DamAbsorb = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[Stats[1]];
+    }
     #endregion
+
+    #region Traits (sans Traits)
+    void Stealth()
+    {
+        HasStealth = true;
+    }
+    #endregion
+
+    void Traits()
+    {
+        if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 1)
+        {
+            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[0], PlayerAndID);
+
+            if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 2)
+            {
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[1], PlayerAndID);
+
+                if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 3)
+                {
+                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[2], PlayerAndID);
+
+                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 4)
+                    {
+                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[3], PlayerAndID);
+
+                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 5)
+                        {
+                            Debug.Log("this card has too many triats");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    void Abilities()
+    {
+        int[] Temp = new int[2];
+        Temp[0] = -1;
+        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 1)
+        {
+            Temp[1] = 0;
+            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
+
+            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
+            {
+                Temp[1] = 1;
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
+
+                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
+                {
+                    Temp[1] = 2;
+                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
+
+                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
+                    {
+                        Temp[1] = 3;
+                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], Temp);
+
+                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
+                        {
+                            Debug.Log("this card has too many abilities");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    void Block(int Originid)
+    {
+        BlockBool = true;
+        OriginID = Originid;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerAndStats[0] = 1;
+        PlayerAndID[1] = id;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Time.frameCount % 3 == 1)
+        {
+            PlayerAndStats[0] = Player;
+            PlayerAndID[0] = Player;
+        }
+
+        if (HeP > SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints)
+        {
+            HeP = SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints;
+        }
+
+        if (Prompt == true)
+        { 
+            if (Input.GetKeyDown("y"))
+            {
+                Debug.Log("Click the card you want to block with");
+                SendMessageUpwards("SendBlock", id);
+            }
+            if (Input.GetKeyDown("n"))
+            {
+                Wait = false;
+                Prompt = false;
+                Debug.Log("click on the card again to procide");
+            }
+        }
         if (HeP == 0)
         {
             CardListNumber = 0;

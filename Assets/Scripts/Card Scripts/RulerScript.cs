@@ -79,11 +79,11 @@ public class RulerScript : MonoBehaviour
         CurentCard.text = "Current Card: " + "\n" + Deck;
         if (ID == 0)
         {
-            Debug.Log("And the ruler picked is " + TweenSceneManager.P1Deck + " I hope to god that they are the same");
+
         }
         if (ID == 1)
         {
-            Debug.Log("And the ruler picked is " + TweenSceneManager.P2Deck + " I hope to god that they are the same");
+
         }
         Cost.text = "Bio Cost: " + "n/a" + "\n" + "Geo Cost: " + "n/a";
         HP.text = "HP: " + HeP;

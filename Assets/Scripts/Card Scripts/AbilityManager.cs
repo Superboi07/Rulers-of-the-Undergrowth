@@ -4,6 +4,56 @@ using UnityEngine;
 
 public class AbilityManager : MonoBehaviour
 {
+    // Ability varibales
+    bool CoolDown = true;
+    bool CoolDownJr;
+    int CoolDownint = MainMessageCheckpoint.Hour + 1;
+
+    // trait varibales
+
+    #region Class
+
+    void Animal(int[] PlayerAndID)
+    {
+        Rush(PlayerAndID);
+    }
+
+    void Plant(int[] PlayerAndID)
+    {
+        //thing do
+    }
+
+    void Fungi(int[] PlayerAndID)
+    {
+        // dpp thing
+    }
+
+    void Inst(int[] PlayerAndID)
+    {
+        //thing do
+    }
+
+    #endregion
+
+    #region Species
+
+    void Spider(int[] PlayerAndID)
+    {
+        //thing do
+    }
+
+    void Construct(int[] PlayerAndID)
+    {
+        //thing do
+    }
+
+    //void Inst(int[] PlayerAndID)
+    //{
+    //If I even need to difenaticate class inst and species inst
+    //}
+
+    #endregion
+
     #region Abilities
 
     void InsertAbilityNameHere(int[] Stats)
@@ -13,21 +63,41 @@ public class AbilityManager : MonoBehaviour
 
     void GainBio(int[] Stats)
     {
-        if (Stats[0] != -1)
+        if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("GainBio" + " is attempting to exicute");
             SendMessageUpwards("ChangeBio", Stats);
             SendMessageUpwards("PassTurn", Stats);
         }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
     }
 
     void GainGeo(int[] Stats)
     {
-        if (Stats[0] != -1)
+        if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("GainGeo" + " is attempting to exicute");
             SendMessageUpwards("ChangeGeo", Stats);
             SendMessageUpwards("PassTurn", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
         }
     }
 
@@ -41,11 +111,21 @@ public class AbilityManager : MonoBehaviour
 
     void SpawnWeb(int[] Stats)
     {
-        if (Stats[0] != -1)
+        if (Stats[0] != -1 && CoolDown == true)
         {
             int zero = 0;
             Debug.Log("SpawnWeb" + " is attempting to exicute");
             SendMessageUpwards("Spawn___", zero);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
         }
     }
 
@@ -97,10 +177,20 @@ public class AbilityManager : MonoBehaviour
 
     void DealDam(int[] Stats)
     {
-        if (Stats[0] != -1)
+        if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("DealDam" + " is attempting to exicute");
             SendMessageUpwards("MinusHealth", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
         }
     }
 
@@ -187,50 +277,71 @@ public class AbilityManager : MonoBehaviour
     #endregion
 
     #region Traits 
+
     void Nocturnal(int[] PlayerAndID)
     {
         // do thing
     }
+
     void Cowardly(int[] PlayerAndID)
     {
         Debug.Log("Cowardly");
     }
+
     void Stealth(int[] PlayerAndID)
     { 
         // dpp thing
     }
+
     void Rush(int[] PlayerAndID)
     {
-        //thing do
+        Debug.Log("Rush");
+        CoolDown = false;
     }
+
     void Toxic(int[] PlayerAndID)
     {
         //thing do
     }
+
     void Flying(int[] PlayerAndID)
     {
         //thing do
     }
+
     void Reaching(int[] PlayerAndID)
     {
         //thing do
     }
+
     void Range(int[] PlayerAndID)
     {
         //thing do
     }
+
     void Overkill(int[] PlayerAndID)
     {
         //thing do
     }
+
     void Taunt(int[] PlayerAndID)
     {
         //thing do
     }
+
     void Unphased(int[] PlayerAndID)
     {
         //thing do
         //thing do
     }
+
     #endregion
+
+    void Update()
+    {
+        if (CoolDownint == MainMessageCheckpoint.Hour)
+        {
+            CoolDown = false;
+        }
+    }
 }

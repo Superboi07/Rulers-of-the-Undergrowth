@@ -61,7 +61,10 @@ public class Player1CardScript : MonoBehaviour
             Debug.Log("Player1Card (" + id + ") is " + SpawnManagerScriptableObject.CardList[Stats[1]].Name);
             CardListNumber = Stats[1];
             HeP = SpawnManagerScriptableObject.CardList[Stats[1]].HealthPoints;
+            // It is important abilities goes first so that Rush Works
             Abilities();
+            Class();
+            Species();
             Traits();
         }
     }
@@ -118,7 +121,7 @@ public class Player1CardScript : MonoBehaviour
                     {
                         string God = "alive";
                         #region things that adjust damage caulculation
-                        if (HealthChange[1] > DamAbsorb)
+                        if (HealthChange[1] > DamAbsorb && DamAbsorb != 0)
                         {
                             HealthChange[1] -= DamAbsorb;
                             God = "dead";
@@ -197,10 +200,14 @@ public class Player1CardScript : MonoBehaviour
 
         if (LeftClicked == true)
         {
+            int[] PlayerAndStatsAndCooldown = new int[3];
             if (Input.GetKeyDown("1") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 1)
             {
                 PlayerAndStats[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[0];
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], PlayerAndStats);
+                PlayerAndStatsAndCooldown[0] = PlayerAndStats[0];
+                PlayerAndStatsAndCooldown[1] = PlayerAndStats[1];
+                PlayerAndStatsAndCooldown[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[0];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], PlayerAndStatsAndCooldown);
             }
             else if (Input.GetKeyDown("1"))
             {
@@ -210,7 +217,10 @@ public class Player1CardScript : MonoBehaviour
             if (Input.GetKeyDown("2") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
             {
                 PlayerAndStats[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[1];
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], PlayerAndStats);
+                PlayerAndStatsAndCooldown[0] = PlayerAndStats[0];
+                PlayerAndStatsAndCooldown[1] = PlayerAndStats[1];
+                PlayerAndStatsAndCooldown[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[1];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], PlayerAndStatsAndCooldown);
             }
             else if (Input.GetKeyDown("2"))
             {
@@ -220,7 +230,10 @@ public class Player1CardScript : MonoBehaviour
             if (Input.GetKeyDown("3") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
             {
                 PlayerAndStats[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[2];
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], PlayerAndStats);
+                PlayerAndStatsAndCooldown[0] = PlayerAndStats[0];
+                PlayerAndStatsAndCooldown[1] = PlayerAndStats[1];
+                PlayerAndStatsAndCooldown[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[2];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], PlayerAndStatsAndCooldown);
             }
             else if (Input.GetKeyDown("3"))
             {
@@ -230,13 +243,26 @@ public class Player1CardScript : MonoBehaviour
             if (Input.GetKeyDown("4") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
             {
                 PlayerAndStats[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[3];
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], PlayerAndStats);
+                PlayerAndStatsAndCooldown[0] = PlayerAndStats[0];
+                PlayerAndStatsAndCooldown[1] = PlayerAndStats[1];
+                PlayerAndStatsAndCooldown[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[3];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], PlayerAndStatsAndCooldown);
             }
             else if (Input.GetKeyDown("4"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 3 Abilities or Robert forgot to add the rest, that idiot");
             }
         }
+    }
+
+    void Class()
+    {
+        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Class, PlayerAndID);
+    }
+
+    void Species()
+    {
+        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Species, PlayerAndID);
     }
 
     #region Abiblites
@@ -252,6 +278,48 @@ public class Player1CardScript : MonoBehaviour
     }
     #endregion
 
+    void Abilities()
+    {
+        #region the tower
+        int[] Temp = new int[3];
+        Temp[0] = -1;
+        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 1)
+        {
+            {
+                Temp[1] = 0;
+                Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[0];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
+
+                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
+                {
+                    Temp[1] = 1;
+                    Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[1];
+                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
+
+                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
+                    {
+                        Temp[1] = 2;
+                        Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[2];
+                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
+
+                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
+                        {
+                            Temp[1] = 3;
+                            Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[3];
+                            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
+
+                            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
+                            {
+                                Debug.Log("this card has too many abilities");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #endregion
+    }
+
     #region Traits (sans Traits)
     void Stealth()
     {
@@ -261,6 +329,7 @@ public class Player1CardScript : MonoBehaviour
 
     void Traits()
     {
+        #region the tower
         if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 1)
         {
             SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[0], PlayerAndID);
@@ -285,40 +354,7 @@ public class Player1CardScript : MonoBehaviour
                 }
             }
         }
-    }
-
-    void Abilities()
-    {
-        int[] Temp = new int[2];
-        Temp[0] = -1;
-        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 1)
-        {
-            Temp[1] = 0;
-            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
-
-            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
-            {
-                Temp[1] = 1;
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
-
-                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
-                {
-                    Temp[1] = 2;
-                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
-
-                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
-                    {
-                        Temp[1] = 3;
-                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], Temp);
-
-                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
-                        {
-                            Debug.Log("this card has too many abilities");
-                        }
-                    }
-                }
-            }
-        }
+        #endregion
     }
 
     void Block(int Originid)
@@ -361,6 +397,7 @@ public class Player1CardScript : MonoBehaviour
                 Debug.Log("click on the card again to procide");
             }
         }
+
         if (HeP == 0)
         {
             CardListNumber = 0;

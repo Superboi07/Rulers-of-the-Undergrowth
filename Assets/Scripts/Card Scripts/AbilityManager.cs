@@ -144,6 +144,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("InhabitBasicSpider" + " is attempting to exicute");
+            SendMessageUpwards("Inhabit___", 2);
         }
     }
 
@@ -151,7 +152,11 @@ public class AbilityManager : MonoBehaviour
     {
         if (Stats[0] != -1)
         {
-            Debug.Log("InhabitBasicSpider" + " is attempting to exicute");
+            Debug.Log("InhabCounter is not triggerble");
+        }
+        else
+        {
+            Debug.Log("InhabCounter" + " is attempting to exicute");
         }
     }
 
@@ -170,6 +175,10 @@ public class AbilityManager : MonoBehaviour
     void Counter(int[] Stats)
     {
         if (Stats[0] != -1)
+        {
+            Debug.Log("Counter is not triggerble");
+        }
+        else
         {
             Debug.Log("Counter" + " is attempting to exicute");
         }
@@ -206,7 +215,14 @@ public class AbilityManager : MonoBehaviour
 
     void Armor(int[] Stats)
     {
-        Debug.Log("Armor" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("Armor is not triggerble");
+        }
+        else
+        {
+            Debug.Log("Armor" + " is attempting to exicute");
+        }
     }
 
     void Spot(int[] Stats)
@@ -286,11 +302,13 @@ public class AbilityManager : MonoBehaviour
     void Cowardly(int[] PlayerAndID)
     {
         Debug.Log("Cowardly");
+        SendMessageUpwards("NotVisible", PlayerAndID);
     }
 
     void Stealth(int[] PlayerAndID)
-    { 
-        // dpp thing
+    {
+        Debug.Log("Stealth");
+        SendMessageUpwards("NotVisible", PlayerAndID);
     }
 
     void Rush(int[] PlayerAndID)

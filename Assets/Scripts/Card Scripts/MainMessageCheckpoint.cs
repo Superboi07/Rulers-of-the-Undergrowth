@@ -100,6 +100,7 @@ public class MainMessageCheckpoint : MonoBehaviour
 
                 TimeText.text = "It is " + Hour + "'o Clock";
                 AreThouSure = 0;
+                LazyPassTurn();
             }
             else
             {
@@ -174,7 +175,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         else if (change[0] == 2)
         {
             P2Geo += change[1];
-            P2BioGeo.text = "P1 Bio: " + P2Bio + "\n" + "Geo: " + P2Geo;
+            P2BioGeo.text = "P2 Bio: " + P2Bio + "\n" + "Geo: " + P2Geo;
         }
         else
         {
@@ -192,7 +193,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         else if (change[0] == 2)
         {
             P2Bio += change[1];
-            P2BioGeo.text = "P1 Bio: " + P2Bio + "\n" + "Geo: " + P2Geo;
+            P2BioGeo.text = "P2 Bio: " + P2Bio + "\n" + "Geo: " + P2Geo;
         }
         else
         {
@@ -226,13 +227,30 @@ public class MainMessageCheckpoint : MonoBehaviour
     void SendClosed()
     {
         BroadcastMessage("Closed");
+        BroadcastMessage("Closing");
         PassTurn(ArrayTurn);
         HammerTime = false;
     }
+
     void MinusHealth(int[] Stats)
     {
         HammerTime = true;
         BroadcastMessage("SubtractHealth", Stats);
+    }
+
+    void Inhabit___(int id)
+    {
+        HammerTime = true;
+    }
+
+    void InhabitingMessage()
+    {
+        HammerTime = false;
+    }
+
+    void SendRetaliation(int Stats)
+    {
+        BroadcastMessage("Retaliation", Stats);
     }
     #endregion
 

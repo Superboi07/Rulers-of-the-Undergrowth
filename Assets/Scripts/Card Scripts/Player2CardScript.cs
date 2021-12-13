@@ -34,12 +34,20 @@ public class Player2CardScript : MonoBehaviour
     #region abilities
     int[] HealthChange;
     int DamAbsorb;
+    int ArmorInt;
+    bool Inhabiting;
+    bool Inhabited;
+    int Counter;
+    bool Attacking;
     #endregion
     #region traits
     bool HasStealth;
+    bool HasCowardly;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
+    bool OpenToInhabit;
+    bool OpenToInhabiting;
     #endregion
 
     void Closed()
@@ -74,30 +82,41 @@ public class Player2CardScript : MonoBehaviour
         #region Abilites
         if (MainMessageCheckpoint.HammerTime == true)
         {
-            if (OpenToAttack == true)
+            if (OpenToInhabit == true)
+            {
+                SendMessageUpwards("InhabitingMessage");
+                OpenToInhabit = false;
+                Inhabited = true;
+            }
+            else if (OpenToAttack == true)
             {
                 #region Triats that effect a card's capability of being attacked
                 bool IHateThis = false;
                 if (BlockBool == false && IHateThis == false)
                 {
-                    if (HasStealth == true)
+                    if (Inhabited == true)
+                    {
+                        Debug.Log("Sorry mate, but this card is inside another card");
+                    }
+                    else if (HasStealth == true)
                     {
                         Debug.Log("Sorry mate, but you cant see this card");
                     }
-                    else if (1 == 0)
+                    else if (HasCowardly == true && Player1MessageCheckpoint.VisibleCards >= 1)
                     {
-                        // placeholder
+                        Debug.Log("Sorry mate, but this card is a coward");
                     }
                     else
                     {
                         IHateThis = true;
                     }
                 }
-                else 
+                else
                 {
                     IHateThis = true;
                 }
                 #endregion
+
                 if (IHateThis == true)
                 {
                     if (BlockBool == true)
@@ -120,12 +139,12 @@ public class Player2CardScript : MonoBehaviour
                     {
                         string God = "alive";
                         #region things that adjust damage caulculation
-                        if (HealthChange[1] > DamAbsorb && DamAbsorb != 0)
+                        if (HealthChange[1] > ArmorInt && ArmorInt != 0)
                         {
-                            HealthChange[1] -= DamAbsorb;
+                            HealthChange[1] -= ArmorInt;
                             God = "dead";
                         }
-                        else if (DamAbsorb != 0)
+                        else if (ArmorInt != 0)
                         {
                             DamAbsorb = HealthChange[1];
                             HealthChange[1] = 0;
@@ -144,7 +163,7 @@ public class Player2CardScript : MonoBehaviour
 
                             if (God == "very dead")
                             {
-                                Debug.Log("The damge was less than the attacked card's AbsorbDam, loser");
+                                Debug.Log("The damge was less than the attacked card's defences, loser");
                             }
                         }
                         #endregion
@@ -156,6 +175,20 @@ public class Player2CardScript : MonoBehaviour
                         {
                             HeP -= HealthChange[1];
                         }
+                        #region Things that happen after being attacked
+                        if (Counter > 0)
+                        {
+                            SendMessageUpwards("SendRetaliation", Counter);
+                        }
+                        else if (0 == 1)
+                        {
+                            // placeholder
+                        }
+                        else
+                        {
+                            Debug.Log("no after effects");
+                        }
+                        #endregion
                         SendMessageUpwards("SendClosed");
                         Wait = true;
                     }
@@ -271,9 +304,60 @@ public class Player2CardScript : MonoBehaviour
         OpenToAttack = true;
     }
 
+    void DealDam(int[] Stats)
+    {
+        Attacking = true;
+    }
+
     void AbsorbDam(int[] Stats)
     {
-        DamAbsorb = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[Stats[1]];
+        DamAbsorb = Stats[1];
+        ArmorInt = DamAbsorb;
+    }
+
+    void Armor(int[] Stats)
+    {
+        ArmorInt = Stats[1];
+    }
+
+    void Inhabit(int ID)
+    {
+        if (ID == CardListNumber)
+        {
+            OpenToInhabit = true;
+        }
+    }
+
+    void Inhabit___(int IDontNeedThis)
+    {
+        OpenToInhabiting = true;
+    }
+
+    void Inhabitingg()
+    {
+        if (OpenToInhabiting == true)
+        {
+            Inhabiting = true;
+            Abilities();
+            SendMessageUpwards("LazyPassTurn");
+        }
+    }
+
+    void Closing()
+    {
+        Attacking = false;
+    }
+
+    void Retaliation(int Stats)
+    {
+        if (Attacking == true)
+        {
+            HeP -= Stats;
+            if (HeP <= 0)
+            {
+                HeP = 0;
+            }
+        }
     }
     #endregion
 
@@ -284,31 +368,33 @@ public class Player2CardScript : MonoBehaviour
         Temp[0] = -1;
         if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 1)
         {
-            Temp[1] = 0;
-            Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[0];
-            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
-
-            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
             {
-                Temp[1] = 1;
-                Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[1];
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
+                Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[0];
+                Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[0];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
 
-                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
+                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
                 {
-                    Temp[1] = 2;
-                    Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[2];
-                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
+                    Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[1];
+                    Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[1];
+                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
 
-                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
+                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
                     {
-                        Temp[1] = 3;
-                        Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[3];
-                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], Temp);
+                        Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[2];
+                        Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[2];
+                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
 
-                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
+                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
                         {
-                            Debug.Log("this card has too many abilities");
+                            Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[3];
+                            Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[3];
+                            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], Temp);
+
+                            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
+                            {
+                                Debug.Log("this card has too many abilities");
+                            }
                         }
                     }
                 }
@@ -321,6 +407,11 @@ public class Player2CardScript : MonoBehaviour
     void Stealth()
     {
         HasStealth = true;
+    }
+
+    void Cowardly()
+    {
+        HasCowardly = true;
     }
     #endregion
 
@@ -353,6 +444,25 @@ public class Player2CardScript : MonoBehaviour
         }
         #endregion
     }
+
+    #region Inhabit sans Inhabit, Inhabit___, and Inhabitingg
+    void InhabCounter(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("InhabCounter is not triggerble");
+        }
+        else if (Inhabiting == true)
+        {
+            Debug.Log("It works");
+            Counter = Stats[1];
+        }
+        else
+        {
+            Debug.Log("You need to have another card inhabit this card");
+        }
+    }
+    #endregion
 
     void Block(int Originid)
     {

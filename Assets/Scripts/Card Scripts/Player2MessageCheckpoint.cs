@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Player2MessageCheckpoint : MonoBehaviour
 {
+    // Trait / ability varibles
+    public static int VisibleCards;
+
     // calls my data objects
     public SpawnDeckList SpawnDeckList;
     public SpawnManagerScriptableObject SpawnManagerScriptableObject;
 
+
+    // I dont know what I am doing
     public bool[] Player2Card = new bool[120];
+    public bool[] Player2CardVisible = new bool[120];
 
     // temp
     int[] StorageTemp = new int[2];
@@ -39,6 +45,12 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         Player2Card[ID] = false;
         Debug.Log("Player2Card " + ID + " is not full");
+
+        if (Player2CardVisible[ID] == true)
+        {
+            Player2CardVisible[ID] = false;
+            VisibleCards -= 1;
+        }
     }
 
     void SendBlock(int OriginID)
@@ -532,6 +544,7 @@ public class Player2MessageCheckpoint : MonoBehaviour
         #endregion
 
         Player2Card[TempStorage[0]] = true;
+        VisibleCards += 1;
 
         BroadcastMessage("ReciveGooStats", TempStorage);
     }
@@ -542,6 +555,24 @@ public class Player2MessageCheckpoint : MonoBehaviour
         StorageTemp[1] = id + 1;
         ApplyStatsP2(StorageTemp);
         SendMessageUpwards("LazyPassTurn");
+    }
+
+    void Inhabit___(int id)
+    {
+        BroadcastMessage("Inhabit", id + 1);
+    }
+
+    void InhabitingMessage()
+    {
+        BroadcastMessage("Inhabitingg");
+    }
+    #endregion
+
+    #region Traits
+    void NotVisible(int[] ID)
+    {
+        Player2CardVisible[ID[1]] = false;
+        VisibleCards -= 1;
     }
     #endregion
 }

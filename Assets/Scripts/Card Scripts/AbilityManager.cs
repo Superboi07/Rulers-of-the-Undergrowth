@@ -131,12 +131,26 @@ public class AbilityManager : MonoBehaviour
 
     void PoisonDam(int[] Stats)
     {
-        Debug.Log("PoisonDam" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("PoisonDam is not triggerble");
+        }
+        else
+        {
+            Debug.Log("PoisonDam" + " is attempting to exicute");
+        }
     }
 
     void PoisonWeak(int[] Stats)
     {
-        Debug.Log("PoisonWeak" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("PoisonWeak is not triggerble");
+        }
+        else
+        {
+            Debug.Log("PoisonWeak" + " is attempting to exicute");
+        }
     }
 
     void InhabitBasicSpider(int[] Stats)
@@ -319,7 +333,7 @@ public class AbilityManager : MonoBehaviour
 
     void Toxic(int[] PlayerAndID)
     {
-        //thing do
+        Debug.Log("Toxic");
     }
 
     void Flying(int[] PlayerAndID)

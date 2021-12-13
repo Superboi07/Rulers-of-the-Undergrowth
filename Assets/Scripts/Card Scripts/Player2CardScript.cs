@@ -39,8 +39,15 @@ public class Player2CardScript : MonoBehaviour
     bool Inhabited;
     int Counter;
     bool Attacking;
+    int PoisonDamInt;
+    int PoisonDurrationInt;
+    int PoisonWeakInt;
+    int[] PoisonStats = new int[3];
+    int[] HarmPoisonStats = new int[3];
+    bool Poisoned;
     #endregion
     #region traits
+    bool HasToxic;
     bool HasStealth;
     bool HasCowardly;
     #endregion
@@ -48,6 +55,7 @@ public class Player2CardScript : MonoBehaviour
     bool OpenToAttack;
     bool OpenToInhabit;
     bool OpenToInhabiting;
+    bool OpenToPoison;
     #endregion
 
     void Closed()
@@ -180,9 +188,16 @@ public class Player2CardScript : MonoBehaviour
                         {
                             SendMessageUpwards("SendRetaliation", Counter);
                         }
-                        else if (0 == 1)
+                        else if (HasToxic == true)
                         {
-                            // placeholder
+                            PoisonStats[0] = PoisonDamInt;
+                            PoisonStats[1] = PoisonDurrationInt;
+                            PoisonStats[2] = PoisonWeakInt;
+                            SendMessageUpwards("SendPoison", PoisonStats);
+                        }
+                        else if (OpenToPoison == true && HeP != 0)
+                        {
+                            Poisoned = true;
                         }
                         else
                         {
@@ -208,7 +223,7 @@ public class Player2CardScript : MonoBehaviour
             }
         }
         #endregion
-        else if (Player == 2)
+        else if (Player == 2 && Inhabited == false)
         {
             if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length > 0)
             {
@@ -218,6 +233,10 @@ public class Player2CardScript : MonoBehaviour
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
             }
+        }
+        else if (Player == 2 && Inhabited == true)
+        {
+            Debug.Log("This card is inside another card");
         }
         else
         {
@@ -307,6 +326,16 @@ public class Player2CardScript : MonoBehaviour
     void DealDam(int[] Stats)
     {
         Attacking = true;
+
+        #region Things that hppen after attacking
+        if (HasToxic == true)
+        {
+            PoisonStats[0] = PoisonDamInt;
+            PoisonStats[1] = PoisonDurrationInt;
+            PoisonStats[2] = PoisonWeakInt;
+            SendMessageUpwards("SendVenom", PoisonStats);
+        }
+        #endregion
     }
 
     void AbsorbDam(int[] Stats)
@@ -359,6 +388,44 @@ public class Player2CardScript : MonoBehaviour
             }
         }
     }
+
+    void RetaliationPoison(int[] Stats)
+    {
+        if (Attacking == true)
+        {
+            Debug.Log("POG");
+            Poisoned = true;
+            HarmPoisonStats = Stats;
+        }
+    }
+
+    void AgressivePoison(int[] Stats)
+    {
+        Debug.Log("POG");
+        OpenToPoison = true;
+        HarmPoisonStats = Stats;
+    }
+
+    void PoisonDam(int[] Stats)
+    {
+        PoisonDamInt = Stats[1];
+        PoisonDurrationInt = Stats[2];
+    }
+
+    void PoisonWeak(int[] Stats)
+    {
+        PoisonWeakInt = Stats[1];
+
+        if (PoisonDurrationInt == 0)
+        {
+            Debug.Log("Make sure PoisonDam is before PoionWeak");
+        }
+        else if (PoisonDurrationInt != Stats[2])
+        {
+            Debug.Log("Uh-oh, the durration of weak & dam are different");
+        }
+    }
+
     #endregion
 
     void Abilities()
@@ -413,6 +480,11 @@ public class Player2CardScript : MonoBehaviour
     {
         HasCowardly = true;
     }
+
+    void Toxic()
+    {
+        HasToxic = true;
+    }
     #endregion
 
     void Traits()
@@ -463,6 +535,19 @@ public class Player2CardScript : MonoBehaviour
         }
     }
     #endregion
+
+    void TimePassing()
+    {
+        if (Poisoned == true && HarmPoisonStats[1] != 0)
+        {
+            HeP -= HarmPoisonStats[0];
+            if (HeP < 0)
+            {
+                HeP = 0;
+            }
+            HarmPoisonStats[2] -= 1;
+        }
+    }
 
     void Block(int Originid)
     {

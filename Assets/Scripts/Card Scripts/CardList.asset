@@ -160,7 +160,7 @@ MonoBehaviour:
     Abilities:
     - DealDam
     - PoisonDam
-    - PosionWeak
+    - PoisonWeak
     AbilityStats: 050000000100000001000000
     AbilityRefresh: 030000000500000005000000
     Traits:

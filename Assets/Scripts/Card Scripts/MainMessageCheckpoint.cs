@@ -57,6 +57,7 @@ public class MainMessageCheckpoint : MonoBehaviour
             TimeText.text = "It is " + Hour + "'o Clock";
             P1Passed = false;
             P2Passed = false;
+            BroadcastMessage("TimePassing");
         }
 
         if (P1Passed == true && Turn == 1)
@@ -251,6 +252,16 @@ public class MainMessageCheckpoint : MonoBehaviour
     void SendRetaliation(int Stats)
     {
         BroadcastMessage("Retaliation", Stats);
+    }
+
+    void SendVenom(int[] Stats)
+    {
+        BroadcastMessage("AgressivePoison", Stats);
+    }
+
+    void SendPoison(int[] Stats)
+    {
+        BroadcastMessage("RetaliationPoison", Stats);
     }
     #endregion
 

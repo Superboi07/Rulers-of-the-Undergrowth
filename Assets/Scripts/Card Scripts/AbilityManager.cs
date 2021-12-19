@@ -8,7 +8,6 @@ public class AbilityManager : MonoBehaviour
     bool CoolDown = true;
     bool CoolDownJr;
     int CoolDownint = MainMessageCheckpoint.Hour + 1;
-    int PoisonLessDam = 0;
 
     // trait varibales
 
@@ -154,15 +153,6 @@ public class AbilityManager : MonoBehaviour
         }
     }
 
-    void Poisonn(int[] Stats)
-    {
-        PoisonLessDam = Stats[2];
-        if (Stats[0] == 0)
-        {
-            PoisonLessDam = 0;
-        }
-    }
-
     void InhabitBasicSpider(int[] Stats)
     {
         if (Stats[0] != -1)
@@ -212,16 +202,8 @@ public class AbilityManager : MonoBehaviour
     {
         if (Stats[0] != -1 && CoolDown == false)
         {
-            Stats[1] -= PoisonLessDam;
-            if (Stats[1] <= 0)
-            {
-                Debug.Log("Poison renders this card inert");
-            }
-            else
-            {
-                Debug.Log("DealDam" + " is attempting to exicute");
-                SendMessageUpwards("MinusHealth", Stats);
-            }
+            Debug.Log("DealDam" + " is attempting to exicute");
+            SendMessageUpwards("MinusHealth", Stats);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {

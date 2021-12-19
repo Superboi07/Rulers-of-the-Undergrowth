@@ -198,7 +198,6 @@ public class Player2CardScript : MonoBehaviour
                         else if (OpenToPoison == true && HeP != 0)
                         {
                             Poisoned = true;
-                            SendMessage("Poisonn", HarmPoisonStats);
                         }
                         else
                         {
@@ -394,17 +393,17 @@ public class Player2CardScript : MonoBehaviour
     {
         if (Attacking == true)
         {
+            Debug.Log("POG");
             Poisoned = true;
             HarmPoisonStats = Stats;
-            SendMessage("Poisonn", Stats);
         }
     }
 
     void AgressivePoison(int[] Stats)
     {
+        Debug.Log("POG");
         OpenToPoison = true;
         HarmPoisonStats = Stats;
-        SendMessage("Poisonn", Stats);
     }
 
     void PoisonDam(int[] Stats)
@@ -542,16 +541,11 @@ public class Player2CardScript : MonoBehaviour
         if (Poisoned == true && HarmPoisonStats[1] != 0)
         {
             HeP -= HarmPoisonStats[0];
-            HarmPoisonStats[2] -= 1;
             if (HeP < 0)
             {
                 HeP = 0;
-                HarmPoisonStats[1] = 0;
             }
-            if (HarmPoisonStats[1] == 0)
-            {
-                SendMessage("Poisonn", 0);
-            }
+            HarmPoisonStats[2] -= 1;
         }
     }
 

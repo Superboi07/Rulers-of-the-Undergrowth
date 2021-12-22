@@ -9,6 +9,12 @@ public class AbilityManager : MonoBehaviour
     bool CoolDownJr;
     int CoolDownint = MainMessageCheckpoint.Hour + 1;
 
+    #region Trait vars
+    bool HasReaching;
+    bool HasRange;
+    bool HasOverkill;
+    #endregion
+
     // trait varibales
 
     #region Class
@@ -202,6 +208,18 @@ public class AbilityManager : MonoBehaviour
     {
         if (Stats[0] != -1 && CoolDown == false)
         {
+            if (HasReaching == true)
+            {
+                SendMessageUpwards("AddReaching", Stats[0]);
+            }
+            if (HasRange == true)
+            {
+                SendMessageUpwards("AddRange", Stats[0]);
+            }
+            if (HasOverkill == true)
+            {
+                SendMessageUpwards("AddOverkill", Stats[0]);
+            }
             Debug.Log("DealDam" + " is attempting to exicute");
             SendMessageUpwards("MinusHealth", Stats);
         }
@@ -343,17 +361,17 @@ public class AbilityManager : MonoBehaviour
 
     void Reaching(int[] PlayerAndID)
     {
-        //thing do
+        HasReaching = true;
     }
 
     void Range(int[] PlayerAndID)
     {
-        //thing do
+        HasRange = true;
     }
 
     void Overkill(int[] PlayerAndID)
     {
-        //thing do
+        HasOverkill = true;
     }
 
     void Taunt(int[] PlayerAndID)

@@ -18,6 +18,7 @@ public class Player2CardScript : MonoBehaviour
     int[] PlayerAndStats = new int[2];
     int[] PlayerAndID = new int[2];
     int Player = 1;
+    int TempInt1 = 0;
 
     // varibles for Abilites
     int AbilityStats;
@@ -42,14 +43,18 @@ public class Player2CardScript : MonoBehaviour
     int PoisonDamInt;
     int PoisonDurrationInt;
     int PoisonWeakInt;
-    int[] PoisonStats = new int[3];
-    int[] HarmPoisonStats = new int[3];
+    int[] PoisonStats = new int[4];
+    int[] HarmPoisonStats = new int[4];
     bool Poisoned;
     #endregion
     #region traits
     bool HasToxic;
     bool HasStealth;
     bool HasCowardly;
+    bool HasFlying;
+    bool AgHasReaching;
+    bool AgHasRange;
+    bool AgHasOverkill;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
@@ -102,6 +107,7 @@ public class Player2CardScript : MonoBehaviour
                 bool IHateThis = false;
                 if (BlockBool == false && IHateThis == false)
                 {
+                    // make the Debug.Logs visible
                     if (Inhabited == true)
                     {
                         Debug.Log("Sorry mate, but this card is inside another card");
@@ -113,6 +119,16 @@ public class Player2CardScript : MonoBehaviour
                     else if (HasCowardly == true && Player1MessageCheckpoint.VisibleCards >= 1)
                     {
                         Debug.Log("Sorry mate, but this card is a coward");
+                    }
+                    else if (HasFlying == true)
+                    {
+                        Debug.Log("Sorry mate, but you cant reach this card");
+
+                        if (AgHasReaching == true)
+                        {
+                            Debug.Log("Fortunately your card can!");
+                            IHateThis = true;
+                        }
                     }
                     else
                     {
@@ -186,14 +202,33 @@ public class Player2CardScript : MonoBehaviour
                         #region Things that happen after being attacked
                         if (Counter > 0)
                         {
-                            SendMessageUpwards("SendRetaliation", Counter);
+                            if (AgHasRange == true)
+                            {
+                                Debug.Log("Cant counter a ranged attack");
+                                AgHasRange = false;
+                            }
+                            else
+                            {
+                                SendMessageUpwards("SendRetaliation", Counter);
+                            }
                         }
                         else if (HasToxic == true)
                         {
-                            PoisonStats[0] = PoisonDamInt;
-                            PoisonStats[1] = PoisonDurrationInt;
-                            PoisonStats[2] = PoisonWeakInt;
-                            SendMessageUpwards("SendPoison", PoisonStats);
+                            if (AgHasRange == true)
+                            {
+                                Debug.Log("Cant poison a ranged attack");
+                                AgHasRange = false;
+                            }
+                            else
+                            {
+                                PoisonStats[0] = PoisonDamInt;
+                                Debug.Log("Poison Dur M = " + PoisonDurrationInt);
+                                PoisonStats[1] = PoisonDurrationInt;
+                                Debug.Log("Poison Dur N = " + PoisonStats[1]);
+                                PoisonStats[2] = PoisonWeakInt;
+                                PoisonStats[3] = 2;
+                                SendMessageUpwards("SendPoison", PoisonStats);
+                            }
                         }
                         else if (OpenToPoison == true && HeP != 0)
                         {
@@ -389,13 +424,14 @@ public class Player2CardScript : MonoBehaviour
         }
     }
 
-    void RetaliationPoison(int[] Stats)
+    void RetaliationPoison2(int[] Stats)
     {
         if (Attacking == true)
         {
-            Debug.Log("POG");
+            Debug.Log("Poison Dur D = " + Stats[1]);
             Poisoned = true;
             HarmPoisonStats = Stats;
+            Debug.Log("Poison Dur C = " + HarmPoisonStats[1]);
         }
     }
 
@@ -485,6 +521,26 @@ public class Player2CardScript : MonoBehaviour
     {
         HasToxic = true;
     }
+
+    void Flying(int[] PlayerAndID)
+    {
+        HasFlying = true;
+    }
+
+    void AdddReaching(int Player)
+    {
+        AgHasReaching = true;
+    }
+
+    void AdddRange(int Player)
+    {
+        AgHasRange = true;
+    }
+
+    void AdddOverkill(int Player)
+    {
+        AgHasOverkill = true;
+    }
     #endregion
 
     void Traits()
@@ -540,12 +596,26 @@ public class Player2CardScript : MonoBehaviour
     {
         if (Poisoned == true && HarmPoisonStats[1] != 0)
         {
-            HeP -= HarmPoisonStats[0];
-            if (HeP < 0)
+            Debug.Log("Dur H = " + HarmPoisonStats[1]);
+            if (Poisoned == true && HarmPoisonStats[1] != 0)
             {
-                HeP = 0;
+                Debug.Log("Dur A = " + HarmPoisonStats[1]);
+                HeP -= HarmPoisonStats[0];
+                if (HeP < 0)
+                {
+                    HeP = 0;
+                }
+                HarmPoisonStats[1] -= 1;
+                if (HeP == 0)
+                {
+                    Poisoned = false;
+                    HarmPoisonStats[1] = 0;
+                }
+                Debug.Log("Dur B = " + HarmPoisonStats[1]);
             }
-            HarmPoisonStats[2] -= 1;
+            // Word of note: I dont know why, but somehow all of this Debug.Log nonsence fixed a bug. so you cant remove it or poison breaks
+            TempInt1 += 1;
+            Debug.Log("This scprit has run " + TempInt1 + " times");
         }
     }
 

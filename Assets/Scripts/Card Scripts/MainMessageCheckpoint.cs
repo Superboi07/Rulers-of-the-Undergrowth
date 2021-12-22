@@ -27,6 +27,13 @@ public class MainMessageCheckpoint : MonoBehaviour
     int AreThouSure;
     bool P1Passed;
     bool P2Passed;
+    int TempInt1 = 0;
+
+    #region Trait vars
+    bool HasReaching;
+    bool HasRange;
+    bool HasOverkill;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +62,8 @@ public class MainMessageCheckpoint : MonoBehaviour
             }
 
             TimeText.text = "It is " + Hour + "'o Clock";
+            TempInt1 += 1;
+            Debug.Log("Time has passed " + TempInt1 + " times");
             P1Passed = false;
             P2Passed = false;
             BroadcastMessage("TimePassing");
@@ -224,6 +233,23 @@ public class MainMessageCheckpoint : MonoBehaviour
     }
     #endregion
 
+    #region Traits
+    void AddReaching(int Player)
+    {
+        HasReaching = true;
+    }
+
+    void AddRange(int Player)
+    {
+        HasRange = true;
+    }
+
+    void AddOverkill(int Player)
+    {
+        HasOverkill = true;
+    }
+    #endregion
+
     #region Abiblites
     void SendClosed()
     {
@@ -235,6 +261,21 @@ public class MainMessageCheckpoint : MonoBehaviour
 
     void MinusHealth(int[] Stats)
     {
+        if (HasReaching == true)
+        {
+            BroadcastMessage("AdddReaching", Stats[0]);
+            HasReaching = false;
+        }
+        if (HasRange == true)
+        {
+            BroadcastMessage("AdddRange", Stats[0]);
+            HasRange = false;
+        }
+        if (HasOverkill == true)
+        {
+            BroadcastMessage("AdddOverkill", Stats[0]);
+            HasOverkill = false;
+        }
         HammerTime = true;
         BroadcastMessage("SubtractHealth", Stats);
     }
@@ -261,7 +302,18 @@ public class MainMessageCheckpoint : MonoBehaviour
 
     void SendPoison(int[] Stats)
     {
-        BroadcastMessage("RetaliationPoison", Stats);
+        // 1 is 2 and 2 is 1 because 1 means that is coming from 1 and going to 2 and vice versa
+        // and if you are reading this and wondering why I lettered the letters in the order I did, A-H is in the order I made it, then I-P is just A-H but off set by 8. I dont know where G whent
+        if (Stats[3] == 1)
+        {
+            Debug.Log("Poison Dur F = " + Stats[1]);
+            BroadcastMessage("RetaliationPoison2", Stats);
+        }
+        else if (Stats[3] == 2)
+        {
+            Debug.Log("Poison Dur O = " + Stats[1]);
+            BroadcastMessage("RetaliationPoison1", Stats);
+        }
     }
     #endregion
 

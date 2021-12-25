@@ -25,6 +25,7 @@ public class Player1CardScript : MonoBehaviour
     bool LeftClicked;
     bool Wait = true;
     bool Prompt;
+    bool Prompt2;
     bool Open; // I don't know what this does, there isn't a error, and I fear the consiquences of removing it
 
     // varibles for stats
@@ -46,6 +47,8 @@ public class Player1CardScript : MonoBehaviour
     int[] PoisonStats = new int[4];
     int[] HarmPoisonStats = new int[4];
     bool Poisoned;
+    bool HasNegateAttack;
+    int NegateAttacks;
     #endregion
     #region traits
     bool HasToxic;
@@ -67,6 +70,13 @@ public class Player1CardScript : MonoBehaviour
     {
         // set all varibles in ability OpenTo___ to false
         OpenToAttack = false;
+        OpenToInhabit = false;
+        OpenToInhabiting = false;
+        OpenToPoison = false;
+        AgHasReaching = false;
+        AgHasRange = false;
+        AgHasOverkill = false;
+        Prompt2 = false;
     }
 
     void Turn(int turn)
@@ -95,6 +105,7 @@ public class Player1CardScript : MonoBehaviour
         #region Abilites
         if (MainMessageCheckpoint.HammerTime == true)
         {
+            string normal = "a";
             if (OpenToInhabit == true)
             {
                 SendMessageUpwards("InhabitingMessage");
@@ -175,6 +186,17 @@ public class Player1CardScript : MonoBehaviour
                             God = "very dead";
                         }
 
+                        if (AgHasOverkill == true)
+                        {
+                            int temptemp = HealthChange[1] - HeP;
+                            if (temptemp > 0)
+                            {
+                                Debug.Log("OverKill has " + temptemp + " dam left");
+                                SendMessageUpwards("Again", temptemp);
+                                normal = "c";
+                            }
+                        }
+
                         if (God == "dead" || God == "very dead" && DamAbsorb != 0)
                         {
                             HeP -= HealthChange[1];
@@ -211,8 +233,10 @@ public class Player1CardScript : MonoBehaviour
                             {
                                 SendMessageUpwards("SendRetaliation", Counter);
                             }
+                            normal = "b";
                         }
-                        else if (HasToxic == true)
+
+                        if (HasToxic == true)
                         {
                             if (AgHasRange == true)
                             {
@@ -229,17 +253,24 @@ public class Player1CardScript : MonoBehaviour
                                 PoisonStats[3] = 1;
                                 SendMessageUpwards("SendPoison", PoisonStats);
                             }
+                            normal = "b";
                         }
-                        else if (OpenToPoison == true && HeP != 0)
+
+                        if (OpenToPoison == true && HeP != 0)
                         {
                             Poisoned = true;
+                            normal = "b";
                         }
-                        else
+
+                        if (normal != "b")
                         {
                             Debug.Log("no after effects");
                         }
                         #endregion
-                        SendMessageUpwards("SendClosed");
+                        if (normal == "a")
+                        {
+                            SendMessageUpwards("SendClosed");
+                        }
                         Wait = true;
                     }
                     else
@@ -283,6 +314,13 @@ public class Player1CardScript : MonoBehaviour
     {
         CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[CardListNumber].Name;
         HP.text = "HP: " + HeP;
+
+        if (Prompt2 == true && Input.GetKeyDown("y"))
+        {
+            NNegateAttack();
+            Debug.Log("Attack has been Negated");
+            SendMessageUpwards("SendClosed");
+        }
 
         if (LeftClicked == true)
         {
@@ -354,6 +392,12 @@ public class Player1CardScript : MonoBehaviour
     #region Abiblites (sans Abiblites)
     void SubtractHealth(int[] Stats)
     {
+        if (HasNegateAttack == true)
+        {
+            Debug.Log("If you want to Negate the Attack, mouse over Player " + "1" + " ID " + id + " and press [y]");
+            Prompt2 = true;
+            Debug.Log("If you don't want to Negate the Attack, just procide like normal");
+        }
         HealthChange = Stats;
         OpenToAttack = true;
     }
@@ -459,6 +503,22 @@ public class Player1CardScript : MonoBehaviour
         else if (PoisonDurrationInt != Stats[2])
         {
             Debug.Log("Uh-oh, the durration of weak & dam are different");
+        }
+    }
+
+    void NegateAttack(int[] Stats)
+    {
+        HasNegateAttack = true;
+        NegateAttacks = Stats[1];
+    }
+
+    void NNegateAttack()
+    {
+        NegateAttacks -= 1;
+        if (NegateAttacks == 0)
+        {
+            HeP = 0;
+            HasNegateAttack = false;
         }
     }
 

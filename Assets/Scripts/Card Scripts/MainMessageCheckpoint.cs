@@ -259,6 +259,13 @@ public class MainMessageCheckpoint : MonoBehaviour
         HammerTime = false;
     }
 
+    void Again(int Stats)
+    {
+        int[] tempppp = new int[2];
+        tempppp[1] = Stats;
+        BroadcastMessage("SubtractHealth", tempppp);
+    }
+
     void MinusHealth(int[] Stats)
     {
         if (HasReaching == true)

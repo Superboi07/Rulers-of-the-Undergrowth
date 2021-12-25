@@ -89,7 +89,7 @@ public class AbilityManager : MonoBehaviour
 
     void GainGeo(int[] Stats)
     {
-        if (Stats[0] != -1 && CoolDown == true)
+        if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("GainGeo" + " is attempting to exicute");
             SendMessageUpwards("ChangeGeo", Stats);
@@ -111,13 +111,17 @@ public class AbilityManager : MonoBehaviour
     {
         if (Stats[0] != -1)
         {
+            Debug.Log("NegateAttack is not triggerble");
+        }
+        else
+        {
             Debug.Log("NegateAttack" + " is attempting to exicute");
         }
     }
 
     void SpawnWeb(int[] Stats)
     {
-        if (Stats[0] != -1 && CoolDown == true)
+        if (Stats[0] != -1 && CoolDown == false)
         {
             int zero = 0;
             Debug.Log("SpawnWeb" + " is attempting to exicute");

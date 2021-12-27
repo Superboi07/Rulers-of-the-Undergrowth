@@ -263,12 +263,31 @@ public class AbilityManager : MonoBehaviour
 
     void Spot(int[] Stats)
     {
-        Debug.Log("Spot" + " is attempting to exicute");
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            Debug.Log("Spot" + " is attempting to exicute");
+            SendMessageUpwards("SendSpot", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
     }
 
     void Suicide(int[] Stats)
     {
-        Debug.Log("Suicide" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            SendMessageUpwards("AddUnblocking", Stats[0]);
+            Debug.Log("Suicide" + " is attempting to exicute");
+            SendMessage("Ssuicide", Stats);
+        }
     }
 
     void Cannibalize(int[] Stats)

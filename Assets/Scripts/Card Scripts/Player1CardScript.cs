@@ -58,12 +58,14 @@ public class Player1CardScript : MonoBehaviour
     bool AgHasReaching;
     bool AgHasRange;
     bool AgHasOverkill;
+    bool AgHasUnblocking;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
     bool OpenToInhabit;
     bool OpenToInhabiting;
     bool OpenToPoison;
+    bool OpenToSpot;
     #endregion
 
     void Closed()
@@ -73,9 +75,11 @@ public class Player1CardScript : MonoBehaviour
         OpenToInhabit = false;
         OpenToInhabiting = false;
         OpenToPoison = false;
+        OpenToSpot = false;
         AgHasReaching = false;
         AgHasRange = false;
         AgHasOverkill = false;
+        AgHasUnblocking = false;
         Prompt2 = false;
     }
 
@@ -112,6 +116,19 @@ public class Player1CardScript : MonoBehaviour
                 OpenToInhabit = false;
                 Inhabited = true;
             }
+            else if (OpenToSpot == true)
+            {
+                if (HasStealth == true)
+                {
+                    HasStealth = false;
+                    SendMessageUpwards("SendClosed");
+                    Debug.Log("Stealth has been removed");
+                }
+                else
+                {
+                    Debug.Log("This card does not have stealth; you can not spot a coward");
+                }
+            }
             else if (OpenToAttack == true)
             {
                 #region Triats that effect a card's capability of being attacked
@@ -145,6 +162,12 @@ public class Player1CardScript : MonoBehaviour
                     {
                         IHateThis = true;
                     }
+
+                    if (AgHasUnblocking == true)
+                    {
+                        Debug.Log("But it dont matter as your card is a beast");
+                        IHateThis = true;
+                    }
                 }
                 else
                 {
@@ -174,42 +197,45 @@ public class Player1CardScript : MonoBehaviour
                     {
                         string God = "alive";
                         #region things that adjust damage caulculation
-                        if (HealthChange[1] > ArmorInt && ArmorInt != 0)
+                        if (AgHasUnblocking == false)
                         {
-                            HealthChange[1] -= ArmorInt;
-                            God = "dead";
-                        }
-                        else if (ArmorInt != 0)
-                        {
-                            DamAbsorb = HealthChange[1];
-                            HealthChange[1] = 0;
-                            God = "very dead";
-                        }
-
-                        if (AgHasOverkill == true)
-                        {
-                            int temptemp = HealthChange[1] - HeP;
-                            if (temptemp > 0)
+                            if (HealthChange[1] > ArmorInt && ArmorInt != 0)
                             {
-                                Debug.Log("OverKill has " + temptemp + " dam left");
-                                SendMessageUpwards("Again", temptemp);
-                                normal = "c";
+                                HealthChange[1] -= ArmorInt;
+                                God = "dead";
                             }
-                        }
-
-                        if (God == "dead" || God == "very dead" && DamAbsorb != 0)
-                        {
-                            HeP -= HealthChange[1];
-                            HeP += DamAbsorb;
-
-                            if (HeP <= 0)
+                            else if (ArmorInt != 0)
                             {
-                                HeP = 0;
+                                DamAbsorb = HealthChange[1];
+                                HealthChange[1] = 0;
+                                God = "very dead";
                             }
 
-                            if (God == "very dead")
+                            if (AgHasOverkill == true)
                             {
-                                Debug.Log("The damge was less than the attacked card's defences, loser");
+                                int temptemp = HealthChange[1] - HeP;
+                                if (temptemp > 0)
+                                {
+                                    Debug.Log("OverKill has " + temptemp + " dam left");
+                                    SendMessageUpwards("Again", temptemp);
+                                    normal = "c";
+                                }
+                            }
+
+                            if (God == "dead" || God == "very dead" && DamAbsorb != 0)
+                            {
+                                HeP -= HealthChange[1];
+                                HeP += DamAbsorb;
+
+                                if (HeP <= 0)
+                                {
+                                    HeP = 0;
+                                }
+
+                                if (God == "very dead")
+                                {
+                                    Debug.Log("The damge was less than the attacked card's defences, loser");
+                                }
                             }
                         }
                         #endregion
@@ -222,49 +248,52 @@ public class Player1CardScript : MonoBehaviour
                             HeP -= HealthChange[1];
                         }
                         #region Things that happen after being attacked
-                        if (Counter > 0)
+                        if (AgHasUnblocking == false)
                         {
-                            if (AgHasRange == true)
+                            if (Counter > 0)
                             {
-                                Debug.Log("Cant counter a ranged attack");
-                                AgHasRange = false;
+                                if (AgHasRange == true)
+                                {
+                                    Debug.Log("Cant counter a ranged attack");
+                                    AgHasRange = false;
+                                }
+                                else
+                                {
+                                    SendMessageUpwards("SendRetaliation", Counter);
+                                }
+                                normal = "b";
                             }
-                            else
-                            {
-                                SendMessageUpwards("SendRetaliation", Counter);
-                            }
-                            normal = "b";
-                        }
 
-                        if (HasToxic == true)
-                        {
-                            if (AgHasRange == true)
+                            if (HasToxic == true)
                             {
-                                Debug.Log("Cant poison a ranged attack");
-                                AgHasRange = false;
+                                if (AgHasRange == true)
+                                {
+                                    Debug.Log("Cant poison a ranged attack");
+                                    AgHasRange = false;
+                                }
+                                else
+                                {
+                                    PoisonStats[0] = PoisonDamInt;
+                                    Debug.Log("Poison Dur D = " + PoisonDurrationInt);
+                                    PoisonStats[1] = PoisonDurrationInt;
+                                    Debug.Log("Poison Dur E = " + PoisonStats[1]);
+                                    PoisonStats[2] = PoisonWeakInt;
+                                    PoisonStats[3] = 1;
+                                    SendMessageUpwards("SendPoison", PoisonStats);
+                                }
+                                normal = "b";
                             }
-                            else
+
+                            if (OpenToPoison == true && HeP != 0)
                             {
-                                PoisonStats[0] = PoisonDamInt;
-                                Debug.Log("Poison Dur D = " + PoisonDurrationInt);
-                                PoisonStats[1] = PoisonDurrationInt;
-                                Debug.Log("Poison Dur E = " + PoisonStats[1]);
-                                PoisonStats[2] = PoisonWeakInt;
-                                PoisonStats[3] = 1;
-                                SendMessageUpwards("SendPoison", PoisonStats);
+                                Poisoned = true;
+                                normal = "b";
                             }
-                            normal = "b";
-                        }
 
-                        if (OpenToPoison == true && HeP != 0)
-                        {
-                            Poisoned = true;
-                            normal = "b";
-                        }
-
-                        if (normal != "b")
-                        {
-                            Debug.Log("no after effects");
+                            if (normal != "b")
+                            {
+                                Debug.Log("no after effects");
+                            }
                         }
                         #endregion
                         if (normal == "a")
@@ -522,6 +551,25 @@ public class Player1CardScript : MonoBehaviour
         }
     }
 
+    void Sspot(int[] Stats)
+    {
+        OpenToSpot = true;
+    }
+
+    void Ssuicide(int[] Stats)
+    {
+        Stats[1] += HeP;
+        HeP = 0;
+        if (HasToxic == true)
+        {
+            PoisonStats[0] = PoisonDamInt;
+            PoisonStats[1] = PoisonDurrationInt;
+            PoisonStats[2] = PoisonWeakInt;
+            SendMessageUpwards("SendVenom", PoisonStats);
+        }
+        SendMessageUpwards("MinusHealth", Stats);
+    }
+
     #endregion
 
     void Abilities()
@@ -601,6 +649,12 @@ public class Player1CardScript : MonoBehaviour
     {
         AgHasOverkill = true;
     }
+
+    void AdddUnblocking (int Player)
+    {
+        AgHasUnblocking = true;
+    }
+
     #endregion
 
     void Traits()

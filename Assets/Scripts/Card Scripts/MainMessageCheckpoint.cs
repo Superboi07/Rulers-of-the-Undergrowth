@@ -33,6 +33,7 @@ public class MainMessageCheckpoint : MonoBehaviour
     bool HasReaching;
     bool HasRange;
     bool HasOverkill;
+    bool HasUnblocking;
     #endregion
 
     // Start is called before the first frame update
@@ -248,6 +249,11 @@ public class MainMessageCheckpoint : MonoBehaviour
     {
         HasOverkill = true;
     }
+
+    void AddUnblocking(int Player)
+    {
+        HasUnblocking = true;
+    }
     #endregion
 
     #region Abiblites
@@ -282,6 +288,11 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             BroadcastMessage("AdddOverkill", Stats[0]);
             HasOverkill = false;
+        }
+        if (HasUnblocking == true)
+        {
+            BroadcastMessage("AdddUnblocking", Stats[0]);
+            HasUnblocking = false;
         }
         HammerTime = true;
         BroadcastMessage("SubtractHealth", Stats);
@@ -322,7 +333,19 @@ public class MainMessageCheckpoint : MonoBehaviour
             BroadcastMessage("RetaliationPoison1", Stats);
         }
     }
+
+    void SendSpot(int[] Stats)
+    {
+        HammerTime = true;
+        BroadcastMessage("Sspot", Stats);
+    }
     #endregion
+
+    void Skip()
+    {
+        SendClosed();
+        LazyPassTurn();
+    }
 
     void LazyPassTurn()
     {

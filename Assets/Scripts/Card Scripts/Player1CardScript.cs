@@ -704,6 +704,18 @@ public class Player1CardScript : MonoBehaviour
             Debug.Log("You need to have another card inhabit this card");
         }
     }
+
+    void InhabDealDam(int[] Stats)
+    {
+        if (Stats[0] != -1 && Inhabiting == true)
+        {
+            SendMessage("DealDam", Stats);
+        }
+        else if (Inhabiting == false)
+        {
+            Debug.Log("You need to have another card inhabit this card");
+        }
+    }
     #endregion
 
     void TimePassing()

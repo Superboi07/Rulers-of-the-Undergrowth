@@ -34,6 +34,8 @@ public class MainMessageCheckpoint : MonoBehaviour
     bool HasRange;
     bool HasOverkill;
     bool HasUnblocking;
+    bool HasMultiHit;
+    int MultiHitInt;
     #endregion
 
     // Start is called before the first frame update
@@ -234,7 +236,7 @@ public class MainMessageCheckpoint : MonoBehaviour
     }
     #endregion
 
-    #region Traits
+    #region Add___
     void AddReaching(int Player)
     {
         HasReaching = true;
@@ -253,6 +255,13 @@ public class MainMessageCheckpoint : MonoBehaviour
     void AddUnblocking(int Player)
     {
         HasUnblocking = true;
+    }
+
+    void AddMultiHit(int Stats)
+    {
+        Debug.Log("Hello Word");
+        HasMultiHit = true;
+        MultiHitInt = Stats;
     }
     #endregion
 
@@ -294,6 +303,12 @@ public class MainMessageCheckpoint : MonoBehaviour
             BroadcastMessage("AdddUnblocking", Stats[0]);
             HasUnblocking = false;
         }
+        if (HasMultiHit == true)
+        {
+            BroadcastMessage("AdddMultiHit", MultiHitInt);
+            HasUnblocking = false;
+            MultiHitInt = 0;
+        }
         HammerTime = true;
         BroadcastMessage("SubtractHealth", Stats);
     }
@@ -316,6 +331,7 @@ public class MainMessageCheckpoint : MonoBehaviour
     void SendVenom(int[] Stats)
     {
         BroadcastMessage("AgressivePoison", Stats);
+        HammerTime = true;
     }
 
     void SendPoison(int[] Stats)
@@ -338,6 +354,13 @@ public class MainMessageCheckpoint : MonoBehaviour
     {
         HammerTime = true;
         BroadcastMessage("Sspot", Stats);
+    }
+
+    void ReduceHits(int HitAmount)
+    {
+        HasMultiHit = true;
+        MultiHitInt = HitAmount - 1;
+        Debug.Log("Attacks left: " + MultiHitInt);
     }
     #endregion
 

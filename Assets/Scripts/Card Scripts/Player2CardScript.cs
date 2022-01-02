@@ -49,6 +49,9 @@ public class Player2CardScript : MonoBehaviour
     bool Poisoned;
     bool HasNegateAttack;
     int NegateAttacks;
+    bool HasMultiHit;
+    int MultiHitInt;
+    int AgMultiHitInt;
     #endregion
     #region traits
     bool HasToxic;
@@ -80,6 +83,7 @@ public class Player2CardScript : MonoBehaviour
         AgHasRange = false;
         AgHasOverkill = false;
         AgHasUnblocking = false;
+        AgMultiHitInt = 0;
         Prompt2 = false;
     }
 
@@ -195,6 +199,10 @@ public class Player2CardScript : MonoBehaviour
                     }
                     else if (Wait == false)
                     {
+                        #region Temps
+                        int OverkillTemp = 0;
+                        int PreReducDam = HealthChange[1];
+                        #endregion
                         string God = "alive";
                         #region things that adjust damage caulculation
                         if (AgHasUnblocking == false)
@@ -217,7 +225,7 @@ public class Player2CardScript : MonoBehaviour
                                 if (temptemp > 0)
                                 {
                                     Debug.Log("OverKill has " + temptemp + " dam left");
-                                    SendMessageUpwards("Again", temptemp);
+                                    OverkillTemp = temptemp;
                                     normal = "c";
                                 }
                             }
@@ -296,9 +304,31 @@ public class Player2CardScript : MonoBehaviour
                             }
                         }
                         #endregion
-                        if (normal == "a")
+                        if (AgMultiHitInt > 0)
+                        {
+                            SendMessageUpwards("ReduceHits", AgMultiHitInt);
+                            normal = "c";
+                        }
+
+                        if (normal == "a" || normal == "b")
                         {
                             SendMessageUpwards("SendClosed");
+                        }
+                        else if (normal == "c")
+                        {
+                            if (AgHasOverkill == true)
+                            {
+                                SendMessageUpwards("Again", OverkillTemp);
+                                OverkillTemp = 0;
+                            }
+                            else if (1 == 0)
+                            {
+                                //temp
+                            }
+                            else
+                            {
+                                SendMessageUpwards("Again", PreReducDam);
+                            }
                         }
                         Wait = true;
                     }
@@ -307,6 +337,11 @@ public class Player2CardScript : MonoBehaviour
                         Debug.Log("Can a bool be nither true nor false? if you are seeing this, then it can");
                     }
                 }
+            }
+            else if (OpenToPoison == true)
+            {
+                Poisoned = true;
+                SendMessageUpwards("SendClosed");
             }
             else if (1 == 0)
             {
@@ -443,6 +478,11 @@ public class Player2CardScript : MonoBehaviour
             PoisonStats[2] = PoisonWeakInt;
             SendMessageUpwards("SendVenom", PoisonStats);
         }
+
+        if (HasMultiHit == true)
+        {
+            SendMessageUpwards("AddMultiHit", MultiHitInt);
+        }
         #endregion
     }
 
@@ -569,6 +609,14 @@ public class Player2CardScript : MonoBehaviour
         }
         SendMessageUpwards("MinusHealth", Stats);
     }
+    
+    void Ppoison(int[] Stats)
+    {
+        PoisonStats[0] = PoisonDamInt;
+        PoisonStats[1] = PoisonDurrationInt;
+        PoisonStats[2] = PoisonWeakInt;
+        SendMessageUpwards("SendVenom", PoisonStats);
+    }
 
     #endregion
 
@@ -635,6 +683,9 @@ public class Player2CardScript : MonoBehaviour
         HasFlying = true;
     }
 
+    #endregion
+
+    #region Addd___    
     void AdddReaching(int Player)
     {
         AgHasReaching = true;
@@ -653,6 +704,11 @@ public class Player2CardScript : MonoBehaviour
     void AdddUnblocking(int Player)
     {
         AgHasUnblocking = true;
+    }
+
+    void AdddMultiHit(int HitAmount)
+    {
+        AgMultiHitInt = HitAmount;
     }
 
     #endregion
@@ -710,6 +766,24 @@ public class Player2CardScript : MonoBehaviour
         if (Stats[0] != -1 && Inhabiting == true)
         {
             SendMessage("DealDam", Stats);
+        }
+        else if (Inhabiting == false)
+        {
+            Debug.Log("You need to have another card inhabit this card");
+        }
+    }
+
+    void InhabMultiHit(int[] Stats)
+    {
+        if (Stats[0] != -1 && Inhabiting == true)
+        {
+            Debug.Log("MultiHit is not triggerble");
+        }
+        else if (Inhabiting == true)
+        {
+            Debug.Log("why?");
+            HasMultiHit = true;
+            MultiHitInt = Stats[1];
         }
         else if (Inhabiting == false)
         {

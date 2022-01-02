@@ -36,7 +36,7 @@ public class AbilityManager : MonoBehaviour
 
     void Inst(int[] PlayerAndID)
     {
-        //thing do
+        Rush(PlayerAndID);
     }
 
     #endregion
@@ -184,6 +184,18 @@ public class AbilityManager : MonoBehaviour
         }
     }
 
+    void InhabMultiHit(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("InhabMultiHit is not triggerble");
+        }
+        else
+        {
+            Debug.Log("InhabMultiHit" + " is attempting to exicute");
+        }
+    }
+
     void AbsorbDam(int[] Stats)
     {
         if (Stats[0] != -1)
@@ -307,7 +319,21 @@ public class AbilityManager : MonoBehaviour
 
     void Poison(int[] Stats)
     {
-        Debug.Log("Poison" + " is attempting to exicute");
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            Debug.Log("Poison" + " is attempting to exicute");
+            SendMessage("Ppoison", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
     }
 
     void Poison___(int[] Stats)

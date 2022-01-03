@@ -355,23 +355,23 @@ MonoBehaviour:
     Duration: -1
     HealthPoints: -1
     Abilities:
-    - ResSpider,SpiderBall
+    - ResSpiderSpiderBall
     AbilityStats: 01000000
     AbilityRefresh: 01000000
     Traits: []
     Image: {fileID: 0}
-  - ID: Kill It With Fire! 22
-    Name: Kill It With Fire!
-    BioCost: 3
+  - ID: Sticker Spider 22
+    Name: Sticker Spider
+    BioCost: 4
     GeoCost: 0
-    Class: Inst
-    Species: Inst
+    Class: Animal
+    Species: Spider
     Duration: -1
-    HealthPoints: -1
+    HealthPoints: 10
     Abilities:
-    - Burn___
-    AbilityStats: 01000000
-    AbilityRefresh: 00000000
+    - Stun
+    AbilityStats: 03000000
+    AbilityRefresh: 03000000
     Traits: []
     Image: {fileID: 0}
   - ID: Patience 23
@@ -382,9 +382,10 @@ MonoBehaviour:
     Species: Inst
     Duration: -1
     HealthPoints: -1
-    Abilities: []
-    AbilityStats: 
-    AbilityRefresh: 
+    Abilities:
+    - Patience
+    AbilityStats: 02000000
+    AbilityRefresh: 04000000
     Traits: []
     Image: {fileID: 0}
   - ID: Spider Ball 24
@@ -395,8 +396,10 @@ MonoBehaviour:
     Species: Inst
     Duration: -1
     HealthPoints: -1
-    Abilities: []
-    AbilityStats: 
-    AbilityRefresh: 
-    Traits: []
+    Abilities:
+    - DealDam
+    AbilityStats: 3c000000
+    AbilityRefresh: 00000000
+    Traits:
+    - OverKill
     Image: {fileID: 0}

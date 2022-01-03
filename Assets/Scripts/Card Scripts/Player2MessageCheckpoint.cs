@@ -566,6 +566,47 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         BroadcastMessage("Inhabitingg");
     }
+
+    void RefreshCard(int id)
+    {
+        BroadcastMessage("RefreshCcard", id + 1);
+    }
+
+    void RefreshSpecies(string Species)
+    {
+        BroadcastMessage("RefreshSpices", Species);
+    }
+
+    void TtrapLay()
+    {
+        BroadcastMessage("TttrapLay");
+    }
+
+    void TtttrapLay()
+    {
+        StorageTemp[1] = 1 + 1;
+        ApplyStatsP2(StorageTemp);
+    }
+
+    void Ccannibalize()
+    {
+        Debug.Log("Chose the card that will gain HP");
+        BroadcastMessage("Cccannibalize");
+    }
+
+    void Ccccannibalize()
+    {
+        Debug.Log("Chose the card that will be eaten");
+        BroadcastMessage("Cccccannibalize");
+    }
+
+    void Ccccccannibalize(int HeP)
+    {
+        Debug.Log("Chose the card that will be eaten");
+        BroadcastMessage("GainHeP", HeP);
+    }
+
+
     #endregion
 
     #region Traits

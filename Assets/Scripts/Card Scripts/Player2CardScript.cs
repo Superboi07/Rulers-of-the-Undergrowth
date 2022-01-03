@@ -52,6 +52,9 @@ public class Player2CardScript : MonoBehaviour
     bool HasMultiHit;
     int MultiHitInt;
     int AgMultiHitInt;
+    int StunDuration;
+    int[] TempStats = new int[3];
+    bool Cannibalizing;
     #endregion
     #region traits
     bool HasToxic;
@@ -62,6 +65,7 @@ public class Player2CardScript : MonoBehaviour
     bool AgHasRange;
     bool AgHasOverkill;
     bool AgHasUnblocking;
+    bool IsInst;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
@@ -69,6 +73,10 @@ public class Player2CardScript : MonoBehaviour
     bool OpenToInhabiting;
     bool OpenToPoison;
     bool OpenToSpot;
+    bool OpenToStun;
+    bool OpenToPatience;
+    bool OpenToCannibalize;
+    bool OpenToCcannibalize;
     #endregion
 
     void Closed()
@@ -79,12 +87,20 @@ public class Player2CardScript : MonoBehaviour
         OpenToInhabiting = false;
         OpenToPoison = false;
         OpenToSpot = false;
+        OpenToStun = false;
+        OpenToPatience = false;
+        OpenToCannibalize = false;
+        OpenToCcannibalize = false;
+        Cannibalizing = false;
         AgHasReaching = false;
         AgHasRange = false;
         AgHasOverkill = false;
         AgHasUnblocking = false;
         AgMultiHitInt = 0;
         Prompt2 = false;
+        TempStats[0] = 0;
+        TempStats[1] = 0;
+        TempStats[2] = 0;
     }
 
     void Turn(int turn)
@@ -114,7 +130,11 @@ public class Player2CardScript : MonoBehaviour
         if (MainMessageCheckpoint.HammerTime == true)
         {
             string normal = "a";
-            if (OpenToInhabit == true)
+            if (IsInst == true)
+            {
+                Debug.Log("This is an Inst card, thus it is untubeable");
+            }
+            else if (OpenToInhabit == true)
             {
                 SendMessageUpwards("InhabitingMessage");
                 OpenToInhabit = false;
@@ -132,6 +152,26 @@ public class Player2CardScript : MonoBehaviour
                 {
                     Debug.Log("This card does not have stealth; you can not spot a coward");
                 }
+            }
+            else if (OpenToStun == true)
+            {
+                SendMessage("Ssstun", StunDuration);
+                SendMessageUpwards("SendClosed");
+            }
+            else if (OpenToPatience == true)
+            {
+                SendMessage("Pppatience", TempStats);
+                SendMessageUpwards("SendClosed");
+            }
+            else if (OpenToCannibalize == true)
+            {
+                Cannibalizing = true;
+                SendMessageUpwards("Ccccannibalize");
+            }
+            else if (OpenToCcannibalize == true)
+            {
+                SendMessageUpwards("Ccccccannibalize", HeP);
+                Die();
             }
             else if (OpenToAttack == true)
             {
@@ -448,6 +488,16 @@ public class Player2CardScript : MonoBehaviour
         SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Class, PlayerAndID);
     }
 
+    void Inst(int[] tempppmpmpmp)
+    {
+        IsInst = true;
+    }
+
+    void Die()
+    {
+        HeP = 0;
+    }
+
     void Species()
     {
         SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Species, PlayerAndID);
@@ -616,6 +666,73 @@ public class Player2CardScript : MonoBehaviour
         PoisonStats[1] = PoisonDurrationInt;
         PoisonStats[2] = PoisonWeakInt;
         SendMessageUpwards("SendVenom", PoisonStats);
+    }
+
+    void RefreshCcard(int ID)
+    {
+        if (ID == CardListNumber)
+        {
+            SendMessage("Refresh");
+        }
+    }
+
+    void RefreshSpices(string Spices)
+    {
+        if (Spices == SpawnManagerScriptableObject.CardList[CardListNumber].Species)
+        {
+            SendMessage("Refresh");
+        }
+    }
+
+    void Sstun(int[] Stats)
+    {
+        OpenToStun = true;
+        StunDuration = Stats[1];
+    }
+
+    void Ssstun(int Stats)
+    {
+        StunDuration = 0;
+    }
+
+    void Ppatience(int[] Stats)
+    {
+        OpenToPatience = true;
+        TempStats = Stats;
+    }
+
+    void TttrapLay()
+    {
+        if (SpawnManagerScriptableObject.CardList[CardListNumber].Species == "Spider")
+        {
+            SendMessageUpwards("TtttrapLay");
+        }
+    }
+
+    void Cccannibalize()
+    {
+        OpenToCannibalize = true;
+    }
+
+    void Cccccannibalize()
+    {
+        OpenToCannibalize = false;
+        OpenToCcannibalize = true;
+    }
+
+    void Cccccccannibalize(int temp)
+    {
+        if (Cannibalizing == true)
+        {
+            GainHeP(temp);
+            Cannibalizing = false;
+            SendMessageUpwards("LazyPassTurn");
+        }
+    }
+
+    void GainHeP(int temp)
+    {
+        HeP += temp;
     }
 
     #endregion
@@ -840,9 +957,17 @@ public class Player2CardScript : MonoBehaviour
             PlayerAndID[0] = Player;
         }
 
+        if (HeP == 0)
+        {
+            CardListNumber = 0;
+            SendMessageUpwards("Player1NotFull", id);
+            HeP = -1;
+        }
+
         if (HeP > SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints)
         {
             HeP = SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints;
+            Debug.Log("Cant go over max HP");
         }
 
         if (Prompt == true)
@@ -858,13 +983,6 @@ public class Player2CardScript : MonoBehaviour
                 Prompt = false;
                 Debug.Log("click on the card again to procide");
             }
-        }
-
-        if (HeP == 0)
-        {
-            CardListNumber = 0;
-            SendMessageUpwards("Player2NotFull", id);
-            HeP = -1;
         }
     }
 }

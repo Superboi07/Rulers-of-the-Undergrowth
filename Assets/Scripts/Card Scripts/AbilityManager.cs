@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class AbilityManager : MonoBehaviour
 {
-    // Ability varibales
+    // Cooldown varibales
     bool CoolDown = true;
     bool CoolDownJr;
     int CoolDownint = MainMessageCheckpoint.Hour + 1;
+
+    #region Ability vars
+    bool Ppppatience;
+    int PatienceInt;
+    #endregion
 
     #region Trait vars
     bool HasReaching;
     bool HasRange;
     bool HasOverkill;
+    bool HasBrittle;
     #endregion
-
-    // trait varibales
 
     #region Class
 
@@ -37,6 +41,7 @@ public class AbilityManager : MonoBehaviour
     void Inst(int[] PlayerAndID)
     {
         Rush(PlayerAndID);
+        Brittle(PlayerAndID);
     }
 
     #endregion
@@ -72,6 +77,14 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("GainBio" + " is attempting to exicute");
+            if (Ppppatience == true)
+            {
+                Ppppatience = false;
+                Stats[1] *= PatienceInt;
+                Debug.Log("You reap what you sow, and you have planted wisely");
+                Debug.Log("Your harvest is: " + Stats[1]);
+                PatienceInt = 0;
+            }
             SendMessageUpwards("ChangeBio", Stats);
             SendMessageUpwards("PassTurn", Stats);
         }
@@ -92,6 +105,14 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("GainGeo" + " is attempting to exicute");
+            if (Ppppatience == true)
+            {
+                Ppppatience = false;
+                Stats[1] *= PatienceInt;
+                Debug.Log("You reap what you sow, and you have planted wisely");
+                Debug.Log("Your harvest is: " + Stats[1]);
+                PatienceInt = 0;
+            }
             SendMessageUpwards("ChangeGeo", Stats);
             SendMessageUpwards("PassTurn", Stats);
         }
@@ -236,6 +257,14 @@ public class AbilityManager : MonoBehaviour
             {
                 SendMessageUpwards("AddOverkill", Stats[0]);
             }
+            if (Ppppatience == true)
+            {
+                Ppppatience = false;
+                Stats[1] *= PatienceInt;
+                Debug.Log("You reap what you sow, and you have planted wisely");
+                Debug.Log("Your harvest is: " + Stats[1]);
+                PatienceInt = 0;
+            }
             Debug.Log("DealDam" + " is attempting to exicute");
             SendMessageUpwards("MinusHealth", Stats);
         }
@@ -304,7 +333,15 @@ public class AbilityManager : MonoBehaviour
 
     void Cannibalize(int[] Stats)
     {
-        Debug.Log("Cannibalize" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("Cannibalize" + " is attempting to exicute");
+            SendMessageUpwards("Ccannibalize");
+            if (HasBrittle == true)
+            {
+                SendMessage("Die");
+            }
+        }
     }
 
     void MultiHit(int[] Stats)
@@ -314,7 +351,16 @@ public class AbilityManager : MonoBehaviour
 
     void TrapLay(int[] Stats)
     {
-        Debug.Log("TrapLay" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("TrapLay" + " is attempting to exicute");
+            if (HasBrittle == true)
+            {
+                SendMessage("Die");
+            }
+            SendMessageUpwards("TtrapLay");
+            SendMessageUpwards("LazyPassTurn");
+        }
     }
 
     void Poison(int[] Stats)
@@ -340,15 +386,41 @@ public class AbilityManager : MonoBehaviour
     {
         Debug.Log("Poison___" + " is attempting to exicute");
     }
-
-    void Refresh___(int[] Stats)
+    
+    void RefreshWeb(int[] Stats)
     {
-        Debug.Log("Refresh___" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            int zero = 0;
+            Debug.Log("RefreshWeb" + " is attempting to exicute");
+            SendMessageUpwards("RefreshCard", zero);
+            SendMessageUpwards("LazyPassTurn");
+            if (HasBrittle == true)
+            {
+                SendMessage("Die");
+            }
+        }
+    }
+
+    void RefreshSpider(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("RefreshSpider" + " is attempting to exicute");
+            SendMessageUpwards("RefreshSpecies", "Spider");
+            SendMessageUpwards("LazyPassTurn");
+        }
+    }
+
+    void Refresh()
+    {
+        CoolDown = false;
+        CoolDownint = 0;
     }
 
     void Res______(int[] Stats)
     {
-        Debug.Log("Res___,___" + " is attempting to exicute");
+        Debug.Log("Res______" + " is attempting to exicute");
     }
 
     void Trigger___(int[] Stats)
@@ -363,21 +435,62 @@ public class AbilityManager : MonoBehaviour
 
     void Patience(int[] Stats)
     {
-        Debug.Log("Patience" + " is attempting to exicute");
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            Debug.Log("Patience" + " is attempting to exicute");
+            SendMessageUpwards("SendPatience", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
     }
 
-    void Stun___(int[] Stats)
+    void Pppatience(int[] Stats)
     {
-        Debug.Log("Stun___" + " is attempting to exicute");
+        Ssstun(Stats[2]);
+        PatienceInt = Stats[1];
+        Ppppatience = true;
+    }
+
+    void Stun(int[] Stats)
+    {
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            Debug.Log("Stun" + " is attempting to exicute");
+            SendMessageUpwards("SendStun", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
+    }
+
+    void Ssstun(int Stats)
+    {
+        CoolDown = true;
+        CoolDownint += Stats;
     }
 
     #endregion
 
     #region Traits 
 
-    void Nocturnal(int[] PlayerAndID)
+    void Brittle(int[] PlayerAndID)
     {
-        // do thing
+        HasBrittle = true;
     }
 
     void Cowardly(int[] PlayerAndID)

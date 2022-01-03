@@ -362,6 +362,24 @@ public class MainMessageCheckpoint : MonoBehaviour
         MultiHitInt = HitAmount - 1;
         Debug.Log("Attacks left: " + MultiHitInt);
     }
+
+    void SendStun(int[] Stats)
+    {
+        HammerTime = true;
+        BroadcastMessage("Sstun", Stats);
+    }
+
+    void SendPatience(int[] Stats)
+    {
+        HammerTime = true;
+        BroadcastMessage("Ppatience", Stats);
+    }
+
+    void Ccannibalize()
+    {
+        HammerTime = true;
+    }
+
     #endregion
 
     void Skip()

@@ -113,7 +113,7 @@ public class Shuffle : MonoBehaviour
             }
             else
             {
-                Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty was mistakenly called, or at least one of the GooCards are listed as full when they aren�t");
+                Debug.LogError("<color=red>Error:</color> Either all GooCards are full and the GooEmpty / MakeCard was mistakenly called, or at least one of the GooCards are listed as full when they aren�t");
             }
         #endregion
 

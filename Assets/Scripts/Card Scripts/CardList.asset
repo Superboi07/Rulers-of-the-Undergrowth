@@ -401,5 +401,5 @@ MonoBehaviour:
     AbilityStats: 3c000000
     AbilityRefresh: 00000000
     Traits:
-    - OverKill
+    - Overkill
     Image: {fileID: 0}

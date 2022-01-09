@@ -402,6 +402,7 @@ MonoBehaviour:
     AbilityRefresh: 00000000
     Traits:
     - OverKill
+<<<<<<< HEAD
     Image: {fileID: 0}
   - ID: Spindle 25
     Name: Spindle
@@ -420,4 +421,6 @@ MonoBehaviour:
     AbilityRefresh: 18000000180000000100000001000000
     Traits:
     - Overkill
+=======
+>>>>>>> parent of 0003949d (added Res___,___)
     Image: {fileID: 0}

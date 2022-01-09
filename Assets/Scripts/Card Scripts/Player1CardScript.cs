@@ -1046,12 +1046,15 @@ public class Player1CardScript : MonoBehaviour
             SendMessageUpwards("Player1NotFull", id);
             HeP = -1;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (OpenToRes == true)
             {
                 SendMessageUpwards("Spawn___", ResID);
                 OpenToRes = false;
                 ResID = 0;
             }
+=======
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
 >>>>>>> parent of 0003949d (added Res___,___)
         }

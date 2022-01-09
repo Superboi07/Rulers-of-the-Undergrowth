@@ -1039,11 +1039,14 @@ public class Player2CardScript : MonoBehaviour
 
         if (HeP == 0)
         {
+<<<<<<< HEAD
             if (IsRuler == true)
             {
                 SceneManager.LoadScene("End", LoadSceneMode.Additive);
                 SceneManager.UnloadSceneAsync("Battle");
             }
+=======
+>>>>>>> parent of 0003949d (added Res___,___)
             CardListNumber = 0;
             SendMessageUpwards("Player1NotFull", id);
             HeP = -1;

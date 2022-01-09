@@ -123,7 +123,11 @@ MonoBehaviour:
   m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 15
+=======
+  controlID: 81
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
   controlID: 81
 >>>>>>> parent of 0003949d (added Res___,___)
@@ -152,7 +156,11 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 16
+=======
+  controlID: 82
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
   controlID: 82
 >>>>>>> parent of 0003949d (added Res___,___)
@@ -177,11 +185,19 @@ MonoBehaviour:
     y: 0
     width: 866
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 306
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 17
+=======
+    height: 302.66666
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 83
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
     height: 302.66666
   m_MinSize: {x: 403, y: 221}
@@ -212,6 +228,9 @@ MonoBehaviour:
 =======
     width: 426
     height: 302.66666
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -243,6 +262,9 @@ MonoBehaviour:
 =======
     width: 440
     height: 302.66666
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -269,9 +291,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 306
     width: 866
     height: 273
+=======
+    y: 302.66666
+    width: 866
+    height: 276.33334
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
     y: 302.66666
     width: 866
@@ -339,6 +367,9 @@ MonoBehaviour:
 =======
     width: 438
     height: 281.66666
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -348,7 +379,11 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 446.66666, y: 264}
+=======
+  m_TargetSize: {x: 438, y: 260.66666}
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
   m_TargetSize: {x: 438, y: 260.66666}
 >>>>>>> parent of 0003949d (added Res___,___)
@@ -376,6 +411,9 @@ MonoBehaviour:
     m_HBaseRangeMax: 146
     m_VBaseRangeMin: -86.888885
     m_VBaseRangeMax: 86.888885
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -404,6 +442,9 @@ MonoBehaviour:
       height: 260.66666
     m_Scale: {x: 1.1059948, y: 1.1059948}
     m_Translation: {x: 219, y: 130.33333}
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -427,6 +468,9 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 657, y: 422.5}
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -461,6 +505,9 @@ MonoBehaviour:
 =======
     width: 425
     height: 281.66666
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -469,7 +516,11 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: ecddffff3cfbffff40fbffff1c5000003e510000c85100009c520000ea5300001c7f0000cc800000a0810000ee820000908300007e9c00002a9e0000fe9e00004ca00000aaab000056ad00002aae000078af0000
+=======
+      m_ExpandedIDs: b4f2ffff3cfbffff40fbffffec700000ba740000c4e80300
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
       m_ExpandedIDs: b4f2ffff3cfbffff40fbffffec700000ba740000c4e80300
 >>>>>>> parent of 0003949d (added Res___,___)
@@ -524,6 +575,9 @@ MonoBehaviour:
 =======
     width: 438
     height: 281.66666
+<<<<<<< HEAD
+>>>>>>> parent of 0003949d (added Res___,___)
+=======
 >>>>>>> parent of 0003949d (added Res___,___)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -538,9 +592,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -79.21228, y: 26.33495, z: -238.94014}
     speed: 2
     m_Value: {x: -79.21228, y: 26.33495, z: -238.94014}
+=======
+    m_Target: {x: -54.81912, y: 164.1203, z: -164.3852}
+    speed: 2
+    m_Value: {x: -54.81912, y: 164.1203, z: -164.3852}
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
     m_Target: {x: -54.81912, y: 164.1203, z: -164.3852}
     speed: 2
@@ -645,9 +705,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 379.33334
     width: 865
     height: 251.33334
+=======
+    y: 376.6667
+    width: 865
+    height: 254
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
     y: 376.6667
     width: 865
@@ -736,8 +802,13 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+=======
+    m_SelectedInstanceIDs: 46190000
+    m_LastClickedInstanceID: 6470
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
     m_SelectedInstanceIDs: 46190000
     m_LastClickedInstanceID: 6470
@@ -793,9 +864,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 378.6667
     width: 865
     height: 252
+=======
+    y: 375.33334
+    width: 865
+    height: 255.33334
+>>>>>>> parent of 0003949d (added Res___,___)
 =======
     y: 375.33334
     width: 865

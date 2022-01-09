@@ -36,7 +36,7 @@ public class RulerScript : MonoBehaviour
     void Awake()
     {
         #region code here to decide what decks are chosen
-        if (ID == 0)
+        if (ID == -1)
         {
             #region P1Deck
             if (TweenSceneManager.P1Deck == "Spindle")
@@ -46,7 +46,7 @@ public class RulerScript : MonoBehaviour
             }
             #endregion
         }
-        else if (ID == 1)
+        else if (ID == -2)
         {
             #region P2Deck
             if (TweenSceneManager.P2Deck == "Spindle")

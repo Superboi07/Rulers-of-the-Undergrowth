@@ -403,3 +403,21 @@ MonoBehaviour:
     Traits:
     - Overkill
     Image: {fileID: 0}
+  - ID: Spindle 25
+    Name: Spindle
+    BioCost: 0
+    GeoCost: 0
+    Class: Ruler
+    Species: Spindle
+    Duration: -1
+    HealthPoints: 10
+    Abilities:
+    - SongOfValor
+    - SongOfVenom
+    - SongPoisonDam
+    - SongPoisonWeak
+    AbilityStats: 00000000000000000500000001000000
+    AbilityRefresh: 18000000180000000100000001000000
+    Traits:
+    - Overkill
+    Image: {fileID: 0}

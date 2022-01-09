@@ -2323,7 +2323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 182531118}
   - component: {fileID: 182531119}
-  - component: {fileID: 182531120}
+  - component: {fileID: 182531123}
   - component: {fileID: 182531121}
   - component: {fileID: 182531122}
   m_Layer: 0
@@ -2341,8 +2341,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182531117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -2.3333337, z: 0}
-  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_LocalPosition: {x: 5.5, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 722047141}
   m_RootOrder: 0
@@ -2398,22 +2398,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &182531120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182531117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64627a07dff4dd4e8915be78bd46ca0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 1
-  CurentCard: {fileID: 357665330}
-  Cost: {fileID: 2125269497}
-  HP: {fileID: 1218484794}
 --- !u!61 &182531121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2453,6 +2437,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gameobject: {fileID: 182531117}
+--- !u!114 &182531123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182531117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4426155944f5f469dfde6f3607b32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
+  SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  CurentCard: {fileID: 357665330}
+  HP: {fileID: 1218484794}
+  id: -2
 --- !u!1 &207324728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,7 +2744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239502405}
   - component: {fileID: 239502406}
-  - component: {fileID: 239502407}
+  - component: {fileID: 239502410}
   - component: {fileID: 239502408}
   - component: {fileID: 239502409}
   m_Layer: 0
@@ -2761,8 +2762,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239502404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -1.3333335, z: 0}
-  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_LocalPosition: {x: 5.5, y: -0.6666667, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 946820411}
   m_RootOrder: 0
@@ -2818,22 +2819,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &239502407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239502404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64627a07dff4dd4e8915be78bd46ca0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  CurentCard: {fileID: 357665330}
-  Cost: {fileID: 2125269497}
-  HP: {fileID: 1218484794}
 --- !u!61 &239502408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2873,6 +2858,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gameobject: {fileID: 239502404}
+--- !u!114 &239502410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239502404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a048f30483d7b074caac70183553512a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
+  SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  CurentCard: {fileID: 357665330}
+  HP: {fileID: 1218484794}
+  id: -1
 --- !u!1 &240579568
 GameObject:
   m_ObjectHideFlags: 0

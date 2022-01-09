@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player1CardScript : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class Player1CardScript : MonoBehaviour
     int OriginID;
     int CardListNumber = 0;
     int HeP = -1;
+    string RulerName;
     #region abilities
     int[] HealthChange;
     int DamAbsorb;
@@ -68,6 +70,7 @@ public class Player1CardScript : MonoBehaviour
     bool AgHasOverkill;
     bool AgHasUnblocking;
     bool IsInst;
+    bool IsRuler;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
@@ -158,23 +161,51 @@ public class Player1CardScript : MonoBehaviour
             }
             else if (OpenToStun == true)
             {
-                SendMessage("Ssstun", StunDuration);
-                SendMessageUpwards("SendClosed");
+                if (IsRuler == true)
+                {
+                    Debug.Log("Ruler " + RulerName + " is not open to being a/e ffected by " + "stun" + ", use the ability before doing ANYTING else");
+                }
+                else
+                {
+                    SendMessage("Ssstun", StunDuration);
+                    SendMessageUpwards("SendClosed");
+                }
             }
             else if (OpenToPatience == true)
             {
-                SendMessage("Pppatience", TempStats);
-                SendMessageUpwards("SendClosed");
+                if (IsRuler == true)
+                {
+                    Debug.Log("Ruler " + RulerName + " is not open to being a/e ffected by " + "patience" + ", use the ability before doing ANYTING else");
+                }
+                else
+                {
+                    SendMessage("Pppatience", TempStats);
+                    SendMessageUpwards("SendClosed");
+                }
             }
             else if (OpenToCannibalize == true)
             {
-                Cannibalizing = true;
-                SendMessageUpwards("Ccccannibalize");
+                if (IsRuler == true)
+                {
+                    Debug.Log("Ruler " + RulerName + " is not open to being a/e ffected by " + "the urge to concume its kin" + ", use the ability before doing ANYTING else");
+                }
+                else
+                {
+                    Cannibalizing = true;
+                    SendMessageUpwards("Ccccannibalize");
+                }
             }
             else if (OpenToCcannibalize == true)
             {
-                SendMessageUpwards("Ccccccannibalize", HeP);
-                Die();
+                if (IsRuler == true)
+                {
+                    Debug.Log("Ruler " + RulerName + " is not open to being a/e ffected by " + "being eaten by its own kin" + ", use the ability before doing ANYTING else");
+                }
+                else
+                {
+                    SendMessageUpwards("Ccccccannibalize", HeP);
+                    Die();
+                }
             }
             else if (OpenToAttack == true)
             {
@@ -496,6 +527,11 @@ public class Player1CardScript : MonoBehaviour
         IsInst = true;
     }
 
+    void Ruler(int[] tempppmpmpmp)
+    {
+        IsRuler = true;
+    }
+
     void Die()
     {
         HeP = 0;
@@ -504,6 +540,11 @@ public class Player1CardScript : MonoBehaviour
     void Species()
     {
         SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Species, PlayerAndID);
+    }
+
+    void Spindle(int[] ytguhijokpl)
+    {
+        //empty
     }
 
     #region Abiblites (sans Abiblites)
@@ -967,6 +1008,43 @@ public class Player1CardScript : MonoBehaviour
         PlayerAndID[1] = id;
     }
 
+    // *REMEMBER* Awake is when the object is inzlied, so DIFFERENT from Start
+    void Awake()
+    {
+        #region code here to decide what decks were chosen
+        int[] tempppppp = new int[2];
+        if (id >= 0)
+        {
+            //empty
+        }
+        else if (id == -1)
+        {
+            #region P1Deck
+            if (TweenSceneManager.P1Deck == "Spindle")
+            {
+                RulerName = "Spindle";
+                tempppppp[1] = 26;
+            }
+            #endregion
+        }
+        else if (id == -2)
+        {
+            #region P2Deck
+            if (TweenSceneManager.P2Deck == "Spindle")
+            {
+                RulerName = "Spindle";
+                tempppppp[1] = 26;
+            }
+            #endregion
+        }
+        else
+        {
+            Debug.Log("Either a card has the ruler class or the ruler has a id number not represented");
+        }
+        ReciveGooStats(tempppppp);
+        #endregion
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -978,12 +1056,16 @@ public class Player1CardScript : MonoBehaviour
 
         if (HeP == 0)
         {
+            if (IsRuler == true)
+            {
+                SceneManager.LoadScene("End", LoadSceneMode.Additive);
+                SceneManager.UnloadSceneAsync("Battle");
+            }
             CardListNumber = 0;
             SendMessageUpwards("Player1NotFull", id);
             HeP = -1;
             if (OpenToRes == true)
             {
-                Debug.Log("temp");
                 SendMessageUpwards("Spawn___", ResID);
                 OpenToRes = false;
                 ResID = 0;

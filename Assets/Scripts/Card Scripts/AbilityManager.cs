@@ -418,23 +418,10 @@ public class AbilityManager : MonoBehaviour
         CoolDownint = 0;
     }
 
-    void ResSpiderSpiderBall(int[] Stats)
+    void Res______(int[] Stats)
     {
-        if (Stats[0] != -1)
-        {
-            if (HasBrittle == true)
-            {
-            SendMessage("Die");
-            }
-            object[] temp = new object[3];
-            temp[0] = Stats[2];
-            temp[1] = "Spider";
-            temp[2] = 24; // dubble check if this is Spider Ball’s ID
-            SendMessageUpwards("ResSpeciesCard", temp);
-            SendMessageUpwards("LazyPassTurn");
-        }
+        Debug.Log("Res______" + " is attempting to exicute");
     }
-
 
     void Trigger___(int[] Stats)
     {

@@ -1,14 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player2MessageCheckpoint : MonoBehaviour
 {
-    #region Trait / ability varibles
+    // Trait / ability varibles
     public static int VisibleCards;
-    int ResDur;
-    #endregion
 
     // calls my data objects
     public SpawnDeckList SpawnDeckList;
@@ -35,36 +32,6 @@ public class Player2MessageCheckpoint : MonoBehaviour
             ApplyStatsP2(StorageTemp);
             StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[3] + 1;
             ApplyStatsP2(StorageTemp);
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 5)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[4] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 6)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[5] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 7)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[6] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 8)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[7] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 9)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[8] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 10)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[4] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
         }
     }
 
@@ -582,15 +549,6 @@ public class Player2MessageCheckpoint : MonoBehaviour
         BroadcastMessage("ReciveGooStats", TempStorage);
     }
 
-    void TimePassing()
-    {
-        ResDur -= 1;
-        if (ResDur <= 0)
-        {
-            BroadcastMessage("StopRes");
-        }
-    }
-
     #region Abilities
     void Spawn___(int id)
     {
@@ -648,11 +606,6 @@ public class Player2MessageCheckpoint : MonoBehaviour
         BroadcastMessage("GainHeP", HeP);
     }
 
-    void ResSpeciesCard(object[] Stats)
-    {
-        ResDur = Convert.ToInt32(Stats[0]);
-        BroadcastMessage("RresSpeciesCard", Stats);
-    }
 
     #endregion
 

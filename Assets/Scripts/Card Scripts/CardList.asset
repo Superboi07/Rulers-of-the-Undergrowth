@@ -401,7 +401,7 @@ MonoBehaviour:
     AbilityStats: 3c000000
     AbilityRefresh: 00000000
     Traits:
-    - Overkill
+    - OverKill
     Image: {fileID: 0}
   - ID: Spindle 25
     Name: Spindle

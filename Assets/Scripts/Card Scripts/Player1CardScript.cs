@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,7 +57,6 @@ public class Player1CardScript : MonoBehaviour
     int StunDuration;
     int[] TempStats = new int[3];
     bool Cannibalizing;
-    int ResID;
     #endregion
     #region traits
     bool HasToxic;
@@ -82,7 +80,6 @@ public class Player1CardScript : MonoBehaviour
     bool OpenToPatience;
     bool OpenToCannibalize;
     bool OpenToCcannibalize;
-    bool OpenToRes; // an exception to being in void closed
     #endregion
 
     void Closed()
@@ -779,22 +776,6 @@ public class Player1CardScript : MonoBehaviour
         HeP += temp;
     }
 
-    void RresSpeciesCard(object[] Stats)
-    {
-        if (SpawnManagerScriptableObject.CardList[CardListNumber].Species == (string)Stats[1])
-        {
-            OpenToRes = true;
-            ResID = Convert.ToInt32(Stats[2]);
-        }
-    }
-
-    void StopRes()
-    {
-        Debug.Log("Res has stoped for player 1");
-        OpenToRes = false;
-        ResID = 0;
-    }
-
     #endregion
 
     void Abilities()
@@ -1064,12 +1045,15 @@ public class Player1CardScript : MonoBehaviour
             CardListNumber = 0;
             SendMessageUpwards("Player1NotFull", id);
             HeP = -1;
+<<<<<<< HEAD
             if (OpenToRes == true)
             {
                 SendMessageUpwards("Spawn___", ResID);
                 OpenToRes = false;
                 ResID = 0;
             }
+=======
+>>>>>>> parent of 0003949d (added Res___,___)
         }
 
         if (HeP > SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints)

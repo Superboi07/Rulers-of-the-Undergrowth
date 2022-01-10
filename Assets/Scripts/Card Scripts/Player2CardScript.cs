@@ -100,6 +100,7 @@ public class Player2CardScript : MonoBehaviour
         AgHasOverkill = false;
         AgHasUnblocking = false;
         AgMultiHitInt = 0;
+        Prompt = false;
         Prompt2 = false;
         TempStats[0] = 0;
         TempStats[1] = 0;
@@ -752,6 +753,25 @@ public class Player2CardScript : MonoBehaviour
         Debug.Log("Res has stoped for player 2");
         OpenToRes = false;
         ResID = 0;
+    }
+
+    void SongOfVenom()
+    {
+        if (HasToxic == true)
+        {
+            PoisonDamInt += SpawnManagerScriptableObject.CardList[26].AbilityStats[0];
+            PoisonDurrationInt += SpawnManagerScriptableObject.CardList[26].AbilityRefresh[0];
+            PoisonWeakInt += SpawnManagerScriptableObject.CardList[26].AbilityStats[1];
+
+        }
+        else
+        {
+            HasToxic = true;
+            PoisonDamInt += SpawnManagerScriptableObject.CardList[26].AbilityStats[0];
+            PoisonDurrationInt += SpawnManagerScriptableObject.CardList[26].AbilityRefresh[0];
+            PoisonWeakInt += SpawnManagerScriptableObject.CardList[26].AbilityStats[1];
+
+        }
     }
 
     #endregion

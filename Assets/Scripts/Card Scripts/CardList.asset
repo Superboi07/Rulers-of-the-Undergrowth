@@ -412,9 +412,10 @@ MonoBehaviour:
     Duration: -1
     HealthPoints: 10
     Abilities:
-    - DealDam
-    AbilityStats: 3c000000
-    AbilityRefresh: 00000000
+    - SongOfVenomDam
+    - SongOfVenomWeak
+    AbilityStats: 0100000001000000
+    AbilityRefresh: 0500000005000000
     Traits:
     - Overkill
     Image: {fileID: 0}

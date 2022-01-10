@@ -23,11 +23,17 @@ public class RulerScript : MonoBehaviour
     public int ID;
     string Deck;
 
+    // Cooldown varibales
+    bool CoolDown = true;
+    bool CoolDownJr;
+    int CoolDownint = MainMessageCheckpoint.Hour + 1;
+
     // varibles for Abilites
     int AbilityStats;
     bool LeftClicked;
     bool Wait = true;
     bool Prompt;
+    bool Prompt2;
     bool Open; // I don't know what this does, there isn't a error, and I fear the consiquences of removing it
 
     // varibles for stats
@@ -72,6 +78,8 @@ public class RulerScript : MonoBehaviour
         OpenToCannibalize = false;
         Cannibalizing = false;
         AgMultiHitInt = 0;
+        Prompt = false;
+        Prompt2 = false;
         TempStats[0] = 0;
         TempStats[1] = 0;
         TempStats[2] = 0;
@@ -138,6 +146,30 @@ public class RulerScript : MonoBehaviour
                 Prompt = false;
                 Debug.Log("click on the card again to procide");
             }
+        }
+
+        if (Prompt2 == true)
+        {
+            if (Deck == "Spindle")
+            {
+                if (Input.GetKeyDown("1"))
+                {
+                    Prompt2 = false;
+                    SendMessageUpwards("SendRefresh");
+                    SendMessageUpwards("LazyPassTurn");
+                }
+                if (Input.GetKeyDown("2"))
+                {
+                    Prompt2 = false;
+                    SendMessageUpwards("SendSongOfVenom");
+                    SendMessageUpwards("LazyPassTurn");
+                }
+            }
+        }
+
+        if (CoolDownint == MainMessageCheckpoint.Hour)
+        {
+            CoolDown = false;
         }
     }
 
@@ -226,9 +258,14 @@ public class RulerScript : MonoBehaviour
         #endregion
         else 
         {
-            if (Deck == "Spindle")
+            if (CoolDown == true)
             {
-
+                Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            }
+            else if (Deck == "Spindle")
+            {
+                Prompt2 = true;
+                Debug.Log("Press [1] to play the Song of Vallor or press [2] to play the Song of Venom");
             }
             else if (1 == 0)
             {
@@ -237,6 +274,12 @@ public class RulerScript : MonoBehaviour
             else
             {
                 Debug.Log("Add another Deck ==");
+            }
+
+            if (CoolDown == false)
+            {
+                CoolDownint = MainMessageCheckpoint.Hour - 1;
+                CoolDown = true;
             }
         }
     }

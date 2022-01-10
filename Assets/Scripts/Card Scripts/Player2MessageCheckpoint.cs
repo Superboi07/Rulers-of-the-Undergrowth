@@ -585,7 +585,7 @@ public class Player2MessageCheckpoint : MonoBehaviour
     void TimePassing()
     {
         ResDur -= 1;
-        if (ResDur <= 0)
+        if (ResDur == 0)
         {
             BroadcastMessage("StopRes");
         }
@@ -617,6 +617,11 @@ public class Player2MessageCheckpoint : MonoBehaviour
     void RefreshSpecies(string Species)
     {
         BroadcastMessage("RefreshSpices", Species);
+    }
+
+    void SendRefresh()
+    {
+        BroadcastMessage("Refresh");
     }
 
     void TtrapLay()
@@ -652,6 +657,11 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         ResDur = Convert.ToInt32(Stats[0]);
         BroadcastMessage("RresSpeciesCard", Stats);
+    }
+
+    void SendSongOfVenom()
+    {
+        BroadcastMessage("SongOfVenom");
     }
 
     #endregion

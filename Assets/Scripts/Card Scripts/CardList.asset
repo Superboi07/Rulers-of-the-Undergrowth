@@ -403,3 +403,18 @@ MonoBehaviour:
     Traits:
     - Overkill
     Image: {fileID: 0}
+  - ID: Spindle 25
+    Name: Spindle
+    BioCost: 0
+    GeoCost: 0
+    Class: Ruler
+    Species: Sindle
+    Duration: -1
+    HealthPoints: 10
+    Abilities:
+    - DealDam
+    AbilityStats: 3c000000
+    AbilityRefresh: 00000000
+    Traits:
+    - Overkill
+    Image: {fileID: 0}

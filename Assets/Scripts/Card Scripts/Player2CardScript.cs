@@ -10,6 +10,9 @@ public class Player2CardScript : MonoBehaviour
     public SpawnDeckList SpawnDeckList;
     public SpawnManagerScriptableObject SpawnManagerScriptableObject;
 
+    // vanity stuff
+    public SpriteRenderer spriteRenderer;
+
     // calls my text boxes
     public Text CurentCard;
     public Text HP;
@@ -125,6 +128,7 @@ public class Player2CardScript : MonoBehaviour
             Class();
             Species();
             Traits();
+            spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[Stats[1]].Image;
         }
     }
 
@@ -985,6 +989,8 @@ public class Player2CardScript : MonoBehaviour
     void Start()
     {
         PlayerAndID[1] = id;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[CardListNumber].Image;
     }
 
     // Update is called once per frame
@@ -999,6 +1005,7 @@ public class Player2CardScript : MonoBehaviour
         if (HeP == 0)
         {
             CardListNumber = 0;
+            spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[CardListNumber].Image;
             SendMessageUpwards("Player2NotFull", id);
             HeP = -1;
             if (OpenToRes == true)

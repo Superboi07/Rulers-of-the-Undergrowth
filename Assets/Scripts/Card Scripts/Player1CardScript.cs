@@ -185,7 +185,7 @@ public class Player1CardScript : MonoBehaviour
             {
                 #region Triats that effect a card's capability of being attacked
                 bool IHateThis = false;
-                if (BlockBool == false && IHateThis == false)
+                if (BlockBool == false)
                 {
                     // make the Debug.Logs visible
                     if (Inhabited == true)

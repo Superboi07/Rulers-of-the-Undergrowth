@@ -209,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 79
@@ -349,6 +350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 74
@@ -489,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 90
@@ -760,6 +763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 6
@@ -900,6 +904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 47
@@ -1040,6 +1045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 81
@@ -1180,6 +1186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 22
@@ -1320,6 +1327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 11
@@ -1460,6 +1468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 31
@@ -1600,6 +1609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 42
@@ -1740,6 +1750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 72
@@ -1880,6 +1891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 51
@@ -2020,6 +2032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 62
@@ -2160,6 +2173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 104
@@ -2300,6 +2314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 3
@@ -2440,6 +2455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 101
@@ -2580,6 +2596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 99
@@ -2720,6 +2737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 24
@@ -2959,6 +2977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 104
@@ -3099,6 +3118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 119
@@ -3227,6 +3247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 6
@@ -3321,7 +3342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182531117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -2.3333337, z: 0}
+  m_LocalPosition: {x: 5.5, y: -2.1666, z: 0}
   m_LocalScale: {x: 1, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 722047141}
@@ -3521,6 +3542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 71
@@ -3661,6 +3683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 58
@@ -3801,6 +3824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 91
@@ -3941,6 +3965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 27
@@ -4081,6 +4106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 44
@@ -4221,6 +4247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 64
@@ -4361,6 +4388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 17
@@ -4443,7 +4471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239502404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -1.3333335, z: 0}
+  m_LocalPosition: {x: 5.5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 946820411}
@@ -4643,6 +4671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 10
@@ -4783,6 +4812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 30
@@ -4923,6 +4953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 68
@@ -5063,6 +5094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 61
@@ -5203,6 +5235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 113
@@ -5341,8 +5374,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5477,6 +5510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 81
@@ -5617,6 +5651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 106
@@ -5757,6 +5792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 67
@@ -5897,6 +5933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 63
@@ -6037,6 +6074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 114
@@ -6308,6 +6346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 102
@@ -6396,8 +6435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179.17, y: 29.6}
-  m_SizeDelta: {x: 80, y: 66.8}
+  m_AnchoredPosition: {x: -401.99988, y: 81.75}
+  m_SizeDelta: {x: 156, y: 103.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &357665330
 MonoBehaviour:
@@ -6421,10 +6460,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -6477,8 +6516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.17, y: 112.5}
-  m_SizeDelta: {x: 70, y: 35}
+  m_AnchoredPosition: {x: 401.99997, y: 235.49998}
+  m_SizeDelta: {x: 156, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362042556
 MonoBehaviour:
@@ -6502,10 +6541,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -6610,8 +6649,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6746,6 +6785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 112
@@ -6886,6 +6926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 40
@@ -7026,6 +7067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 45
@@ -7166,6 +7208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 20
@@ -7306,6 +7349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 5
@@ -7446,6 +7490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 109
@@ -7586,6 +7631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 108
@@ -7726,6 +7772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 71
@@ -7866,6 +7913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 51
@@ -8006,6 +8054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 76
@@ -8146,6 +8195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 99
@@ -8286,6 +8336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 116
@@ -8426,6 +8477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 18
@@ -8566,6 +8618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 103
@@ -8706,6 +8759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 60
@@ -8846,6 +8900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 115
@@ -8986,6 +9041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 35
@@ -9126,6 +9182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 80
@@ -9266,6 +9323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 46
@@ -9387,7 +9445,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 80
+  orthographic size: 75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9505,6 +9563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 78
@@ -9645,6 +9704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 25
@@ -9785,6 +9845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 111
@@ -9925,6 +9986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 22
@@ -10065,6 +10127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 113
@@ -10205,6 +10268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 97
@@ -10345,6 +10409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 68
@@ -10485,6 +10550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 114
@@ -10625,6 +10691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 93
@@ -10765,6 +10832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 87
@@ -10905,6 +10973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 16
@@ -11045,6 +11114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 95
@@ -11185,6 +11255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 48
@@ -11325,6 +11396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 52
@@ -11413,8 +11485,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: 113.30001}
-  m_SizeDelta: {x: 80, y: 33.4}
+  m_AnchoredPosition: {x: -401.99994, y: 236.6}
+  m_SizeDelta: {x: 156, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648256256
 MonoBehaviour:
@@ -11438,10 +11510,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -11544,6 +11616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 32
@@ -11684,6 +11757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 31
@@ -11824,6 +11898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 65
@@ -11964,6 +12039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 29
@@ -12104,6 +12180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 41
@@ -12244,6 +12321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 33
@@ -12384,6 +12462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 15
@@ -12537,6 +12616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 0
@@ -12664,6 +12744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 75
@@ -12804,6 +12885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 45
@@ -13112,6 +13194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 111
@@ -13252,6 +13335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 74
@@ -13392,6 +13476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 16
@@ -13532,6 +13617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 54
@@ -13672,6 +13758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 49
@@ -13812,6 +13899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 73
@@ -13952,6 +14040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 103
@@ -14092,6 +14181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 59
@@ -14232,6 +14322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 73
@@ -14372,6 +14463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 34
@@ -14512,6 +14604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 69
@@ -14652,6 +14745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 82
@@ -14792,6 +14886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 50
@@ -14932,6 +15027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 70
@@ -15060,6 +15156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 7
@@ -15212,6 +15309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 25
@@ -15352,6 +15450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 18
@@ -15492,6 +15591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 9
@@ -15632,6 +15732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 28
@@ -15772,6 +15873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 11
@@ -15912,6 +16014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 108
@@ -16052,6 +16155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 66
@@ -16192,6 +16296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 28
@@ -16414,6 +16519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 107
@@ -16554,6 +16660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 69
@@ -16694,6 +16801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 110
@@ -16834,6 +16942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 83
@@ -16974,6 +17083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 110
@@ -17114,6 +17224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 56
@@ -17320,6 +17431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 88
@@ -17460,6 +17572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 119
@@ -17600,6 +17713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 65
@@ -17908,6 +18022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 38
@@ -18048,6 +18163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 87
@@ -18188,6 +18304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 15
@@ -18328,6 +18445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 46
@@ -18468,6 +18586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 55
@@ -18556,8 +18675,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179.17, y: 83.481}
-  m_SizeDelta: {x: 80, y: 33.4}
+  m_AnchoredPosition: {x: -402, y: 175.41}
+  m_SizeDelta: {x: 156, y: 69}
   m_Pivot: {x: 0.5, y: 0.61319923}
 --- !u!114 &975598182
 MonoBehaviour:
@@ -18581,10 +18700,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -18687,6 +18806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 47
@@ -18827,6 +18947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 21
@@ -19098,6 +19219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 41
@@ -19238,6 +19360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 67
@@ -19366,6 +19489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 4
@@ -19518,6 +19642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 116
@@ -19658,6 +19783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 7
@@ -19798,6 +19924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 94
@@ -19938,6 +20065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 57
@@ -20078,6 +20206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 60
@@ -20218,6 +20347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 94
@@ -20358,6 +20488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 82
@@ -20498,6 +20629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 96
@@ -20638,6 +20770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 70
@@ -20865,6 +20998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 89
@@ -21005,6 +21139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 23
@@ -21145,6 +21280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 56
@@ -21233,8 +21369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.17, y: 77.5}
-  m_SizeDelta: {x: 70, y: 35}
+  m_AnchoredPosition: {x: 401.99997, y: 167.99998}
+  m_SizeDelta: {x: 156, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135406312
 MonoBehaviour:
@@ -21258,10 +21394,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -21368,6 +21504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 48
@@ -21508,6 +21645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 36
@@ -21648,6 +21786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 83
@@ -21788,6 +21927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 59
@@ -21928,6 +22068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 118
@@ -22068,6 +22209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 107
@@ -22208,6 +22350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 21
@@ -22348,6 +22491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 49
@@ -22488,6 +22632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 53
@@ -22628,6 +22773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 84
@@ -22768,6 +22914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 77
@@ -22856,8 +23003,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179.17, y: -12.149994}
-  m_SizeDelta: {x: 80, y: 16.7}
+  m_AnchoredPosition: {x: -401.9999, y: 12.749991}
+  m_SizeDelta: {x: 156, y: 34.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218484794
 MonoBehaviour:
@@ -22881,10 +23028,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -22975,6 +23122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 5
@@ -23127,6 +23275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 19
@@ -23267,6 +23416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 2
@@ -23407,6 +23557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 86
@@ -23547,6 +23698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 24
@@ -23687,6 +23839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 75
@@ -23827,6 +23980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 77
@@ -23967,6 +24121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 13
@@ -24107,6 +24262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 84
@@ -24299,6 +24455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 106
@@ -24427,6 +24584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 3
@@ -24579,6 +24737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 72
@@ -24719,6 +24878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 98
@@ -24859,6 +25019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 32
@@ -24999,6 +25160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 57
@@ -25139,6 +25301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 42
@@ -25279,6 +25442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 53
@@ -25419,6 +25583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 62
@@ -25559,6 +25724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 26
@@ -25699,6 +25865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 58
@@ -25839,6 +26006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 96
@@ -25979,6 +26147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 33
@@ -26119,6 +26288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 54
@@ -26259,6 +26429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 39
@@ -26399,6 +26570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 61
@@ -26539,6 +26711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 35
@@ -26667,6 +26840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 9
@@ -26781,7 +26955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -26801,7 +26975,7 @@ Canvas:
   m_GameObject: {fileID: 1490227245}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -26927,6 +27101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 19
@@ -27067,6 +27242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 12
@@ -27207,6 +27383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 118
@@ -27347,6 +27524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 91
@@ -27618,6 +27796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 43
@@ -27771,6 +27950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 0
@@ -27898,6 +28078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 98
@@ -28038,6 +28219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 78
@@ -28178,6 +28360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 100
@@ -28318,6 +28501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 13
@@ -28458,6 +28642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 43
@@ -28598,6 +28783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 20
@@ -28738,6 +28924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 85
@@ -28878,6 +29065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 39
@@ -29018,6 +29206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 88
@@ -29158,6 +29347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 66
@@ -29298,6 +29488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 92
@@ -29438,6 +29629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 8
@@ -29578,6 +29770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 105
@@ -29718,6 +29911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 27
@@ -29858,6 +30052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 38
@@ -29998,6 +30193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 26
@@ -30138,6 +30334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 10
@@ -30228,8 +30425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.16998, y: 15}
-  m_SizeDelta: {x: 70, y: 30}
+  m_AnchoredPosition: {x: 401.99997, y: 30}
+  m_SizeDelta: {x: 138, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662122387
 MonoBehaviour:
@@ -30411,6 +30608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 79
@@ -30551,6 +30749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 93
@@ -30691,6 +30890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 115
@@ -30831,6 +31031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 92
@@ -30971,6 +31172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 44
@@ -31111,6 +31313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 50
@@ -31251,6 +31454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 80
@@ -31391,6 +31595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 29
@@ -31531,6 +31736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 23
@@ -31671,6 +31877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 101
@@ -31811,6 +32018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 100
@@ -31901,8 +32109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.16998, y: 45}
-  m_SizeDelta: {x: 70, y: 30}
+  m_AnchoredPosition: {x: 401.99997, y: 99}
+  m_SizeDelta: {x: 138, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780353351
 MonoBehaviour:
@@ -32072,6 +32280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 1
@@ -32224,6 +32433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 37
@@ -32364,6 +32574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 102
@@ -32586,6 +32797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 52
@@ -32714,6 +32926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 8
@@ -32866,6 +33079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 109
@@ -33006,6 +33220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 34
@@ -33146,6 +33361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 63
@@ -33286,6 +33502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 86
@@ -33426,6 +33643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 64
@@ -33566,6 +33784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 89
@@ -33706,6 +33925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 4
@@ -33846,6 +34066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 76
@@ -33986,6 +34207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 95
@@ -34126,6 +34348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 117
@@ -34254,6 +34477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 2
@@ -34406,6 +34630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 36
@@ -34546,6 +34771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 14
@@ -34686,6 +34912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 37
@@ -34826,6 +35053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 112
@@ -34966,6 +35194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 97
@@ -35106,6 +35335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 30
@@ -35246,6 +35476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 14
@@ -35386,6 +35617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 17
@@ -35526,6 +35758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 12
@@ -35666,6 +35899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 1
@@ -35806,6 +36040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 85
@@ -35946,6 +36181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 55
@@ -36086,6 +36322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 117
@@ -36226,6 +36463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 105
@@ -36314,8 +36552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: -33.419}
-  m_SizeDelta: {x: 80, y: 33.4}
+  m_AnchoredPosition: {x: -402, y: -31.189}
+  m_SizeDelta: {x: 156, y: 69}
   m_Pivot: {x: 0.5, y: 0.61319923}
 --- !u!114 &2125269497
 MonoBehaviour:
@@ -36339,10 +36577,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -36447,6 +36685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 90
@@ -36718,6 +36957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnDeckList: {fileID: 11400000, guid: 9d348d5e5d08f8f4397cd69ff85b8977, type: 2}
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
+  spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
   id: 40

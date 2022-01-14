@@ -185,7 +185,7 @@ public class Player2CardScript : MonoBehaviour
             {
                 #region Triats that effect a card's capability of being attacked
                 bool IHateThis = false;
-                if (BlockBool == false && IHateThis == false)
+                if (BlockBool == false)
                 {
                     // make the Debug.Logs visible
                     if (Inhabited == true)
@@ -257,7 +257,9 @@ public class Player2CardScript : MonoBehaviour
                         {
                             if (HealthChange[1] > ArmorInt && ArmorInt != 0)
                             {
+                                Debug.Log("Damage pre-redeuction is " + HealthChange[1]);
                                 HealthChange[1] -= ArmorInt;
+                                Debug.Log("Damage post-redeuction is " + HealthChange[1]);
                                 God = "dead";
                             }
                             else if (ArmorInt != 0)
@@ -280,6 +282,7 @@ public class Player2CardScript : MonoBehaviour
 
                             if (God == "dead" || God == "very dead" && DamAbsorb != 0)
                             {
+                                Debug.Log("Damage before damaging is " + HealthChange[1]);
                                 HeP -= HealthChange[1];
                                 HeP += DamAbsorb;
 

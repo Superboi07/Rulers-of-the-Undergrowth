@@ -212,6 +212,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 79
 --- !u!212 &2166772
 SpriteRenderer:
@@ -353,6 +361,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 74
 --- !u!212 &21120693
 SpriteRenderer:
@@ -494,6 +510,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 90
 --- !u!212 &22802162
 SpriteRenderer:
@@ -766,6 +790,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 6
 --- !u!212 &24914233
 SpriteRenderer:
@@ -907,6 +939,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 47
 --- !u!212 &27217812
 SpriteRenderer:
@@ -1048,6 +1088,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 81
 --- !u!212 &38360141
 SpriteRenderer:
@@ -1189,6 +1237,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 22
 --- !u!212 &41826465
 SpriteRenderer:
@@ -1330,6 +1386,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 11
 --- !u!212 &49459571
 SpriteRenderer:
@@ -1471,6 +1535,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 31
 --- !u!212 &51818375
 SpriteRenderer:
@@ -1612,6 +1684,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 42
 --- !u!212 &70250865
 SpriteRenderer:
@@ -1753,6 +1833,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 72
 --- !u!212 &81080298
 SpriteRenderer:
@@ -1894,6 +1982,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 51
 --- !u!212 &104706036
 SpriteRenderer:
@@ -2035,6 +2131,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 62
 --- !u!212 &120088427
 SpriteRenderer:
@@ -2176,6 +2280,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 104
 --- !u!212 &121633926
 SpriteRenderer:
@@ -2317,6 +2429,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 3
 --- !u!212 &132531786
 SpriteRenderer:
@@ -2458,6 +2578,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 101
 --- !u!212 &136300839
 SpriteRenderer:
@@ -2599,6 +2727,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 99
 --- !u!212 &143987895
 SpriteRenderer:
@@ -2740,6 +2876,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 24
 --- !u!212 &147154492
 SpriteRenderer:
@@ -2874,7 +3018,7 @@ Transform:
   m_Children:
   - {fileID: 1329756304}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &154715961
 MonoBehaviour:
@@ -2980,6 +3124,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 104
 --- !u!212 &158645102
 SpriteRenderer:
@@ -3121,6 +3273,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 119
 --- !u!212 &168826853
 SpriteRenderer:
@@ -3250,6 +3410,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 6
 --- !u!212 &177379150
 SpriteRenderer:
@@ -3342,8 +3510,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182531117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -2.1666, z: 0}
-  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_LocalPosition: {x: 5.5, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 722047141}
   m_RootOrder: 0
@@ -3545,6 +3713,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 71
 --- !u!212 &182694570
 SpriteRenderer:
@@ -3686,6 +3862,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 58
 --- !u!212 &195289576
 SpriteRenderer:
@@ -3827,6 +4011,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 91
 --- !u!212 &207324733
 SpriteRenderer:
@@ -3968,6 +4160,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 27
 --- !u!212 &209001876
 SpriteRenderer:
@@ -4109,6 +4309,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 44
 --- !u!212 &209792037
 SpriteRenderer:
@@ -4250,6 +4458,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 64
 --- !u!212 &210999193
 SpriteRenderer:
@@ -4391,6 +4607,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 17
 --- !u!212 &238520056
 SpriteRenderer:
@@ -4471,8 +4695,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239502404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
+  m_LocalPosition: {x: 5.5, y: -0.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 946820411}
   m_RootOrder: 0
@@ -4674,6 +4898,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 10
 --- !u!212 &240579573
 SpriteRenderer:
@@ -4815,6 +5047,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 30
 --- !u!212 &242514168
 SpriteRenderer:
@@ -4956,6 +5196,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 68
 --- !u!212 &248784156
 SpriteRenderer:
@@ -5097,6 +5345,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 61
 --- !u!212 &261873998
 SpriteRenderer:
@@ -5238,6 +5494,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 113
 --- !u!212 &269775155
 SpriteRenderer:
@@ -5513,6 +5777,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 81
 --- !u!212 &321315475
 SpriteRenderer:
@@ -5654,6 +5926,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 106
 --- !u!212 &326993314
 SpriteRenderer:
@@ -5795,6 +6075,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 67
 --- !u!212 &340733973
 SpriteRenderer:
@@ -5936,6 +6224,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 63
 --- !u!212 &340877509
 SpriteRenderer:
@@ -6077,6 +6373,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 114
 --- !u!212 &343373824
 SpriteRenderer:
@@ -6349,6 +6653,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 102
 --- !u!212 &355915589
 SpriteRenderer:
@@ -6431,12 +6743,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -401.99988, y: 81.75}
-  m_SizeDelta: {x: 156, y: 103.5}
+  m_AnchoredPosition: {x: -402, y: 90.599}
+  m_SizeDelta: {x: 156, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &357665330
 MonoBehaviour:
@@ -6471,9 +6783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Current Card:
-
-'
+  m_Text: 'Current Card:'
 --- !u!222 &357665331
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6512,7 +6822,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6788,6 +7098,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 112
 --- !u!212 &373617607
 SpriteRenderer:
@@ -6929,6 +7247,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 40
 --- !u!212 &392256937
 SpriteRenderer:
@@ -7070,6 +7396,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 45
 --- !u!212 &392810886
 SpriteRenderer:
@@ -7211,6 +7545,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 20
 --- !u!212 &399798479
 SpriteRenderer:
@@ -7352,6 +7694,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 5
 --- !u!212 &401785023
 SpriteRenderer:
@@ -7493,6 +7843,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 109
 --- !u!212 &412818859
 SpriteRenderer:
@@ -7634,6 +7992,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 108
 --- !u!212 &423917289
 SpriteRenderer:
@@ -7775,6 +8141,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 71
 --- !u!212 &426408798
 SpriteRenderer:
@@ -7916,6 +8290,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 51
 --- !u!212 &428560896
 SpriteRenderer:
@@ -8057,6 +8439,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 76
 --- !u!212 &440319803
 SpriteRenderer:
@@ -8198,6 +8588,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 99
 --- !u!212 &443015022
 SpriteRenderer:
@@ -8339,6 +8737,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 116
 --- !u!212 &444760292
 SpriteRenderer:
@@ -8480,6 +8886,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 18
 --- !u!212 &450605516
 SpriteRenderer:
@@ -8621,6 +9035,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 103
 --- !u!212 &453598167
 SpriteRenderer:
@@ -8762,6 +9184,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 60
 --- !u!212 &462683818
 SpriteRenderer:
@@ -8903,6 +9333,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 115
 --- !u!212 &464386586
 SpriteRenderer:
@@ -9044,6 +9482,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 35
 --- !u!212 &471342580
 SpriteRenderer:
@@ -9185,6 +9631,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 80
 --- !u!212 &502685396
 SpriteRenderer:
@@ -9326,6 +9780,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 46
 --- !u!212 &516438467
 SpriteRenderer:
@@ -9475,7 +9937,7 @@ Transform:
   - {fileID: 877729578}
   - {fileID: 1885281099}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &533815761
 GameObject:
@@ -9566,6 +10028,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 78
 --- !u!212 &533815766
 SpriteRenderer:
@@ -9707,6 +10177,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 25
 --- !u!212 &560611351
 SpriteRenderer:
@@ -9848,6 +10326,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 111
 --- !u!212 &564116764
 SpriteRenderer:
@@ -9989,6 +10475,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 22
 --- !u!212 &568474917
 SpriteRenderer:
@@ -10130,6 +10624,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 113
 --- !u!212 &589211394
 SpriteRenderer:
@@ -10271,6 +10773,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 97
 --- !u!212 &598145432
 SpriteRenderer:
@@ -10412,6 +10922,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 68
 --- !u!212 &609829391
 SpriteRenderer:
@@ -10553,6 +11071,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 114
 --- !u!212 &618254769
 SpriteRenderer:
@@ -10694,6 +11220,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 93
 --- !u!212 &622123549
 SpriteRenderer:
@@ -10835,6 +11369,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 87
 --- !u!212 &627095376
 SpriteRenderer:
@@ -10976,6 +11518,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 16
 --- !u!212 &635411889
 SpriteRenderer:
@@ -11117,6 +11667,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 95
 --- !u!212 &640054173
 SpriteRenderer:
@@ -11258,6 +11816,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 48
 --- !u!212 &647321137
 SpriteRenderer:
@@ -11399,6 +11965,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 52
 --- !u!212 &648225998
 SpriteRenderer:
@@ -11481,7 +12055,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11619,6 +12193,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 32
 --- !u!212 &654700769
 SpriteRenderer:
@@ -11760,6 +12342,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 31
 --- !u!212 &659470902
 SpriteRenderer:
@@ -11901,6 +12491,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 65
 --- !u!212 &663553565
 SpriteRenderer:
@@ -12042,6 +12640,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 29
 --- !u!212 &666456634
 SpriteRenderer:
@@ -12183,6 +12789,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 41
 --- !u!212 &677923057
 SpriteRenderer:
@@ -12324,6 +12938,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 33
 --- !u!212 &678984311
 SpriteRenderer:
@@ -12465,6 +13087,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 15
 --- !u!212 &679917623
 SpriteRenderer:
@@ -12619,6 +13249,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 0
 --- !u!61 &682418711
 BoxCollider2D:
@@ -12747,6 +13385,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 75
 --- !u!212 &701139250
 SpriteRenderer:
@@ -12888,6 +13534,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 45
 --- !u!212 &707738944
 SpriteRenderer:
@@ -13197,6 +13851,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 111
 --- !u!212 &728692298
 SpriteRenderer:
@@ -13338,6 +14000,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 74
 --- !u!212 &728980415
 SpriteRenderer:
@@ -13479,6 +14149,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 16
 --- !u!212 &731358911
 SpriteRenderer:
@@ -13620,6 +14298,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 54
 --- !u!212 &732821759
 SpriteRenderer:
@@ -13761,6 +14447,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 49
 --- !u!212 &747277596
 SpriteRenderer:
@@ -13902,6 +14596,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 73
 --- !u!212 &749838984
 SpriteRenderer:
@@ -14043,6 +14745,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 103
 --- !u!212 &751734958
 SpriteRenderer:
@@ -14184,6 +14894,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 59
 --- !u!212 &763428930
 SpriteRenderer:
@@ -14325,6 +15043,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 73
 --- !u!212 &768721177
 SpriteRenderer:
@@ -14466,6 +15192,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 34
 --- !u!212 &777661442
 SpriteRenderer:
@@ -14607,6 +15341,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 69
 --- !u!212 &783640108
 SpriteRenderer:
@@ -14748,6 +15490,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 82
 --- !u!212 &792625121
 SpriteRenderer:
@@ -14889,6 +15639,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 50
 --- !u!212 &803691545
 SpriteRenderer:
@@ -15030,6 +15788,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 70
 --- !u!212 &804328145
 SpriteRenderer:
@@ -15159,6 +15925,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 7
 --- !u!212 &810307385
 SpriteRenderer:
@@ -15312,6 +16086,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 25
 --- !u!212 &818476484
 SpriteRenderer:
@@ -15453,6 +16235,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 18
 --- !u!212 &819198011
 SpriteRenderer:
@@ -15594,6 +16384,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 9
 --- !u!212 &825196489
 SpriteRenderer:
@@ -15735,6 +16533,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 28
 --- !u!212 &842067410
 SpriteRenderer:
@@ -15876,6 +16682,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 11
 --- !u!212 &854422677
 SpriteRenderer:
@@ -16017,6 +16831,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 108
 --- !u!212 &861713805
 SpriteRenderer:
@@ -16158,6 +16980,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 66
 --- !u!212 &866948607
 SpriteRenderer:
@@ -16299,6 +17129,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 28
 --- !u!212 &869988530
 SpriteRenderer:
@@ -16522,6 +17360,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 107
 --- !u!212 &883165252
 SpriteRenderer:
@@ -16663,6 +17509,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 69
 --- !u!212 &885939985
 SpriteRenderer:
@@ -16804,6 +17658,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 110
 --- !u!212 &897824595
 SpriteRenderer:
@@ -16945,6 +17807,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 83
 --- !u!212 &908799183
 SpriteRenderer:
@@ -17086,6 +17956,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 110
 --- !u!212 &916059059
 SpriteRenderer:
@@ -17227,6 +18105,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 56
 --- !u!212 &926183137
 SpriteRenderer:
@@ -17434,6 +18320,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 88
 --- !u!212 &944334910
 SpriteRenderer:
@@ -17575,6 +18469,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 119
 --- !u!212 &945536436
 SpriteRenderer:
@@ -17716,6 +18618,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 65
 --- !u!212 &946111028
 SpriteRenderer:
@@ -18025,6 +18935,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 38
 --- !u!212 &950991789
 SpriteRenderer:
@@ -18166,6 +19084,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 87
 --- !u!212 &959638793
 SpriteRenderer:
@@ -18307,6 +19233,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 15
 --- !u!212 &965323031
 SpriteRenderer:
@@ -18448,6 +19382,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 46
 --- !u!212 &967267826
 SpriteRenderer:
@@ -18589,6 +19531,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 55
 --- !u!212 &969020439
 SpriteRenderer:
@@ -18671,7 +19621,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18809,6 +19759,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 47
 --- !u!212 &1002010027
 SpriteRenderer:
@@ -18950,6 +19908,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 21
 --- !u!212 &1008413200
 SpriteRenderer:
@@ -19222,6 +20188,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 41
 --- !u!212 &1011758960
 SpriteRenderer:
@@ -19363,6 +20337,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 67
 --- !u!212 &1013109302
 SpriteRenderer:
@@ -19492,6 +20474,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 4
 --- !u!212 &1014453011
 SpriteRenderer:
@@ -19645,6 +20635,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 116
 --- !u!212 &1016875832
 SpriteRenderer:
@@ -19786,6 +20784,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 7
 --- !u!212 &1027404911
 SpriteRenderer:
@@ -19927,6 +20933,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 94
 --- !u!212 &1034799297
 SpriteRenderer:
@@ -20068,6 +21082,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 57
 --- !u!212 &1056404044
 SpriteRenderer:
@@ -20209,6 +21231,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 60
 --- !u!212 &1057281522
 SpriteRenderer:
@@ -20350,6 +21380,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 94
 --- !u!212 &1093879034
 SpriteRenderer:
@@ -20491,6 +21529,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 82
 --- !u!212 &1097386914
 SpriteRenderer:
@@ -20632,6 +21678,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 96
 --- !u!212 &1115419331
 SpriteRenderer:
@@ -20773,6 +21827,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 70
 --- !u!212 &1118363388
 SpriteRenderer:
@@ -21001,6 +22063,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 89
 --- !u!212 &1125180763
 SpriteRenderer:
@@ -21142,6 +22212,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 23
 --- !u!212 &1128325540
 SpriteRenderer:
@@ -21283,6 +22361,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 56
 --- !u!212 &1133947994
 SpriteRenderer:
@@ -21365,7 +22451,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21507,6 +22593,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 48
 --- !u!212 &1141206678
 SpriteRenderer:
@@ -21648,6 +22742,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 36
 --- !u!212 &1142067489
 SpriteRenderer:
@@ -21789,6 +22891,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 83
 --- !u!212 &1150423567
 SpriteRenderer:
@@ -21930,6 +23040,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 59
 --- !u!212 &1160310698
 SpriteRenderer:
@@ -22071,6 +23189,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 118
 --- !u!212 &1167824375
 SpriteRenderer:
@@ -22212,6 +23338,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 107
 --- !u!212 &1168184360
 SpriteRenderer:
@@ -22353,6 +23487,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 21
 --- !u!212 &1172661308
 SpriteRenderer:
@@ -22494,6 +23636,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 49
 --- !u!212 &1180184369
 SpriteRenderer:
@@ -22635,6 +23785,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 53
 --- !u!212 &1193256537
 SpriteRenderer:
@@ -22776,6 +23934,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 84
 --- !u!212 &1204834706
 SpriteRenderer:
@@ -22917,6 +24083,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 77
 --- !u!212 &1209495038
 SpriteRenderer:
@@ -22999,11 +24173,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -401.9999, y: 12.749991}
+  m_AnchoredPosition: {x: -401.9999, y: 30.000008}
   m_SizeDelta: {x: 156, y: 34.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218484794
@@ -23125,6 +24299,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 5
 --- !u!212 &1235340835
 SpriteRenderer:
@@ -23278,6 +24460,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 19
 --- !u!212 &1244739933
 SpriteRenderer:
@@ -23419,6 +24609,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 2
 --- !u!212 &1250930797
 SpriteRenderer:
@@ -23560,6 +24758,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 86
 --- !u!212 &1254112301
 SpriteRenderer:
@@ -23701,6 +24907,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 24
 --- !u!212 &1256668134
 SpriteRenderer:
@@ -23842,6 +25056,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 75
 --- !u!212 &1276415778
 SpriteRenderer:
@@ -23983,6 +25205,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 77
 --- !u!212 &1283645035
 SpriteRenderer:
@@ -24124,6 +25354,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 13
 --- !u!212 &1285378322
 SpriteRenderer:
@@ -24265,6 +25503,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 84
 --- !u!212 &1318857045
 SpriteRenderer:
@@ -24458,6 +25704,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 106
 --- !u!212 &1343291074
 SpriteRenderer:
@@ -24587,6 +25841,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 3
 --- !u!212 &1349631450
 SpriteRenderer:
@@ -24740,6 +26002,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 72
 --- !u!212 &1371119217
 SpriteRenderer:
@@ -24881,6 +26151,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 98
 --- !u!212 &1375021715
 SpriteRenderer:
@@ -25022,6 +26300,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 32
 --- !u!212 &1381980690
 SpriteRenderer:
@@ -25163,6 +26449,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 57
 --- !u!212 &1382656804
 SpriteRenderer:
@@ -25304,6 +26598,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 42
 --- !u!212 &1385242049
 SpriteRenderer:
@@ -25445,6 +26747,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 53
 --- !u!212 &1385919213
 SpriteRenderer:
@@ -25586,6 +26896,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 62
 --- !u!212 &1395703476
 SpriteRenderer:
@@ -25727,6 +27045,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 26
 --- !u!212 &1395788464
 SpriteRenderer:
@@ -25868,6 +27194,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 58
 --- !u!212 &1400013346
 SpriteRenderer:
@@ -26009,6 +27343,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 96
 --- !u!212 &1405044099
 SpriteRenderer:
@@ -26150,6 +27492,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 33
 --- !u!212 &1432938603
 SpriteRenderer:
@@ -26291,6 +27641,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 54
 --- !u!212 &1446720305
 SpriteRenderer:
@@ -26432,6 +27790,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 39
 --- !u!212 &1456045716
 SpriteRenderer:
@@ -26573,6 +27939,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 61
 --- !u!212 &1459699513
 SpriteRenderer:
@@ -26714,6 +28088,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 35
 --- !u!212 &1477835490
 SpriteRenderer:
@@ -26843,6 +28225,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 9
 --- !u!212 &1487528606
 SpriteRenderer:
@@ -26998,17 +28388,17 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 357665329}
-  - {fileID: 362042555}
-  - {fileID: 1135406311}
   - {fileID: 648256255}
   - {fileID: 975598181}
+  - {fileID: 357665329}
   - {fileID: 1218484793}
   - {fileID: 2125269496}
+  - {fileID: 362042555}
+  - {fileID: 1135406311}
   - {fileID: 1662122386}
   - {fileID: 1780353350}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -27104,6 +28494,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 19
 --- !u!212 &1499366590
 SpriteRenderer:
@@ -27245,6 +28643,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 12
 --- !u!212 &1501015788
 SpriteRenderer:
@@ -27386,6 +28792,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 118
 --- !u!212 &1514439265
 SpriteRenderer:
@@ -27527,6 +28941,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 91
 --- !u!212 &1515586872
 SpriteRenderer:
@@ -27799,6 +29221,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 43
 --- !u!212 &1528326855
 SpriteRenderer:
@@ -27953,6 +29383,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 0
 --- !u!114 &1539625041
 MonoBehaviour:
@@ -28081,6 +29519,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 98
 --- !u!212 &1568078417
 SpriteRenderer:
@@ -28222,6 +29668,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 78
 --- !u!212 &1572997844
 SpriteRenderer:
@@ -28363,6 +29817,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 100
 --- !u!212 &1578892714
 SpriteRenderer:
@@ -28504,6 +29966,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 13
 --- !u!212 &1581555329
 SpriteRenderer:
@@ -28645,6 +30115,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 43
 --- !u!212 &1583344776
 SpriteRenderer:
@@ -28786,6 +30264,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 20
 --- !u!212 &1610457491
 SpriteRenderer:
@@ -28927,6 +30413,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 85
 --- !u!212 &1611444804
 SpriteRenderer:
@@ -29068,6 +30562,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 39
 --- !u!212 &1617597072
 SpriteRenderer:
@@ -29209,6 +30711,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 88
 --- !u!212 &1619790197
 SpriteRenderer:
@@ -29350,6 +30860,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 66
 --- !u!212 &1627969137
 SpriteRenderer:
@@ -29491,6 +31009,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 92
 --- !u!212 &1629938291
 SpriteRenderer:
@@ -29632,6 +31158,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 8
 --- !u!212 &1634983424
 SpriteRenderer:
@@ -29773,6 +31307,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 105
 --- !u!212 &1636899551
 SpriteRenderer:
@@ -29914,6 +31456,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 27
 --- !u!212 &1644482994
 SpriteRenderer:
@@ -30055,6 +31605,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 38
 --- !u!212 &1651799421
 SpriteRenderer:
@@ -30196,6 +31754,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 26
 --- !u!212 &1651898281
 SpriteRenderer:
@@ -30337,6 +31903,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 10
 --- !u!212 &1652273740
 SpriteRenderer:
@@ -30611,6 +32185,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 79
 --- !u!212 &1666910245
 SpriteRenderer:
@@ -30752,6 +32334,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 93
 --- !u!212 &1670553261
 SpriteRenderer:
@@ -30893,6 +32483,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 115
 --- !u!212 &1680242696
 SpriteRenderer:
@@ -31034,6 +32632,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 92
 --- !u!212 &1703902937
 SpriteRenderer:
@@ -31175,6 +32781,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 44
 --- !u!212 &1716073791
 SpriteRenderer:
@@ -31316,6 +32930,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 50
 --- !u!212 &1719934253
 SpriteRenderer:
@@ -31457,6 +33079,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 80
 --- !u!212 &1724189379
 SpriteRenderer:
@@ -31598,6 +33228,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 29
 --- !u!212 &1729986451
 SpriteRenderer:
@@ -31739,6 +33377,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 23
 --- !u!212 &1734517939
 SpriteRenderer:
@@ -31880,6 +33526,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 101
 --- !u!212 &1753920164
 SpriteRenderer:
@@ -32021,6 +33675,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 100
 --- !u!212 &1766588085
 SpriteRenderer:
@@ -32283,6 +33945,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 1
 --- !u!212 &1795296675
 SpriteRenderer:
@@ -32436,6 +34106,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 37
 --- !u!212 &1798883358
 SpriteRenderer:
@@ -32577,6 +34255,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 102
 --- !u!212 &1828654145
 SpriteRenderer:
@@ -32800,6 +34486,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 52
 --- !u!212 &1892662761
 SpriteRenderer:
@@ -32929,6 +34623,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 8
 --- !u!212 &1895393137
 SpriteRenderer:
@@ -33082,6 +34784,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 109
 --- !u!212 &1904836817
 SpriteRenderer:
@@ -33223,6 +34933,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 34
 --- !u!212 &1909193701
 SpriteRenderer:
@@ -33364,6 +35082,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 63
 --- !u!212 &1919394927
 SpriteRenderer:
@@ -33505,6 +35231,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 86
 --- !u!212 &1925086197
 SpriteRenderer:
@@ -33646,6 +35380,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 64
 --- !u!212 &1932085941
 SpriteRenderer:
@@ -33787,6 +35529,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 89
 --- !u!212 &1938392182
 SpriteRenderer:
@@ -33928,6 +35678,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 4
 --- !u!212 &1950612618
 SpriteRenderer:
@@ -34069,6 +35827,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 76
 --- !u!212 &1979153894
 SpriteRenderer:
@@ -34210,6 +35976,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 95
 --- !u!212 &1990743468
 SpriteRenderer:
@@ -34351,6 +36125,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 117
 --- !u!212 &2001364372
 SpriteRenderer:
@@ -34480,6 +36262,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 2
 --- !u!212 &2033226681
 SpriteRenderer:
@@ -34633,6 +36423,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 36
 --- !u!212 &2034955276
 SpriteRenderer:
@@ -34774,6 +36572,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 14
 --- !u!212 &2034994615
 SpriteRenderer:
@@ -34915,6 +36721,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 37
 --- !u!212 &2049679270
 SpriteRenderer:
@@ -35056,6 +36870,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 112
 --- !u!212 &2050159352
 SpriteRenderer:
@@ -35197,6 +37019,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 97
 --- !u!212 &2054381763
 SpriteRenderer:
@@ -35338,6 +37168,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 30
 --- !u!212 &2060567414
 SpriteRenderer:
@@ -35479,6 +37317,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 14
 --- !u!212 &2083030391
 SpriteRenderer:
@@ -35620,6 +37466,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 17
 --- !u!212 &2084478983
 SpriteRenderer:
@@ -35761,6 +37615,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 12
 --- !u!212 &2085650251
 SpriteRenderer:
@@ -35902,6 +37764,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 1
 --- !u!212 &2087995977
 SpriteRenderer:
@@ -36043,6 +37913,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 85
 --- !u!212 &2106632739
 SpriteRenderer:
@@ -36184,6 +38062,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 55
 --- !u!212 &2109512741
 SpriteRenderer:
@@ -36325,6 +38211,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 117
 --- !u!212 &2115649709
 SpriteRenderer:
@@ -36466,6 +38360,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 105
 --- !u!212 &2123219454
 SpriteRenderer:
@@ -36548,11 +38450,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490227249}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -402, y: -31.189}
+  m_AnchoredPosition: {x: -402, y: -13.939}
   m_SizeDelta: {x: 156, y: 69}
   m_Pivot: {x: 0.5, y: 0.61319923}
 --- !u!114 &2125269497
@@ -36688,6 +38590,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 90
 --- !u!212 &2126726368
 SpriteRenderer:
@@ -36960,6 +38870,14 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   CurentCard: {fileID: 357665330}
   HP: {fileID: 1218484794}
+  Ability1Text: {fileID: 0}
+  Ability2Text: {fileID: 0}
+  Ability3Text: {fileID: 0}
+  Ability4Text: {fileID: 0}
+  Trait1Text: {fileID: 0}
+  Trait2Text: {fileID: 0}
+  Trait3Text: {fileID: 0}
+  Trait4Text: {fileID: 0}
   id: 40
 --- !u!212 &2133061396
 SpriteRenderer:

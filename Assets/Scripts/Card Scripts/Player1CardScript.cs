@@ -16,6 +16,29 @@ public class Player1CardScript : MonoBehaviour
     // calls my text boxes
     public Text CurentCard;
     public Text HP;
+    public Text Ability1Text;
+    public Text Ability2Text;
+    public Text Ability3Text;
+    public Text Ability4Text;
+    public Text Trait1Text;
+    public Text Trait2Text;
+    public Text Trait3Text;
+    public Text Trait4Text;
+
+    #region varibles for text boxes
+    string Ability1;
+    string Ability2;
+    string Ability3;
+    string Ability4;
+    object[] AbilityStats1 = new object[2];
+    object[] AbilityStats2 = new object[2];
+    object[] AbilityStats3 = new object[2];
+    object[] AbilityStats4 = new object[2];
+    string Trait1;
+    string Trait2;
+    string Trait3;
+    string Trait4;
+    #endregion
 
     // varibles for messaging
     public int id;
@@ -128,6 +151,7 @@ public class Player1CardScript : MonoBehaviour
             Class();
             Species();
             Traits();
+            spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[Stats[1]].Image;
         }
     }
@@ -787,37 +811,90 @@ public class Player1CardScript : MonoBehaviour
         Temp[0] = -1;
         if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 1)
         {
+            Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[0];
+            Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[0];
+            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
+            Ability1 = SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0];
+            AbilityStats1[0] = Temp[1];
+            AbilityStats1[1] = Temp[2];
+
+            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
             {
-                Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[0];
-                Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[0];
-                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[0], Temp);
+                Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[1];
+                Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[1];
+                SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
+                Ability2 = SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1];
+                AbilityStats2[0] = Temp[1];
+                AbilityStats2[1] = Temp[2];
 
-                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
+                if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
                 {
-                    Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[1];
-                    Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[1];
-                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[1], Temp);
+                    Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[2];
+                    Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[2];
+                    SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
+                    Ability3 = SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2];
+                    AbilityStats3[0] = Temp[1];
+                    AbilityStats3[1] = Temp[2];
 
-                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
+                    if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
                     {
-                        Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[2];
-                        Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[2];
-                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[2], Temp);
+                        Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[3];
+                        Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[3];
+                        SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], Temp);
+                        Ability4 = SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3];
+                        AbilityStats4[0] = Temp[1];
+                        AbilityStats4[1] = Temp[2];
 
-                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
+                        if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
                         {
-                            Temp[1] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityStats[3];
-                            Temp[2] = SpawnManagerScriptableObject.CardList[CardListNumber].AbilityRefresh[3];
-                            SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Abilities[3], Temp);
-
-                            if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
-                            {
-                                Debug.Log("this card has too many abilities");
-                            }
+                            Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has too many abilities");
                         }
                     }
+                    else
+                    {
+                        Ability4 = "n/a";
+                        AbilityStats4[0] = "n/a";
+                        AbilityStats4[1] = "n/a";
+                    }
+                }
+                else
+                {
+                    Ability3 = "n/a";
+                    Ability4 = "n/a";
+                    AbilityStats3[0] = "n/a";
+                    AbilityStats3[1] = "n/a";
+                    AbilityStats4[0] = "n/a";
+                    AbilityStats4[1] = "n/a";
                 }
             }
+            else
+            {
+                Ability2 = "n/a";
+                Ability3 = "n/a";
+                Ability4 = "n/a";
+                AbilityStats2[0] = "n/a";
+                AbilityStats2[1] = "n/a";
+                AbilityStats3[0] = "n/a";
+                AbilityStats3[1] = "n/a";
+                AbilityStats4[0] = "n/a";
+                AbilityStats4[1] = "n/a";
+            }
+        }
+        else
+        {
+            Debug.Log("why does " + SpawnManagerScriptableObject.CardList[CardListNumber].Name + " have no abilities?");
+            Ability1 = "n/a";
+            Ability2 = "n/a";
+            Ability3 = "n/a";
+            Ability4 = "n/a";
+            AbilityStats1[0] = "n/a";
+            AbilityStats1[1] = "n/a";
+            AbilityStats2[0] = "n/a";
+            AbilityStats2[1] = "n/a";
+            AbilityStats3[0] = "n/a";
+            AbilityStats3[1] = "n/a";
+            AbilityStats4[0] = "n/a";
+            AbilityStats4[1] = "n/a";
         }
         #endregion
     }
@@ -879,29 +956,57 @@ public class Player1CardScript : MonoBehaviour
         if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 1)
         {
             SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[0], PlayerAndID);
+            Trait1 = SpawnManagerScriptableObject.CardList[CardListNumber].Traits[0];
 
             if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 2)
             {
                 SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[1], PlayerAndID);
+                Trait2 = SpawnManagerScriptableObject.CardList[CardListNumber].Traits[1];
 
                 if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 3)
                 {
                     SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[2], PlayerAndID);
+                    Trait3 = SpawnManagerScriptableObject.CardList[CardListNumber].Traits[2];
 
                     if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 4)
                     {
                         SendMessage(SpawnManagerScriptableObject.CardList[CardListNumber].Traits[3], PlayerAndID);
+                        Trait4 = SpawnManagerScriptableObject.CardList[CardListNumber].Traits[3];
 
                         if (SpawnManagerScriptableObject.CardList[CardListNumber].Traits.Length >= 5)
                         {
                             Debug.Log("this card has too many triats");
                         }
                     }
+                    else
+                    {
+                        Trait4 = "n/a";
+                    }
+                }
+                else
+                {
+                    Trait3 = "n/a";
+                    Trait4 = "n/a";
                 }
             }
+            else
+            {
+                Trait2 = "n/a";
+                Trait3 = "n/a";
+                Trait4 = "n/a";
+            }
+        }
+        else
+        {
+            Debug.Log("why does " + SpawnManagerScriptableObject.CardList[CardListNumber].Name + " have no traits?");
+            Trait1 = "n/a";
+            Trait2 = "n/a";
+            Trait3 = "n/a";
+            Trait4 = "n/a";
         }
         #endregion
     }
+
 
     #region Inhabit sans Inhabit, Inhabit___, and Inhabitingg
     void InhabCounter(int[] Stats)
@@ -985,8 +1090,8 @@ public class Player1CardScript : MonoBehaviour
         OriginID = Originid;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    // Awake is before Start
+    void Awake()
     {
         PlayerAndID[1] = id;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();

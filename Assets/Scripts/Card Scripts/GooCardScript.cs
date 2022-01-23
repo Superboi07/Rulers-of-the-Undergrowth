@@ -13,6 +13,30 @@ public class GooCardScript : MonoBehaviour
     public Text CurentCard;
     public Text Cost;
     public Text HP;
+    public Text ClassSpecies;
+    public Text Ability1Text;
+    public Text Ability2Text;
+    public Text Ability3Text;
+    public Text Ability4Text;
+    public Text Trait1Text;
+    public Text Trait2Text;
+    public Text Trait3Text;
+    public Text Trait4Text;
+
+    #region varibles for text boxes
+    string Ability1;
+    string Ability2;
+    string Ability3;
+    string Ability4;
+    object[] AbilityStats1 = new object[2];
+    object[] AbilityStats2 = new object[2];
+    object[] AbilityStats3 = new object[2];
+    object[] AbilityStats4 = new object[2];
+    string Trait1;
+    string Trait2;
+    string Trait3;
+    string Trait4;
+    #endregion
 
     // temp variables
 
@@ -60,6 +84,8 @@ public class GooCardScript : MonoBehaviour
             Debug.Log("GooCard " + id + " tryed to send message upwards");
             Debug.Log("GooCard " + id + " BioCost is " + SpawnManagerScriptableObject.CardList[Stats[1]].BioCost);
             Debug.Log("GooCard " + id + " BioCost is " + SpawnManagerScriptableObject.CardList[Stats[1]].GeoCost);
+            Abilities();
+            Traits();
         }
     }
 
@@ -121,8 +147,163 @@ public class GooCardScript : MonoBehaviour
 
     void OnMouseOver()
     {
-        CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[TempStorage[1]].Name;
+        CurentCard.text = SpawnManagerScriptableObject.CardList[TempStorage[1]].Name;
         Cost.text = "Bio Cost: " + SpawnManagerScriptableObject.CardList[TempStorage[1]].BioCost + "\n" + "Geo Cost: "  + SpawnManagerScriptableObject.CardList[TempStorage[1]].GeoCost;
         HP.text = "HP: " + SpawnManagerScriptableObject.CardList[TempStorage[1]].HealthPoints;
+        ClassSpecies.text = "Class: " + SpawnManagerScriptableObject.CardList[TempStorage[1]].Class + "\n" + "Species: " + SpawnManagerScriptableObject.CardList[TempStorage[1]].Species;
+        Ability1Text.text = "Ability1: " + Ability1 + "\n" + "Power: " + AbilityStats1[0] + "\n" + "Cool Down: " + AbilityStats1[1];
+        Ability2Text.text = "Ability2: " + Ability2 + "\n" + "Power: " + AbilityStats2[0] + "\n" + "Cool Down: " + AbilityStats2[1];
+        Ability3Text.text = "Ability3: " + Ability3 + "\n" + "Power: " + AbilityStats3[0] + "\n" + "Cool Down: " + AbilityStats3[1];
+        Ability4Text.text = "Ability4: " + Ability4 + "\n" + "Power: " + AbilityStats4[0] + "\n" + "Cool Down: " + AbilityStats4[1];
+        Trait1Text.text = "Trait1: " + Trait1;
+        Trait2Text.text = "Trait2: " + Trait2;
+        Trait3Text.text = "Trait3: " + Trait3;
+        Trait4Text.text = "Trait4: " + Trait4;
     }
+
+    void Abilities()
+    {
+        #region the tower
+        int[] Temp = new int[3];
+        Temp[0] = -1;
+        if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities.Length >= 1)
+        {
+            Temp[1] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityStats[0];
+            Temp[2] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityRefresh[0];
+            Ability1 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities[0];
+            AbilityStats1[0] = Temp[1];
+            AbilityStats1[1] = Temp[2];
+
+            if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities.Length >= 2)
+            {
+                Temp[1] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityStats[1];
+                Temp[2] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityRefresh[1];
+                Ability2 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities[1];
+                AbilityStats2[0] = Temp[1];
+                AbilityStats2[1] = Temp[2];
+
+                if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities.Length >= 3)
+                {
+                    Temp[1] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityStats[2];
+                    Temp[2] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityRefresh[2];
+                    Ability3 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities[2];
+                    AbilityStats3[0] = Temp[1];
+                    AbilityStats3[1] = Temp[2];
+
+                    if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities.Length >= 4)
+                    {
+                        Temp[1] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityStats[3];
+                        Temp[2] = SpawnManagerScriptableObject.CardList[TempStorage[1]].AbilityRefresh[3];
+                        SendMessage(SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities[3], Temp);
+                        Ability4 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities[3];
+                        AbilityStats4[0] = Temp[1];
+                        AbilityStats4[1] = Temp[2];
+
+                        if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Abilities.Length >= 5)
+                        {
+                            Debug.Log(SpawnManagerScriptableObject.CardList[TempStorage[1]].Name + " has too many abilities");
+                        }
+                    }
+                    else
+                    {
+                        Ability4 = "n/a";
+                        AbilityStats4[0] = "n/a";
+                        AbilityStats4[1] = "n/a";
+                    }
+                }
+                else
+                {
+                    Ability3 = "n/a";
+                    Ability4 = "n/a";
+                    AbilityStats3[0] = "n/a";
+                    AbilityStats3[1] = "n/a";
+                    AbilityStats4[0] = "n/a";
+                    AbilityStats4[1] = "n/a";
+                }
+            }
+            else
+            {
+                Ability2 = "n/a";
+                Ability3 = "n/a";
+                Ability4 = "n/a";
+                AbilityStats2[0] = "n/a";
+                AbilityStats2[1] = "n/a";
+                AbilityStats3[0] = "n/a";
+                AbilityStats3[1] = "n/a";
+                AbilityStats4[0] = "n/a";
+                AbilityStats4[1] = "n/a";
+            }
+        }
+        else
+        {
+            Debug.Log("why does " + SpawnManagerScriptableObject.CardList[TempStorage[1]].Name + " have no abilities?");
+            Ability1 = "n/a";
+            Ability2 = "n/a";
+            Ability3 = "n/a";
+            Ability4 = "n/a";
+            AbilityStats1[0] = "n/a";
+            AbilityStats1[1] = "n/a";
+            AbilityStats2[0] = "n/a";
+            AbilityStats2[1] = "n/a";
+            AbilityStats3[0] = "n/a";
+            AbilityStats3[1] = "n/a";
+            AbilityStats4[0] = "n/a";
+            AbilityStats4[1] = "n/a";
+        }
+        #endregion
+    }
+
+    void Traits()
+    {
+        #region the tower
+        if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits.Length >= 1)
+        {
+            Trait1 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits[0];
+
+            if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits.Length >= 2)
+            {
+                Trait2 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits[1];
+
+                if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits.Length >= 3)
+                {
+                    Trait3 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits[2];
+
+                    if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits.Length >= 4)
+                    {
+                        Trait4 = SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits[3];
+
+                        if (SpawnManagerScriptableObject.CardList[TempStorage[1]].Traits.Length >= 5)
+                        {
+                            Debug.Log("this card has too many triats");
+                        }
+                    }
+                    else
+                    {
+                        Trait4 = "n/a";
+                    }
+                }
+                else
+                {
+                    Trait3 = "n/a";
+                    Trait4 = "n/a";
+                }
+            }
+            else
+            {
+                Trait2 = "n/a";
+                Trait3 = "n/a";
+                Trait4 = "n/a";
+            }
+        }
+        else
+        {
+            Debug.Log("why does " + SpawnManagerScriptableObject.CardList[TempStorage[1]].Name + " have no traits?");
+            Trait1 = "n/a";
+            Trait2 = "n/a";
+            Trait3 = "n/a";
+            Trait4 = "n/a";
+        }
+        #endregion
+    }
+
 }

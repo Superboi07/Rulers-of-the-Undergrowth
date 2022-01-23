@@ -15,7 +15,9 @@ public class Player1CardScript : MonoBehaviour
 
     // calls my text boxes
     public Text CurentCard;
+    public Text Cost;
     public Text HP;
+    public Text ClassSpecies;
     public Text Ability1Text;
     public Text Ability2Text;
     public Text Ability3Text;
@@ -281,7 +283,9 @@ public class Player1CardScript : MonoBehaviour
                         {
                             if (HealthChange[1] > ArmorInt && ArmorInt != 0)
                             {
+                                Debug.Log("Damage pre-redeuction is " + HealthChange[1]);
                                 HealthChange[1] -= ArmorInt;
+                                Debug.Log("Damage post-redeuction is " + HealthChange[1]);
                                 God = "dead";
                             }
                             else if (ArmorInt != 0)
@@ -304,6 +308,7 @@ public class Player1CardScript : MonoBehaviour
 
                             if (God == "dead" || God == "very dead" && DamAbsorb != 0)
                             {
+                                Debug.Log("Damage before damaging is " + HealthChange[1]);
                                 HeP -= HealthChange[1];
                                 HeP += DamAbsorb;
 
@@ -448,8 +453,18 @@ public class Player1CardScript : MonoBehaviour
 
     void OnMouseOver()
     {
-        CurentCard.text = "Current Card: " + "\n" + SpawnManagerScriptableObject.CardList[CardListNumber].Name;
+        CurentCard.text = SpawnManagerScriptableObject.CardList[CardListNumber].Name;
+        Cost.text = "Bio Cost: " + SpawnManagerScriptableObject.CardList[CardListNumber].BioCost + "\n" + "Geo Cost: " + SpawnManagerScriptableObject.CardList[CardListNumber].GeoCost;
         HP.text = "HP: " + HeP;
+        ClassSpecies.text = "Class: " + SpawnManagerScriptableObject.CardList[CardListNumber].Class + "\n" + "Species: " + SpawnManagerScriptableObject.CardList[CardListNumber].Species;
+        Ability1Text.text = "Ability1: " + Ability1 + "\n" + "Power: " + AbilityStats1[0] + "\n" + "Cool Down: " + AbilityStats1[1];
+        Ability2Text.text = "Ability2: " + Ability2 + "\n" + "Power: " + AbilityStats2[0] + "\n" + "Cool Down: " + AbilityStats2[1];
+        Ability3Text.text = "Ability3: " + Ability3 + "\n" + "Power: " + AbilityStats3[0] + "\n" + "Cool Down: " + AbilityStats3[1];
+        Ability4Text.text = "Ability4: " + Ability4 + "\n" + "Power: " + AbilityStats4[0] + "\n" + "Cool Down: " + AbilityStats4[1];
+        Trait1Text.text = "Trait1: " + Trait1;
+        Trait2Text.text = "Trait2: " + Trait2;
+        Trait3Text.text = "Trait3: " + Trait3;
+        Trait4Text.text = "Trait4: " + Trait4;
 
         if (Prompt2 == true && Input.GetKeyDown("y"))
         {
@@ -1007,7 +1022,6 @@ public class Player1CardScript : MonoBehaviour
         #endregion
     }
 
-
     #region Inhabit sans Inhabit, Inhabit___, and Inhabitingg
     void InhabCounter(int[] Stats)
     {
@@ -1115,7 +1129,6 @@ public class Player1CardScript : MonoBehaviour
             HeP = -1;
             if (OpenToRes == true)
             {
-                Debug.Log("temp");
                 SendMessageUpwards("Spawn___", ResID);
                 OpenToRes = false;
                 ResID = 0;

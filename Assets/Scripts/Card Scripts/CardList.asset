@@ -41,7 +41,7 @@ MonoBehaviour:
     AbilityRefresh: 0100000000000000
     Traits:
     - Stealth
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 14c78d13826976f4fa9b996998db94a2, type: 3}
   - ID: Web Trap 1
     Name: Web Trap
     BioCost: 0

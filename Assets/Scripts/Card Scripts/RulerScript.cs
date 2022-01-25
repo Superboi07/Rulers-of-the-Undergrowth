@@ -46,6 +46,8 @@ public class RulerScript : MonoBehaviour
     int TempInt1 = 0;
     public int ID;
     string Deck;
+    public static bool P1Lost;
+    public static bool P2Lost;
 
     // Cooldown varibales
     bool CoolDown = true;
@@ -155,8 +157,14 @@ public class RulerScript : MonoBehaviour
     {
         if (HeP == 0)
         {
-            SceneManager.LoadScene("End", LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("Battle");
+            if (ID == 1)
+            {
+                P1Lost = true;
+            }
+            else if (ID == 2)
+            {
+                P2Lost = true;
+            }
         }
 
         if (Prompt == true)

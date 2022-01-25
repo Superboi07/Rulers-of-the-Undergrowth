@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DeckChooser : MonoBehaviour
 {
+    public Text PlayerInfo;
     public static string P1Deck;
     public static string P2Deck;
     int Player = 1;
@@ -19,6 +21,7 @@ public class DeckChooser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerInfo.text = "Player " + Player + " choose";
         if (Player == 3)
         {
             SceneManager.LoadScene("Battle", LoadSceneMode.Additive);

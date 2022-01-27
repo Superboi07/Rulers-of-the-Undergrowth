@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartButtonScript : MonoBehaviour
 {
+    public static bool onceonce = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class StartButtonScript : MonoBehaviour
 
     void henlo()
     {
+        onceonce = true;
         SceneManager.LoadScene("Choose", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Start");
     }

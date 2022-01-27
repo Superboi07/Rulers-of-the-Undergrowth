@@ -10,15 +10,68 @@ public class TweenSceneManager : MonoBehaviour
     public static int Winner;
     bool once = false;
 
+    public AudioSource IntroMusic;
+    public AudioSource ChooseMusic;
+    public AudioSource BattleMusic;
+    public AudioSource EndingMusic;
+    int MusicLevel = 0;
+    bool onceonce = false;
+    bool onceonceonce = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        IntroMusic.Play();
     }
+
+    void AdvanceMusic()
+    {
+        MusicLevel += 1;
+        if (MusicLevel == 1)
+        {
+            IntroMusic.Stop();
+            ChooseMusic.Play();
+        }
+        else if (MusicLevel == 2)
+        {
+            ChooseMusic.Stop();
+            BattleMusic.Play();
+        }
+        else if (MusicLevel == 3)
+        {
+            BattleMusic.Stop();
+            EndingMusic.Play();
+        }
+        else 
+        {
+            Debug.Log("MusicLevel == " + MusicLevel);
+        }
+    }
+
+
 
     // Update is called once per frame
     void Update()
     {
+        if (StartButtonScript.onceonce == true)
+        {
+            if (onceonce == false)
+            {
+                AdvanceMusic();
+                onceonce = true;
+            }
+        }
+
+        if (DeckChooser.onceonceonce == true)
+        {
+            if (onceonceonce == false)
+            {
+                AdvanceMusic();
+                onceonceonce = true;
+            }
+        }
+
         if (DeckChooser.P1Deck == "Spindle")
         {
             P1Deck = "Spindle";
@@ -33,6 +86,7 @@ public class TweenSceneManager : MonoBehaviour
         {
             if (once == false)
             {
+                AdvanceMusic();
                 SceneManager.LoadScene("End", LoadSceneMode.Additive);
                 SceneManager.UnloadSceneAsync("Battle");
                 once = true;
@@ -51,6 +105,7 @@ public class TweenSceneManager : MonoBehaviour
         {
             if (once == false)
             {
+                AdvanceMusic();
                 SceneManager.LoadScene("End", LoadSceneMode.Additive);
                 SceneManager.UnloadSceneAsync("Battle");
                 once = true;

@@ -409,7 +409,7 @@ MonoBehaviour:
     Class: Ruler
     Species: Sindle
     Duration: -1
-    HealthPoints: 10
+    HealthPoints: 6
     Abilities:
     - SongOfVenomDam
     - SongOfVenomWeak

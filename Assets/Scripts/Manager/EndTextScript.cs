@@ -15,20 +15,20 @@ public class EndTextScript : MonoBehaviour
     {
         P1 = TweenSceneManager.P1Deck;
         P2 = TweenSceneManager.P2Deck;
-        if (TweenSceneManager.Winner == 0)
+        if (TweenSceneManager.Loser == 0) // this doesn't work, and I am in no mood to fix it
         {
             WinInfo.text = "It's a tie!";
             RulerInfo.text = "That's wicked!";
         }
-        else if (TweenSceneManager.Winner == 1)
-        {
-            WinInfo.text = "Player 1 Wins!!!";
-            RulerInfo.text = "Good job " + P1 + " for beating " + P2 + "!";
-        }
-        else if (TweenSceneManager.Winner == 2)
+        else if (TweenSceneManager.Loser == 1)
         {
             WinInfo.text = "Player 2 Wins!!!";
             RulerInfo.text = "Good job " + P2 + " for beating " + P1 + "!";
+        }
+        else if (TweenSceneManager.Loser == 2)
+        {
+            WinInfo.text = "Player 1 Wins!!!";
+            RulerInfo.text = "Good job " + P1 + " for beating " + P2 + "!";
         }
         else
         {

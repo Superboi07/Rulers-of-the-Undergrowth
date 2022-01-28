@@ -7,7 +7,7 @@ public class TweenSceneManager : MonoBehaviour
 {
     public static string P1Deck;
     public static string P2Deck;
-    public static int Winner;
+    public static int Loser;
     bool once = false;
 
     public AudioSource IntroMusic;
@@ -48,8 +48,6 @@ public class TweenSceneManager : MonoBehaviour
             Debug.Log("MusicLevel == " + MusicLevel);
         }
     }
-
-
 
     // Update is called once per frame
     void Update()
@@ -94,11 +92,11 @@ public class TweenSceneManager : MonoBehaviour
 
             if (RulerScript.P2Lost == true)
             {
-                Winner = 0;
+                Loser = 0;
             }
             else 
             {
-                Winner = 1;
+                Loser = 1;
             }
         }
         else if (RulerScript.P2Lost == true)
@@ -110,7 +108,7 @@ public class TweenSceneManager : MonoBehaviour
                 SceneManager.UnloadSceneAsync("Battle");
                 once = true;
             }
-            Winner = 2;
+            Loser = 2;
         }
     }
 }

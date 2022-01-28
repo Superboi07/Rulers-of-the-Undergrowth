@@ -263,6 +263,12 @@ public class RulerScript : MonoBehaviour
                         HeP -= HealthChange[1];
                     }
 
+                    if (OpenToPoison == true && HeP != 0)
+                    {
+                        Poisoned = true;
+                        normal = "b";
+                    }
+
                     if (AgMultiHitInt > 0)
                     {
                         SendMessageUpwards("ReduceHits", AgMultiHitInt);

@@ -10,6 +10,11 @@ public class MainMessageCheckpoint : MonoBehaviour
     public Text P2BioGeo;
     public Text PlayerTurn;
     public Text TimeText;
+    public Text Misc1Text;
+    string Misc1Words;
+    public Text Misc2Text;
+    string Misc2Words;
+    string[] MiscWords = new string[2];
 
     // global variables
     public int StartingBio;
@@ -392,4 +397,15 @@ public class MainMessageCheckpoint : MonoBehaviour
     {
         PassTurn(ArrayTurn);
     }
+
+    void MiscText(string Words)
+    {
+        Misc2Words = Misc1Words;
+        Misc1Words = Words;
+        MiscWords[0] = Misc1Words;
+        MiscWords[1] = Misc2Words;
+        Misc1Text.text = Misc1Words;
+        Misc2Text.text = Misc2Words;
+    }
+
 }

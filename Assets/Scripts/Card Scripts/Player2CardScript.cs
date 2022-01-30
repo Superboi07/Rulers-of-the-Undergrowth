@@ -260,6 +260,7 @@ public class Player2CardScript : MonoBehaviour
                         if (OriginID == id)
                         {
                             Debug.Log("You cant block with the same card, if you misclicked [y], too bad, so sad");
+                            SendMessageUpwards("MiscText", "You cant block with the same card, if you misclicked [y], too bad, so sad");
                         }
                         else
                         {
@@ -269,6 +270,7 @@ public class Player2CardScript : MonoBehaviour
                     if (Wait == true)
                     {
                         Debug.Log("Do you want to block using another card? [Y] [N] ps. if you click another card, I think everything will break, so please don't");
+                        SendMessageUpwards("MiscText", "Do you want to block using another card? [Y] [N]");
                         Prompt = true;
                     }
                     else if (Wait == false)
@@ -290,7 +292,7 @@ public class Player2CardScript : MonoBehaviour
                             }
                             else if (ArmorInt != 0)
                             {
-                                DamAbsorb = HealthChange[1];
+                                // DamAbsorb = HealthChange[1];
                                 HealthChange[1] = 0;
                                 God = "very dead";
                             }
@@ -306,11 +308,13 @@ public class Player2CardScript : MonoBehaviour
                                 }
                             }
 
-                            if (God == "dead" || God == "very dead" && DamAbsorb != 0)
+                            if (God == "dead" || God == "very dead")
                             {
                                 Debug.Log("Damage before damaging is " + HealthChange[1]);
                                 HeP -= HealthChange[1];
                                 HeP += DamAbsorb;
+                                Debug.Log("God is " + God);
+                                Debug.Log("HP after damaging is " + HeP);
 
                                 if (HeP <= 0)
                                 {
@@ -328,8 +332,10 @@ public class Player2CardScript : MonoBehaviour
                         {
                             HeP = 0;
                         }
-                        else if (God != "dead" || God != "very dead")
+                        else if (God != "dead" && God != "very dead")
                         {
+                            Debug.Log("HP was reduced here");
+                            Debug.Log("God before damage is " + God);
                             HeP -= HealthChange[1];
                         }
                         #region Things that happen after being attacked
@@ -556,8 +562,10 @@ public class Player2CardScript : MonoBehaviour
         if (HasNegateAttack == true)
         {
             Debug.Log("If you want to Negate the Attack, mouse over Player " + "2" + " ID " + id + " and press [y]");
+            SendMessageUpwards("MiscText", "and press [y], if you don't just procide like normal");
             Prompt2 = true;
             Debug.Log("If you don't want to Negate the Attack, just procide like normal");
+            SendMessageUpwards("MiscText", "If you want to Negate the Attack, mouse over a card with NegateAttack and press [y]");
         }
         HealthChange = Stats;
         OpenToAttack = true;
@@ -1146,6 +1154,7 @@ public class Player2CardScript : MonoBehaviour
             if (Input.GetKeyDown("y"))
             {
                 Debug.Log("Click the card you want to block with");
+                SendMessageUpwards("MiscText", "Click the card you want to block with");
                 SendMessageUpwards("SendBlock", id);
             }
             if (Input.GetKeyDown("n"))
@@ -1153,6 +1162,7 @@ public class Player2CardScript : MonoBehaviour
                 Wait = false;
                 Prompt = false;
                 Debug.Log("click on the card again to procide");
+                SendMessageUpwards("MiscText", "click on the card again to procide");
             }
         }
     }

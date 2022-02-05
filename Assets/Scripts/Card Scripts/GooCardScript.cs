@@ -9,6 +9,9 @@ public class GooCardScript : MonoBehaviour
     public SpawnDeckList SpawnDeckList;
     public SpawnManagerScriptableObject SpawnManagerScriptableObject;
 
+    // vanity stuff
+    public SpriteRenderer spriteRenderer;
+
     // calls my text boxes
     public Text CurentCard;
     public Text Cost;
@@ -86,6 +89,8 @@ public class GooCardScript : MonoBehaviour
             Debug.Log("GooCard " + id + " BioCost is " + SpawnManagerScriptableObject.CardList[Stats[1]].GeoCost);
             Abilities();
             Traits();
+            spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[Stats[1]].Image;
         }
     }
 

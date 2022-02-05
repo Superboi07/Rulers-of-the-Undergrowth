@@ -10,6 +10,9 @@ public class RulerScript : MonoBehaviour
     public SpawnDeckList SpawnDeckList;
     public SpawnManagerScriptableObject SpawnManagerScriptableObject;
 
+    // vanity stuff
+    public SpriteRenderer spriteRenderer;
+
     // calls my text boxes
     public Text CurentCard;
     public Text Cost;
@@ -150,6 +153,8 @@ public class RulerScript : MonoBehaviour
         HeP = SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints;
         Abilities();
         Traits();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[CardListNumber].Image;
     }
 
     // Update is called once per frame
@@ -172,6 +177,7 @@ public class RulerScript : MonoBehaviour
             if (Input.GetKeyDown("y"))
             {
                 Debug.Log("Click the card you want to block with");
+                SendMessageUpwards("MiscText", "Click the card you want to block with");
                 SendMessageUpwards("SendBlock", -1);
             }
             if (Input.GetKeyDown("n"))
@@ -179,6 +185,7 @@ public class RulerScript : MonoBehaviour
                 Wait = false;
                 Prompt = false;
                 Debug.Log("click on the card again to procide");
+                SendMessageUpwards("MiscText", "Click on the card again to procide");
             }
         }
 
@@ -241,6 +248,7 @@ public class RulerScript : MonoBehaviour
                     if (OriginID == ID)
                     {
                         Debug.Log("You cant block with the same card, if you misclicked [y], too bad, so sad");
+                        SendMessageUpwards("MiscText", "You cant block with the same card, if you misclicked [y], too bad, so sad");
                     }
                     else
                     {
@@ -250,6 +258,7 @@ public class RulerScript : MonoBehaviour
                 if (Wait == true)
                 {
                     Debug.Log("Do you want to block using another card? [Y] [N] ps. if you click another card, I think everything will break, so please don't");
+                    SendMessageUpwards("MiscText", "Do you want to block using another card? [Y] [N]");
                     Prompt = true;
                 }
                 else if (Wait == false)
@@ -302,6 +311,7 @@ public class RulerScript : MonoBehaviour
             else
             {
                 Debug.Log("Card " + Deck + " is not open to being a/e ffected by the ability, use the ability before doing ANYTING else");
+                SendMessageUpwards("MiscText", "Card " + Deck + " is not open to being a / e ffected by the ability, use the ability before doing ANYTING else");
             }
         }
         #endregion
@@ -310,11 +320,13 @@ public class RulerScript : MonoBehaviour
             if (CoolDown == true)
             {
                 Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+                SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
             }
             else if (Deck == "Spindle")
             {
                 Prompt2 = true;
                 Debug.Log("Press [1] to play the Song of Vallor or press [2] to play the Song of Venom");
+                SendMessageUpwards("MiscText", "Press [1] to play the Song of Vallor or press [2] to play the Song of Venom");
             }
             else if (1 == 0)
             {

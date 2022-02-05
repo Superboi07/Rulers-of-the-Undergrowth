@@ -164,9 +164,11 @@ public class Player1CardScript : MonoBehaviour
         if (MainMessageCheckpoint.HammerTime == true)
         {
             string normal = "a";
+
             if (IsInst == true)
             {
                 Debug.Log("This is an Inst card, thus it is untubeable");
+                SendMessageUpwards("MiscText", "This is an Inst card, thus it is untargetable");
             }    
             else if (OpenToInhabit == true)
             {
@@ -181,10 +183,12 @@ public class Player1CardScript : MonoBehaviour
                     HasStealth = false;
                     SendMessageUpwards("SendClosed");
                     Debug.Log("Stealth has been removed");
+                    SendMessageUpwards("MiscText", "Stealth has been removed");
                 }
                 else
                 {
                     Debug.Log("This card does not have stealth; you can not spot a coward");
+                    SendMessageUpwards("MiscText", "This card does not have stealth; you can not spot a coward");
                 }
             }
             else if (OpenToStun == true)
@@ -214,17 +218,25 @@ public class Player1CardScript : MonoBehaviour
                 if (BlockBool == false)
                 {
                     // make the Debug.Logs visible
+                    if (AgHasUnblocking == true)
+                    {
+                        SendMessageUpwards("MiscText", "But it dont matter as your card is a beast");
+                    }
+
                     if (Inhabited == true)
                     {
                         Debug.Log("Sorry mate, but this card is inside another card");
+                        SendMessageUpwards("MiscText", "Sorry mate, but this card is inside another card");
                     }
                     else if (HasStealth == true)
                     {
                         Debug.Log("Sorry mate, but you cant see this card");
+                        SendMessageUpwards("MiscText", "Sorry mate, but you cant see this card");
                     }
                     else if (HasCowardly == true && Player1MessageCheckpoint.VisibleCards >= 1)
                     {
                         Debug.Log("Sorry mate, but this card is a coward");
+                        SendMessageUpwards("MiscText", "Sorry mate, but this card is a coward");
                     }
                     else if (HasFlying == true)
                     {
@@ -233,8 +245,10 @@ public class Player1CardScript : MonoBehaviour
                         if (AgHasReaching == true)
                         {
                             Debug.Log("Fortunately your card can!");
+                            SendMessageUpwards("MiscText", "Fortunately your card can!");
                             IHateThis = true;
                         }
+                        SendMessageUpwards("MiscText", "Sorry mate, but you cant reach this card");
                     }
                     else
                     {
@@ -303,6 +317,7 @@ public class Player1CardScript : MonoBehaviour
                                 if (temptemp > 0)
                                 {
                                     Debug.Log("OverKill has " + temptemp + " dam left");
+                                    SendMessageUpwards("MiscText", "OverKill has " + temptemp + " dam left");
                                     OverkillTemp = temptemp;
                                     normal = "c";
                                 }
@@ -324,6 +339,7 @@ public class Player1CardScript : MonoBehaviour
                                 if (God == "very dead")
                                 {
                                     Debug.Log("The damge was less than the attacked card's defences, loser");
+                                    SendMessageUpwards("MiscText", "The damge was less than the attacked card's defences, loser");
                                 }
                             }
                         }
@@ -346,6 +362,7 @@ public class Player1CardScript : MonoBehaviour
                                 if (AgHasRange == true)
                                 {
                                     Debug.Log("Cant counter a ranged attack");
+                                    SendMessageUpwards("MiscText", "Can't counter a ranged attack");
                                     AgHasRange = false;
                                 }
                                 else
@@ -360,6 +377,7 @@ public class Player1CardScript : MonoBehaviour
                                 if (AgHasRange == true)
                                 {
                                     Debug.Log("Cant poison a ranged attack");
+                                    SendMessageUpwards("MiscText", "Cant poison a ranged attack");
                                     AgHasRange = false;
                                 }
                                 else
@@ -384,6 +402,7 @@ public class Player1CardScript : MonoBehaviour
                             if (normal != "b")
                             {
                                 Debug.Log("no after effects");
+                                SendMessageUpwards("MiscText", "No after effects");
                             }
                         }
                         #endregion
@@ -418,6 +437,7 @@ public class Player1CardScript : MonoBehaviour
                     else
                     {
                         Debug.Log("Can a bool be nither true nor false? if you are seeing this, then it can");
+                        SendMessageUpwards("MiscText", "Can a bool be nither true nor false? if you are seeing this, then it can");
                     }
                 }
             }
@@ -433,6 +453,7 @@ public class Player1CardScript : MonoBehaviour
             else
             {
                 Debug.Log("Card " + id + " is not open to being a/e ffected by the ability, use the ability before doing ANYTING else");
+                SendMessageUpwards("MiscText", "Card " + id + " is not open to being a/e ffected by the ability, use the ability before doing ANYTING else");
             }
         }
         #endregion
@@ -445,15 +466,18 @@ public class Player1CardScript : MonoBehaviour
             else
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
             }
         }
         else if (Player == 1 && Inhabited == true)
         {
             Debug.Log("This card is inside another card");
+            SendMessageUpwards("MiscText", "This card is inside another card");
         }
         else
         {
             Debug.Log("It is not player 1's turn, it is player " + Player + "'s turn; if that just so happened to be a 1, god help me");
+            SendMessageUpwards("MiscText", "It is not player 1's turn, it is player " + Player + "'s turn; if that just so happened to be a 1, god help me");
         }
     }
 
@@ -476,6 +500,7 @@ public class Player1CardScript : MonoBehaviour
         {
             NNegateAttack();
             Debug.Log("Attack has been Negated");
+            SendMessageUpwards("MiscText", "Attack has been Negated");
             SendMessageUpwards("SendClosed");
         }
 
@@ -493,6 +518,7 @@ public class Player1CardScript : MonoBehaviour
             else if (Input.GetKeyDown("1"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
             }
 
             if (Input.GetKeyDown("2") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
@@ -506,6 +532,7 @@ public class Player1CardScript : MonoBehaviour
             else if (Input.GetKeyDown("2"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 1 Ability or Robert forgot to add the rest, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 1 Ability or Robert forgot to add them, that idiot");
             }
 
             if (Input.GetKeyDown("3") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
@@ -519,6 +546,7 @@ public class Player1CardScript : MonoBehaviour
             else if (Input.GetKeyDown("3"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 2 Abilities or Robert forgot to add the rest, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 2 Ability or Robert forgot to add them, that idiot");
             }
 
             if (Input.GetKeyDown("4") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
@@ -532,6 +560,7 @@ public class Player1CardScript : MonoBehaviour
             else if (Input.GetKeyDown("4"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 3 Abilities or Robert forgot to add the rest, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 3 Ability or Robert forgot to add them, that idiot");
             }
         }
     }
@@ -802,6 +831,7 @@ public class Player1CardScript : MonoBehaviour
     void StopRes()
     {
         Debug.Log("Res has stoped for player 1");
+        SendMessageUpwards("MiscText", "Res has stoped for player 1");
         OpenToRes = false;
         ResID = 0;
     }
@@ -871,6 +901,7 @@ public class Player1CardScript : MonoBehaviour
                         if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
                         {
                             Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has too many abilities");
+                            SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has too many abilities");
                         }
                     }
                     else
@@ -906,6 +937,7 @@ public class Player1CardScript : MonoBehaviour
         else
         {
             Debug.Log("why does " + SpawnManagerScriptableObject.CardList[CardListNumber].Name + " have no abilities?");
+            SendMessageUpwards("MiscText", "why does " + SpawnManagerScriptableObject.CardList[CardListNumber].Name + " have no abilities?");
             Ability1 = "n/a";
             Ability2 = "n/a";
             Ability3 = "n/a";
@@ -1036,6 +1068,7 @@ public class Player1CardScript : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("InhabCounter is not triggerble");
+            SendMessageUpwards("MiscText", "InhabCounter is not triggerble");
         }
         else if (Inhabiting == true)
         {
@@ -1045,6 +1078,7 @@ public class Player1CardScript : MonoBehaviour
         else
         {
             Debug.Log("You need to have another card inhabit this card");
+            SendMessageUpwards("MiscText", "You need to have another card inhabit this card");
         }
     }
 
@@ -1057,6 +1091,7 @@ public class Player1CardScript : MonoBehaviour
         else if (Inhabiting == false)
         {
             Debug.Log("You need to have another card inhabit this card");
+            SendMessageUpwards("MiscText", "You need to have another card inhabit this card");
         }
     }
 
@@ -1065,6 +1100,7 @@ public class Player1CardScript : MonoBehaviour
         if (Stats[0] != -1 && Inhabiting == true)
         {
             Debug.Log("MultiHit is not triggerble");
+            SendMessageUpwards("MiscText", "MultiHit is not triggerble");
         }
         else if (Inhabiting == true)
         {
@@ -1075,6 +1111,7 @@ public class Player1CardScript : MonoBehaviour
         else if (Inhabiting == false)
         {
             Debug.Log("You need to have another card inhabit this card");
+            SendMessageUpwards("MiscText", "You need to have another card inhabit this card");
         }
     }
     #endregion
@@ -1147,6 +1184,8 @@ public class Player1CardScript : MonoBehaviour
         {
             HeP = SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints;
             Debug.Log("Cant go over max HP");
+            SendMessageUpwards("MiscText", "You can't go over max HP");
+            SendMessageUpwards("MiscText", "Cant go over max HP");
         }
 
         if (Prompt == true)

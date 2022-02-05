@@ -77,12 +77,15 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("GainBio" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "GainBio" + " is attempting to exicute");
             if (Ppppatience == true)
             {
                 Ppppatience = false;
                 Stats[1] *= PatienceInt;
                 Debug.Log("You reap what you sow, and you have planted wisely");
+                SendMessageUpwards("MiscText", "Your harvest is: " + Stats[1]);
                 Debug.Log("Your harvest is: " + Stats[1]);
+                SendMessageUpwards("MiscText", "You reap what you sow, and you have planted wisely");
                 PatienceInt = 0;
             }
             SendMessageUpwards("ChangeBio", Stats);
@@ -91,6 +94,7 @@ public class AbilityManager : MonoBehaviour
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -105,12 +109,15 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("GainGeo" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "GainGeo" + " is attempting to exicute");
             if (Ppppatience == true)
             {
                 Ppppatience = false;
                 Stats[1] *= PatienceInt;
                 Debug.Log("You reap what you sow, and you have planted wisely");
+                SendMessageUpwards("MiscText", "Your harvest is: " + Stats[1]);
                 Debug.Log("Your harvest is: " + Stats[1]);
+                SendMessageUpwards("MiscText", "You reap what you sow, and you have planted wisely");
                 PatienceInt = 0;
             }
             SendMessageUpwards("ChangeGeo", Stats);
@@ -119,6 +126,7 @@ public class AbilityManager : MonoBehaviour
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -133,6 +141,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("NegateAttack is not triggerble");
+            SendMessageUpwards("MiscText", "NegateAttack is not triggerble");
         }
         else
         {
@@ -146,11 +155,13 @@ public class AbilityManager : MonoBehaviour
         {
             int zero = 0;
             Debug.Log("SpawnWeb" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "SpawnWeb" + " is attempting to exicute");
             SendMessageUpwards("Spawn___", zero);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -165,6 +176,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("PoisonDam is not triggerble");
+            SendMessageUpwards("MiscText", "PoisonDam is not triggerble");
         }
         else
         {
@@ -177,6 +189,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("PoisonWeak is not triggerble");
+            SendMessageUpwards("MiscText", "PoisonWeak is not triggerble");
         }
         else
         {
@@ -189,6 +202,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("InhabitBasicSpider" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "InhabitBasicSpider" + " is attempting to exicute");
             SendMessageUpwards("Inhabit___", 2);
         }
     }
@@ -198,6 +212,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("InhabCounter is not triggerble");
+            SendMessageUpwards("MiscText", "InhabCounter is not triggerble");
         }
         else
         {
@@ -210,6 +225,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("InhabMultiHit is not triggerble");
+            SendMessageUpwards("MiscText", "InhabMultiHit is not triggerble");
         }
         else
         {
@@ -222,6 +238,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("AbsorbDam is not triggerble");
+            SendMessageUpwards("MiscText", "AbsorbDam is not triggerble");
         }
         else
         {
@@ -234,6 +251,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("Counter is not triggerble");
+            SendMessageUpwards("MiscText", "Counter is not triggerble");
         }
         else
         {
@@ -262,15 +280,19 @@ public class AbilityManager : MonoBehaviour
                 Ppppatience = false;
                 Stats[1] *= PatienceInt;
                 Debug.Log("You reap what you sow, and you have planted wisely");
+                SendMessageUpwards("MiscText", "Your harvest is: " + Stats[1]);
                 Debug.Log("Your harvest is: " + Stats[1]);
+                SendMessageUpwards("MiscText", "You reap what you sow, and you have planted wisely");
                 PatienceInt = 0;
             }
             Debug.Log("DealDam" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "DealDam" + " is attempting to exicute");
             SendMessageUpwards("MinusHealth", Stats);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -295,6 +317,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("Armor is not triggerble");
+            SendMessageUpwards("MiscText", "Amror is not triggerble");
         }
         else
         {
@@ -307,11 +330,13 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("Spot" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Spot" + " is attempting to exicute");
             SendMessageUpwards("SendSpot", Stats);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -327,6 +352,7 @@ public class AbilityManager : MonoBehaviour
         {
             SendMessageUpwards("AddUnblocking", Stats[0]);
             Debug.Log("Suicide" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Suicide" + " is attempting to exicute");
             SendMessage("Ssuicide", Stats);
         }
     }
@@ -336,6 +362,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("Cannibalize" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Cannibalize" + " is attempting to exicute");
             SendMessageUpwards("Ccannibalize");
             if (HasBrittle == true)
             {
@@ -354,6 +381,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("TrapLay" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "TrapLay" + " is attempting to exicute");
             if (HasBrittle == true)
             {
                 SendMessage("Die");
@@ -368,11 +396,13 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("Poison" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Poison" + " is attempting to exicute");
             SendMessage("Ppoison", Stats);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -393,6 +423,7 @@ public class AbilityManager : MonoBehaviour
         {
             int zero = 0;
             Debug.Log("RefreshWeb" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "RefreshWeb" + " is attempting to exicute");
             SendMessageUpwards("RefreshCard", zero);
             SendMessageUpwards("LazyPassTurn");
             if (HasBrittle == true)
@@ -407,6 +438,7 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1)
         {
             Debug.Log("RefreshSpider" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "RefreshSpider" + " is attempting to exicute");
             SendMessageUpwards("RefreshSpecies", "Spider");
             SendMessageUpwards("LazyPassTurn");
         }
@@ -451,11 +483,13 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("Patience" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Patience" + " is attempting to exicute");
             SendMessageUpwards("SendPatience", Stats);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)
@@ -477,11 +511,13 @@ public class AbilityManager : MonoBehaviour
         if (Stats[0] != -1 && CoolDown == false)
         {
             Debug.Log("Stun" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Stun" + " is attempting to exicute");
             SendMessageUpwards("SendStun", Stats);
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
             Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
         }
 
         if (CoolDown == false)

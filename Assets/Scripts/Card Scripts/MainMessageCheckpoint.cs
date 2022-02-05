@@ -81,6 +81,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Turn = 2;
             Debug.Log("P1 Passed, and must learn to face the coniquenises");
+            SendMessageUpwards("MiscText", "P1 Passed, and must learn to face the coniquenises");
             PlayerTurn.text = "Player " + Turn + "'s Turn";
             BroadcastMessage("Turn", Turn);
         }
@@ -89,6 +90,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Turn = 1;
             Debug.Log("P2 Passed, and must learn to face the coniquenises");
+            SendMessageUpwards("MiscText", "P2 Passed, and must learn to face the coniquenises");
             PlayerTurn.text = "Player " + Turn + "'s Turn";
             BroadcastMessage("Turn", Turn);
         }
@@ -98,7 +100,9 @@ public class MainMessageCheckpoint : MonoBehaviour
             if (AreThouSure == 0)
             {
                 Debug.Log("Are thou sure?");
+                SendMessageUpwards("MiscText", "Are thou sure?");
                 Debug.Log("This will make it player " + Turn + "'s turn no longer");
+                SendMessageUpwards("MiscText", "This will make it player " + Turn + "'s turn no longer");
                 AreThouSure = 1;
             }
             else if (AreThouSure == 1)
@@ -153,6 +157,7 @@ public class MainMessageCheckpoint : MonoBehaviour
             else if (P1Bio < 10)
             {
                 Debug.Log("yuo do not have enough bio");
+                SendMessageUpwards("MiscText", "You do not have enough bio");
             }
             else
             {
@@ -171,6 +176,7 @@ public class MainMessageCheckpoint : MonoBehaviour
             else if (P2Bio < 10)
             {
                 Debug.Log("yuo do not have enough bio");
+                SendMessageUpwards("MiscText", "You do not have enough bio");
             }
             else
             {
@@ -180,6 +186,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         else
         {
             Debug.Log("It is not player 1 turn yet not player 2 turn");
+            SendMessageUpwards("MiscText", "It is not player 1 turn yet not player 2 turn");
         }
     }
 
@@ -366,6 +373,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         HasMultiHit = true;
         MultiHitInt = HitAmount - 1;
         Debug.Log("Attacks left: " + MultiHitInt);
+        SendMessageUpwards("MiscText", "Attacks left: " + MultiHitInt);
     }
 
     void SendStun(int[] Stats)

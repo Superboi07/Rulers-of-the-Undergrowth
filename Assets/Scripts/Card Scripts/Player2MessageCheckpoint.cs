@@ -638,18 +638,19 @@ public class Player2MessageCheckpoint : MonoBehaviour
     void Ccannibalize()
     {
         Debug.Log("Chose the card that will gain HP");
+        SendMessageUpwards("MiscText", "Chose the card that will gain HP");
         BroadcastMessage("Cccannibalize");
     }
 
     void Ccccannibalize()
     {
         Debug.Log("Chose the card that will be eaten");
+        SendMessageUpwards("MiscText", "Chose the card that will be eaten");
         BroadcastMessage("Cccccannibalize");
     }
 
     void Ccccccannibalize(int HeP)
     {
-        Debug.Log("Chose the card that will be eaten");
         BroadcastMessage("GainHeP", HeP);
     }
 

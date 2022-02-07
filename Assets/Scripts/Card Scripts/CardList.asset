@@ -71,7 +71,7 @@ MonoBehaviour:
     AbilityStats: 0a000000
     AbilityRefresh: 03000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: b04fed30a4625344ebd9fa0d8b0a8614, type: 3}
   - ID: Spinner Spider 3
     Name: Spinner Spider
     BioCost: 5
@@ -118,7 +118,7 @@ MonoBehaviour:
     AbilityRefresh: 06000000
     Traits:
     - Cowardly
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 1f123498ad82d1e47b8e14aa2ff2b318, type: 3}
   - ID: Jumper Spider 6
     Name: Jumper Spider
     BioCost: 4
@@ -164,7 +164,7 @@ MonoBehaviour:
     AbilityRefresh: 030000000500000005000000
     Traits:
     - Toxic
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: ec7c2d54482abb4479bc71ad8afb3cc3, type: 3}
   - ID: Flier Spider 9
     Name: Flier Spider
     BioCost: 4
@@ -285,7 +285,7 @@ MonoBehaviour:
     AbilityRefresh: 06000000
     Traits:
     - Overkill
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 5a2c4af98b07d18459ff6d8bf9a803bf, type: 3}
   - ID: Trap Laying 17
     Name: Trap Laying
     BioCost: 3
@@ -417,4 +417,4 @@ MonoBehaviour:
     AbilityRefresh: 0500000005000000
     Traits:
     - Overkill
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: d35b71ffb1836fe49bffc0e45b88d95e, type: 3}

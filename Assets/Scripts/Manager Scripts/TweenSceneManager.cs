@@ -30,12 +30,13 @@ public class TweenSceneManager : MonoBehaviour
         MusicLevel += 1;
         if (MusicLevel == 1)
         {
-            IntroMusic.Stop();
-            ChooseMusic.Play();
+            //IntroMusic.Stop();
+            //ChooseMusic.Play();
         }
         else if (MusicLevel == 2)
         {
-            ChooseMusic.Stop();
+            IntroMusic.Stop();
+            //ChooseMusic.Stop();
             BattleMusic.Play();
         }
         else if (MusicLevel == 3)

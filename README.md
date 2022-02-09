@@ -1,4 +1,4 @@
-# Rulers-of-the-Undergrowth (RotU)
+# Rulers of the Undergrowth (RotU)
  Game for FBLA
  
  Lead Programer, Team Director, and Orginal Card Designer - Robert C.S.J. Kim

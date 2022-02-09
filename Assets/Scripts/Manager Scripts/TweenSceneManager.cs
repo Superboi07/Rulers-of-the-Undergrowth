@@ -10,22 +10,28 @@ public class TweenSceneManager : MonoBehaviour
     public static int Loser;
     bool once = false;
 
-    public AudioSource IntroMusic;
-    public AudioSource ChooseMusic;
-    public AudioSource BattleMusic;
-    public AudioSource EndingMusic;
-    int MusicLevel = 0;
-    bool onceonce = false;
-    bool onceonceonce = false;
+    public AudioSource TempIntroMusic;
+    public AudioSource TempChooseMusic;
+    public AudioSource TempBattleMusic;
+    public AudioSource TempEndingMusic;
+    public static AudioSource IntroMusic;
+    public static AudioSource ChooseMusic;
+    public static AudioSource BattleMusic;
+    public static AudioSource EndingMusic;
+    public static int MusicLevel = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        IntroMusic = TempIntroMusic;
+        // ChooseMusic = TempChooseMusic;
+        BattleMusic = TempBattleMusic;
+        EndingMusic = TempEndingMusic;
         IntroMusic.Play();
     }
 
-    void AdvanceMusic()
+    public static void AdvanceMusic()
     {
         MusicLevel += 1;
         if (MusicLevel == 1)
@@ -50,27 +56,57 @@ public class TweenSceneManager : MonoBehaviour
         }
     }
 
+    public static void PauseMusic()
+    {
+        if (MusicLevel == 0)
+        {
+            IntroMusic.Pause();
+        }
+        else if (MusicLevel == 1)
+        {
+            //ChooseMusic.Pause();
+        }
+        else if (MusicLevel == 2)
+        {
+            BattleMusic.Pause();
+        }
+        else if (MusicLevel == 3)
+        {
+            EndingMusic.Pause();
+        }
+        else
+        {
+            Debug.Log("MusicLevel == " + MusicLevel);
+        }
+    }
+
+    public static void ResumeMusic()
+    {
+        if (MusicLevel == 0)
+        {
+            IntroMusic.UnPause();
+        }
+        else if (MusicLevel == 1)
+        {
+            //ChooseMusic.UnPause();
+        }
+        else if (MusicLevel == 2)
+        {
+            BattleMusic.UnPause();
+        }
+        else if (MusicLevel == 3)
+        {
+            EndingMusic.UnPause();
+        }
+        else
+        {
+            Debug.Log("MusicLevel == " + MusicLevel);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (StartButtonScript.onceonce == true)
-        {
-            if (onceonce == false)
-            {
-                AdvanceMusic();
-                onceonce = true;
-            }
-        }
-
-        if (DeckChooser.onceonceonce == true)
-        {
-            if (onceonceonce == false)
-            {
-                AdvanceMusic();
-                onceonceonce = true;
-            }
-        }
-
         if (DeckChooser.P1Deck == "Spindle")
         {
             P1Deck = "Spindle";
@@ -83,14 +119,6 @@ public class TweenSceneManager : MonoBehaviour
 
         if (RulerScript.P1Lost == true)
         {
-            if (once == false)
-            {
-                AdvanceMusic();
-                SceneManager.LoadScene("End", LoadSceneMode.Additive);
-                SceneManager.UnloadSceneAsync("Battle");
-                once = true;
-            }
-
             if (RulerScript.P2Lost == true)
             {
                 Loser = 0;
@@ -99,9 +127,7 @@ public class TweenSceneManager : MonoBehaviour
             {
                 Loser = 1;
             }
-        }
-        else if (RulerScript.P2Lost == true)
-        {
+
             if (once == false)
             {
                 AdvanceMusic();
@@ -109,7 +135,18 @@ public class TweenSceneManager : MonoBehaviour
                 SceneManager.UnloadSceneAsync("Battle");
                 once = true;
             }
+
+        }
+        else if (RulerScript.P2Lost == true)
+        {
             Loser = 2;
+            if (once == false)
+            {
+                AdvanceMusic();
+                SceneManager.LoadScene("End", LoadSceneMode.Additive);
+                SceneManager.UnloadSceneAsync("Battle");
+                once = true;
+            }
         }
     }
 }

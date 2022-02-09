@@ -297,10 +297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e539e5cd28401246b35271b76d15bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntroMusic: {fileID: 1864417333}
-  ChooseMusic: {fileID: 1558909084}
-  BattleMusic: {fileID: 1208683454}
-  EndingMusic: {fileID: 1935544065}
+  TempIntroMusic: {fileID: 1864417333}
+  TempChooseMusic: {fileID: 1558909084}
+  TempBattleMusic: {fileID: 1208683454}
+  TempEndingMusic: {fileID: 1935544065}
 --- !u!1 &1558909082
 GameObject:
   m_ObjectHideFlags: 0

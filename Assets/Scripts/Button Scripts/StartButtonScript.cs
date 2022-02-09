@@ -18,10 +18,23 @@ public class StartButtonScript : MonoBehaviour
         
     }
 
-    void henlo()
+    void Begin()
     {
-        onceonce = true;
+        TweenSceneManager.AdvanceMusic();
         SceneManager.LoadScene("Choose", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Start");
+    }
+
+    void Exit()
+    {
+        Debug.Log("It quit");
+        Application.Quit();
+    }
+
+    void Extras()
+    {
+        TweenSceneManager.PauseMusic();
+        SceneManager.LoadScene("Extras", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Start");
     }
 }

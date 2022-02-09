@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEditor.Animations;
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -23,6 +24,7 @@ public class SpawnManagerScriptableObject : ScriptableObject
         public int[] AbilityRefresh;
         public string[] Traits;
         public Sprite Image;
+        public AnimatorController RulerImage;
     }
     public Card[] CardList;
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.Animations;
 
 public class RulerScript : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class RulerScript : MonoBehaviour
 
     // vanity stuff
     public SpriteRenderer spriteRenderer;
+    public Animator Anim;
 
     // calls my text boxes
     public Text CurentCard;
@@ -155,6 +157,8 @@ public class RulerScript : MonoBehaviour
         Traits();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[CardListNumber].Image;
+        Anim = gameObject.GetComponent<Animator>();
+        Anim.runtimeAnimatorController = SpawnManagerScriptableObject.CardList[CardListNumber].RulerImage;
     }
 
     // Update is called once per frame

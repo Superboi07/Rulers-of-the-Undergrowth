@@ -25,7 +25,7 @@ public class DeckChooser : MonoBehaviour
         PlayerInfo.text = "Player " + Player + " choose";
         if (Player == 3)
         {
-            onceonceonce = true;
+            TweenSceneManager.AdvanceMusic();
             SceneManager.LoadScene("Battle", LoadSceneMode.Additive);
             SceneManager.UnloadSceneAsync("Choose");
         }

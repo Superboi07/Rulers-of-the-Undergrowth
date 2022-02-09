@@ -26,6 +26,7 @@ MonoBehaviour:
     AbilityRefresh: 
     Traits: []
     Image: {fileID: 21300000, guid: 84b9b4710fc860044b82bdfbd25c0e27, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Web 0
     Name: Web
     BioCost: 0
@@ -41,7 +42,8 @@ MonoBehaviour:
     AbilityRefresh: 0100000000000000
     Traits:
     - Stealth
-    Image: {fileID: 21300000, guid: 14c78d13826976f4fa9b996998db94a2, type: 3}
+    Image: {fileID: 21300000, guid: 6f4ab16e91e2c5348ae7dcf1df445236, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Web Trap 1
     Name: Web Trap
     BioCost: 0
@@ -58,6 +60,7 @@ MonoBehaviour:
     Traits:
     - Stealth
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Basic Spider 2
     Name: Basic Spider
     BioCost: 3
@@ -72,6 +75,7 @@ MonoBehaviour:
     AbilityRefresh: 03000000
     Traits: []
     Image: {fileID: 21300000, guid: b04fed30a4625344ebd9fa0d8b0a8614, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Spinner Spider 3
     Name: Spinner Spider
     BioCost: 5
@@ -86,7 +90,8 @@ MonoBehaviour:
     AbilityRefresh: 06000000
     Traits:
     - Cowardly
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: f65522f79f180294f80381d36ebbdd1e, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Trapdoor 4
     Name: Trapdoor
     BioCost: 0
@@ -104,6 +109,7 @@ MonoBehaviour:
     Traits:
     - Stealth
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Digger Spider 5
     Name: Digger Spider
     BioCost: 5
@@ -119,6 +125,7 @@ MonoBehaviour:
     Traits:
     - Cowardly
     Image: {fileID: 21300000, guid: 1f123498ad82d1e47b8e14aa2ff2b318, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Jumper Spider 6
     Name: Jumper Spider
     BioCost: 4
@@ -134,6 +141,7 @@ MonoBehaviour:
     Traits:
     - Reaching
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Hunter Spider 7
     Name: Hunter Spider
     BioCost: 4
@@ -148,6 +156,7 @@ MonoBehaviour:
     AbilityRefresh: 02000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Toxic Spider 8
     Name: Toxic Spider
     BioCost: 4
@@ -165,6 +174,7 @@ MonoBehaviour:
     Traits:
     - Toxic
     Image: {fileID: 21300000, guid: ec7c2d54482abb4479bc71ad8afb3cc3, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Flier Spider 9
     Name: Flier Spider
     BioCost: 4
@@ -180,6 +190,7 @@ MonoBehaviour:
     Traits:
     - Flying
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Shooter Spider 10
     Name: Shooter Spider
     BioCost: 4
@@ -195,6 +206,7 @@ MonoBehaviour:
     Traits:
     - Range
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Rocker Spider 11
     Name: Rocker Spider
     BioCost: 0
@@ -210,6 +222,7 @@ MonoBehaviour:
     AbilityRefresh: 0300000000000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Spotter Spider 12
     Name: Spotter Spider
     BioCost: 5
@@ -225,6 +238,7 @@ MonoBehaviour:
     AbilityRefresh: 0300000006000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Suicider Spider 13
     Name: Suicider Spider
     BioCost: 4
@@ -240,6 +254,7 @@ MonoBehaviour:
     AbilityRefresh: 0300000006000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Cannibalism 14
     Name: Cannibalism
     BioCost: 3
@@ -254,6 +269,7 @@ MonoBehaviour:
     AbilityRefresh: 00000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Daddy Long Legs 15
     Name: Daddy Long Legs
     BioCost: 5
@@ -271,6 +287,7 @@ MonoBehaviour:
     Traits:
     - Reaching
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Baller Spider 16
     Name: Baller Spider
     BioCost: 3
@@ -286,6 +303,7 @@ MonoBehaviour:
     Traits:
     - Overkill
     Image: {fileID: 21300000, guid: 5a2c4af98b07d18459ff6d8bf9a803bf, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Trap Laying 17
     Name: Trap Laying
     BioCost: 3
@@ -300,6 +318,7 @@ MonoBehaviour:
     AbilityRefresh: 00000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Trapper Spider 18
     Name: Trapper Spider
     BioCost: 3
@@ -315,6 +334,7 @@ MonoBehaviour:
     Traits:
     - Cowardly
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Poison Spit 19
     Name: Poison Spit
     BioCost: 3
@@ -331,6 +351,7 @@ MonoBehaviour:
     AbilityRefresh: 000000000500000005000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Swarm 20
     Name: Swarm
     BioCost: 3
@@ -345,6 +366,7 @@ MonoBehaviour:
     AbilityRefresh: 00000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Ball Curling 21
     Name: Ball Curling
     BioCost: 3
@@ -359,6 +381,7 @@ MonoBehaviour:
     AbilityRefresh: 01000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Sticker Spider 22
     Name: Sticker Spider
     BioCost: 4
@@ -373,6 +396,7 @@ MonoBehaviour:
     AbilityRefresh: 03000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Patience 23
     Name: Patience
     BioCost: 3
@@ -387,6 +411,7 @@ MonoBehaviour:
     AbilityRefresh: 04000000
     Traits: []
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Spider Ball 24
     Name: Spider Ball
     BioCost: 0
@@ -402,6 +427,7 @@ MonoBehaviour:
     Traits:
     - Overkill
     Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
   - ID: Spindle 25
     Name: Spindle
     BioCost: 0
@@ -417,4 +443,5 @@ MonoBehaviour:
     AbilityRefresh: 0500000005000000
     Traits:
     - Overkill
-    Image: {fileID: 21300000, guid: d35b71ffb1836fe49bffc0e45b88d95e, type: 3}
+    Image: {fileID: 6231433686771215919, guid: d35b71ffb1836fe49bffc0e45b88d95e, type: 3}
+    RulerImage: {fileID: 9100000, guid: 764d7eb4b3a2aae4fa4bdf8e9bd9fdca, type: 2}

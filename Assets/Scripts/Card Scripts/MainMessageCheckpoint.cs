@@ -43,6 +43,19 @@ public class MainMessageCheckpoint : MonoBehaviour
     int MultiHitInt;
     #endregion
 
+
+    public static void Restart()
+    {
+        P1Bio = 0;
+        P1Geo = 0;
+        P2Bio = 0;
+        P2Geo = 0;
+        Turn = 1;
+        ArrayTurn[0] = 0;
+        Hour = 12;
+        HammerTime = false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

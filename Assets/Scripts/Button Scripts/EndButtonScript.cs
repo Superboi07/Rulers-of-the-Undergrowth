@@ -19,6 +19,13 @@ public class EndButtonScript : MonoBehaviour
 
     void Restart()
     {
-        // Do this later
+        TweenSceneManager.Restart();
+        RulerScript.Restart();
+        DeckChooser.Restart();
+        MainMessageCheckpoint.Restart();
+        Player1MessageCheckpoint.Restart();
+        Player1MessageCheckpoint.Restart();
+        SceneManager.LoadScene("TweenScene");
+        SceneManager.LoadScene("Start", LoadSceneMode.Additive);
     }
 }

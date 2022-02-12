@@ -12,6 +12,13 @@ public class DeckChooser : MonoBehaviour
     public static string P2Deck;
     int Player = 1;
     public static bool onceonceonce = false;
+    
+    public static void Restart()
+    {
+        P1Deck = "";
+        P2Deck = "";
+        onceonceonce = false;
+    }
 
     // Start is called before the first frame update
     void Start()

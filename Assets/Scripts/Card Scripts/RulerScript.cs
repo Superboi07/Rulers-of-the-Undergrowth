@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor.Animations;
+using UnityEngine.Animations;
 
 public class RulerScript : MonoBehaviour
 {
@@ -101,6 +101,12 @@ public class RulerScript : MonoBehaviour
     bool OpenToCannibalize;
     bool OpenToRes; // an exception to being in void closed
     #endregion
+
+    public static void Restart()
+    {
+        P1Lost = false;
+        P2Lost = false;
+    }
 
     void Closed()
     {

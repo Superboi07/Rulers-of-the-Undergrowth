@@ -20,6 +20,18 @@ public class TweenSceneManager : MonoBehaviour
     public static AudioSource EndingMusic;
     public static int MusicLevel = 0;
 
+    public static void Restart()
+    {
+        P1Deck = "";
+        P2Deck = "";
+        Loser = 0;
+        MusicLevel = 0;
+    }
+
+    void Awake()
+    {
+        SceneManager.LoadScene("Start", LoadSceneMode.Additive);
+    }
 
     // Start is called before the first frame update
     void Start()

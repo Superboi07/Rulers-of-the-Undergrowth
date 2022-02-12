@@ -22,6 +22,11 @@ public class Player1MessageCheckpoint : MonoBehaviour
     // temp
     int[] StorageTemp = new int[2];
 
+    public static void Restart()
+    {
+        VisibleCards = 0;
+    }
+
     // *REMEMBER* Awake is when the object is inzlied, so DIFFERENT from Start
     void Awake()
     {

@@ -1,5 +1,5 @@
 # Rulers of the Undergrowth (RotU)
- Game for FBLA
+ Deck building game orginaly made for FBLA
  
  Lead Programer, Team Director, and Orginal Card Designer - Robert C.S.J. Kim
  

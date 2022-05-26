@@ -41,6 +41,7 @@ public class MainMessageCheckpoint : MonoBehaviour
     bool HasUnblocking;
     bool HasMultiHit;
     int MultiHitInt;
+    bool HasUnphased;
     #endregion
 
 
@@ -288,6 +289,11 @@ public class MainMessageCheckpoint : MonoBehaviour
         HasMultiHit = true;
         MultiHitInt = Stats;
     }
+    
+    void AddUnphased(int Player)
+    {
+        HasUnphased = true;
+    }
     #endregion
 
     #region Abiblites
@@ -331,8 +337,12 @@ public class MainMessageCheckpoint : MonoBehaviour
         if (HasMultiHit == true)
         {
             BroadcastMessage("AdddMultiHit", MultiHitInt);
-            HasUnblocking = false;
             MultiHitInt = 0;
+        }
+        if (HasUnphased == true)
+        {
+            BroadcastMessage("AdddUnphased", Stats[0]);
+            HasUnphased = false;
         }
         HammerTime = true;
         BroadcastMessage("SubtractHealth", Stats);
@@ -348,9 +358,14 @@ public class MainMessageCheckpoint : MonoBehaviour
         HammerTime = false;
     }
 
-    void SendRetaliation(int Stats)
+    void SendRetalDam(int Stats)
     {
-        BroadcastMessage("Retaliation", Stats);
+        BroadcastMessage("RetalDam", Stats);
+    }
+    
+    void SendRetalStun(int Stats)
+    {
+        BroadcastMessage("RetaliationStun", Stats);
     }
 
     void SendVenom(int[] Stats)
@@ -406,6 +421,11 @@ public class MainMessageCheckpoint : MonoBehaviour
         HammerTime = true;
     }
 
+    void SendHeal(int[] Stats)
+    {
+        BroadcastMessage("Hheal", Stats);
+        HammerTime = true;
+    }
     #endregion
 
     void Skip()

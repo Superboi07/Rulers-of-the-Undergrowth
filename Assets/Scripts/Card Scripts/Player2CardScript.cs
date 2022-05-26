@@ -46,6 +46,7 @@ public class Player2CardScript : MonoBehaviour
     public int id;
     int[] PlayerAndStats = new int[2];
     int[] PlayerAndID = new int[2];
+    int[] IDundVisibility = new int[2];
     int Player = 1;
     int TempInt1 = 0;
 
@@ -68,7 +69,7 @@ public class Player2CardScript : MonoBehaviour
     int ArmorInt;
     bool Inhabiting;
     bool Inhabited;
-    int Counter;
+    int Counterint;
     bool Attacking = false;
     int PoisonDamInt;
     int PoisonDurrationInt;
@@ -85,17 +86,22 @@ public class Player2CardScript : MonoBehaviour
     int[] TempStats = new int[3];
     bool Cannibalizing;
     int ResID;
+    int CountStun;
     #endregion
     #region traits
     bool HasToxic;
     bool HasStealth;
     bool HasCowardly;
     bool HasFlying;
+    bool HasTaunt;
+    bool HasUnphased;
     bool AgHasReaching;
     bool AgHasRange;
     bool AgHasOverkill;
     bool AgHasUnblocking;
+    bool AgHasUnphased;
     bool IsInst;
+    bool FriHasTaunt;
     #endregion
     #region ability OpenTo___
     bool OpenToAttack;
@@ -108,6 +114,7 @@ public class Player2CardScript : MonoBehaviour
     bool OpenToCannibalize;
     bool OpenToCcannibalize;
     bool OpenToRes; // an exception to being in void closed
+    bool OpenToHeal;
     #endregion
 
     void Closed()
@@ -122,12 +129,14 @@ public class Player2CardScript : MonoBehaviour
         OpenToPatience = false;
         OpenToCannibalize = false;
         OpenToCcannibalize = false;
+        OpenToHeal = false;
         Cannibalizing = false;
         AgHasReaching = false;
         AgHasRange = false;
         AgHasOverkill = false;
         AgHasUnblocking = false;
         AgMultiHitInt = 0;
+        AgHasUnphased = false;
         Prompt = false;
         Prompt2 = false;
         TempStats[0] = 0;
@@ -148,6 +157,7 @@ public class Player2CardScript : MonoBehaviour
             Debug.Log("Player2Card (" + id + ") is " + SpawnManagerScriptableObject.CardList[Stats[1]].Name);
             CardListNumber = Stats[1];
             HeP = SpawnManagerScriptableObject.CardList[Stats[1]].HealthPoints;
+            IDundVisibility[1] = 1;
             // It is important abilities goes first so that Rush Works
             Abilities();
             Class();
@@ -164,11 +174,12 @@ public class Player2CardScript : MonoBehaviour
         if (MainMessageCheckpoint.HammerTime == true)
         {
             string normal = "a";
+
             if (IsInst == true)
             {
                 Debug.Log("This is an Inst card, thus it is untubeable");
-                SendMessageUpwards("MiscText", "This is an Inst card, thus it is untouchable");
-            }
+                SendMessageUpwards("MiscText", "This is an Inst card, thus it is untargetable");
+            }    
             else if (OpenToInhabit == true)
             {
                 SendMessageUpwards("InhabitingMessage");
@@ -210,6 +221,12 @@ public class Player2CardScript : MonoBehaviour
                 SendMessageUpwards("Ccccccannibalize", HeP);
                 Die();
             }
+            else if (OpenToHeal == true) // a rare instance where adding is easier than removing
+            {
+                HeP += HealthChange[1];
+                SendMessageUpwards("SendClosed");
+                Debug.Log("Is it this?");
+            }
             else if (OpenToAttack == true)
             {
                 #region Triats that effect a card's capability of being attacked
@@ -221,7 +238,7 @@ public class Player2CardScript : MonoBehaviour
                     {
                         SendMessageUpwards("MiscText", "But it dont matter as your card is a beast");
                     }
-                    
+
                     if (Inhabited == true)
                     {
                         Debug.Log("Sorry mate, but this card is inside another card");
@@ -232,7 +249,7 @@ public class Player2CardScript : MonoBehaviour
                         Debug.Log("Sorry mate, but you cant see this card");
                         SendMessageUpwards("MiscText", "Sorry mate, but you cant see this card");
                     }
-                    else if (HasCowardly == true && Player1MessageCheckpoint.VisibleCards >= 1)
+                    else if (HasCowardly == true && Player2MessageCheckpoint.VisibleCards >= 1)
                     {
                         Debug.Log("Sorry mate, but this card is a coward");
                         SendMessageUpwards("MiscText", "Sorry mate, but this card is a coward");
@@ -248,6 +265,18 @@ public class Player2CardScript : MonoBehaviour
                             IHateThis = true;
                         }
                         SendMessageUpwards("MiscText", "Sorry mate, but you cant reach this card");
+                    }
+                    else if (FriHasTaunt == true && HasTaunt == false)
+                    {
+                        Debug.Log("Sorry mate, but you are too angered by a different card to attack this one");
+                    	
+                        if (AgHasUnphased == true)
+                        {
+                            Debug.Log("Fortunately your card doesn't care!");
+                            SendMessageUpwards("MiscText", "Fortunately your card doesn't care!");
+                            IHateThis = true;
+                        }
+                        SendMessageUpwards("MiscText", "Sorry mate, but you are too angered by a different card to attack this one");
                     }
                     else
                     {
@@ -282,7 +311,7 @@ public class Player2CardScript : MonoBehaviour
                     }
                     if (Wait == true)
                     {
-                        Debug.Log("Do you want to block using another card? [Y] [N] ps. if you click another card, I think everything will break, so please don't");
+                        Debug.Log("Do you want to block using another card? [Y] [N] p.s. if you click another card, I think everything will break, so please don't");
                         SendMessageUpwards("MiscText", "Do you want to block using another card? [Y] [N]");
                         Prompt = true;
                     }
@@ -356,7 +385,7 @@ public class Player2CardScript : MonoBehaviour
                         #region Things that happen after being attacked
                         if (AgHasUnblocking == false)
                         {
-                            if (Counter > 0)
+                            if (Counterint > 0)
                             {
                                 if (AgHasRange == true)
                                 {
@@ -366,7 +395,23 @@ public class Player2CardScript : MonoBehaviour
                                 }
                                 else
                                 {
-                                    SendMessageUpwards("SendRetaliation", Counter);
+                                    SendMessageUpwards("SendRetalDam", Counterint);
+                                }
+                                normal = "b";
+                            }
+                            
+                            if (CountStun > 0)
+                            {
+                                if (AgHasRange == true)
+                                {
+                                    Debug.Log("Cant Stun a ranged attack");
+                                    SendMessageUpwards("MiscText", "Can't Stun a ranged attack");
+                                    AgHasRange = false;
+                                }
+                                else
+                                {
+                                    SendMessageUpwards("SendRetalStun", CountStun);
+                                    Debug.Log("RetalStun is being sent");
                                 }
                                 normal = "b";
                             }
@@ -376,7 +421,7 @@ public class Player2CardScript : MonoBehaviour
                                 if (AgHasRange == true)
                                 {
                                     Debug.Log("Cant poison a ranged attack");
-                                    SendMessageUpwards("MiscText", "Can't poison a ranged attack");
+                                    SendMessageUpwards("MiscText", "Cant poison a ranged attack");
                                     AgHasRange = false;
                                 }
                                 else
@@ -436,12 +481,12 @@ public class Player2CardScript : MonoBehaviour
                     else
                     {
                         Debug.Log("Can a bool be nither true nor false? if you are seeing this, then it can");
+                        SendMessageUpwards("MiscText", "Can a bool be nither true nor false? if you are seeing this, then it can");
                     }
                 }
             }
             else if (OpenToPoison == true)
             {
-                Poisoned = true;
                 SendMessageUpwards("SendClosed");
             }
             else if (1 == 0)
@@ -464,6 +509,7 @@ public class Player2CardScript : MonoBehaviour
             else
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
             }
         }
         else if (Player == 2 && Inhabited == true)
@@ -474,6 +520,7 @@ public class Player2CardScript : MonoBehaviour
         else
         {
             Debug.Log("It is not player 2's turn, it is player " + Player + "'s turn; if that just so happened to be a 2, god help me");
+            SendMessageUpwards("MiscText", "It is not player 2's turn, it is player " + Player + "'s turn; if that just so happened to be a 2, god help me");
         }
     }
 
@@ -514,6 +561,7 @@ public class Player2CardScript : MonoBehaviour
             else if (Input.GetKeyDown("1"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has no Abilities or Robert forgot to add them, that idiot");
             }
 
             if (Input.GetKeyDown("2") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 2)
@@ -527,6 +575,7 @@ public class Player2CardScript : MonoBehaviour
             else if (Input.GetKeyDown("2"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 1 Ability or Robert forgot to add the rest, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 1 Ability or Robert forgot to add them, that idiot");
             }
 
             if (Input.GetKeyDown("3") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 3)
@@ -540,6 +589,7 @@ public class Player2CardScript : MonoBehaviour
             else if (Input.GetKeyDown("3"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 2 Abilities or Robert forgot to add the rest, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 2 Ability or Robert forgot to add them, that idiot");
             }
 
             if (Input.GetKeyDown("4") && SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 4)
@@ -553,6 +603,7 @@ public class Player2CardScript : MonoBehaviour
             else if (Input.GetKeyDown("4"))
             {
                 Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 3 Abilities or Robert forgot to add the rest, that idiot");
+                SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has only 3 Ability or Robert forgot to add them, that idiot");
             }
         }
     }
@@ -583,10 +634,10 @@ public class Player2CardScript : MonoBehaviour
         if (HasNegateAttack == true)
         {
             Debug.Log("If you want to Negate the Attack, mouse over Player " + "2" + " ID " + id + " and press [y]");
-            SendMessageUpwards("MiscText", "and press [y], if you don't just procide like normal");
+            SendMessageUpwards("MiscText", "If you want to Negate the Attack, mouse over a card with NegateAttack and press [y]");
             Prompt2 = true;
             Debug.Log("If you don't want to Negate the Attack, just procide like normal");
-            SendMessageUpwards("MiscText", "If you want to Negate the Attack, mouse over a card with NegateAttack and press [y]");
+            SendMessageUpwards("MiscText", "If you don't want to Negate the Attack, just procide like normal");
         }
         HealthChange = Stats;
         OpenToAttack = true;
@@ -651,7 +702,7 @@ public class Player2CardScript : MonoBehaviour
         Attacking = false;
     }
 
-    void Retaliation(int Stats)
+    void RetalDam(int Stats)
     {
         if (Attacking == true)
         {
@@ -662,15 +713,36 @@ public class Player2CardScript : MonoBehaviour
             }
         }
     }
+    
+    void RetalStun(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("RetalStun is not triggerble");
+            SendMessageUpwards("MiscText", "RetalStun is not triggerble");
+        }
+        else
+        {
+            CountStun = Stats[1];
+        }
+    }
 
-    void RetaliationPoison2(int[] Stats)
+    void RetaliationStun(int Stats)
     {
         if (Attacking == true)
         {
-            Debug.Log("Poison Dur D = " + Stats[1]);
+            SendMessage("Ssstun", Stats);
+        }
+    }
+
+    void RetaliationPoison1(int[] Stats)
+    {
+        if (Attacking == true)
+        {
+            Debug.Log("Poison Dur L = " + Stats[1]);
             Poisoned = true;
             HarmPoisonStats = Stats;
-            Debug.Log("Poison Dur C = " + HarmPoisonStats[1]);
+            Debug.Log("Poison Dur K = " + HarmPoisonStats[1]);
         }
     }
 
@@ -735,7 +807,7 @@ public class Player2CardScript : MonoBehaviour
         }
         SendMessageUpwards("MinusHealth", Stats);
     }
-    
+
     void Ppoison(int[] Stats)
     {
         PoisonStats[0] = PoisonDamInt;
@@ -847,6 +919,39 @@ public class Player2CardScript : MonoBehaviour
         }
     }
 
+    void Hheal(int[] Stats)
+    {
+        HealthChange = Stats;
+        OpenToHeal = true;
+    }
+
+    void Counter(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("Counter is not triggerble");
+            SendMessageUpwards("MiscText", "Counter is not triggerble");
+        }
+        else
+        {
+            Counterint = Stats[1];
+        }
+    }
+
+    void MultiHit(int[] Stats)
+    {
+        if (Stats[0] != -1)
+        {
+            Debug.Log("MultiHit is not triggerble");
+            SendMessageUpwards("MiscText", "MultiHit is not triggerble");
+        }
+        else
+        {
+            Debug.Log("why?");
+            HasMultiHit = true;
+            MultiHitInt = Stats[1];
+        }
+    }
     #endregion
 
     void Abilities()
@@ -893,6 +998,7 @@ public class Player2CardScript : MonoBehaviour
                         if (SpawnManagerScriptableObject.CardList[CardListNumber].Abilities.Length >= 5)
                         {
                             Debug.Log(SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has too many abilities");
+                            SendMessageUpwards("MiscText", SpawnManagerScriptableObject.CardList[CardListNumber].Name + " has too many abilities");
                         }
                     }
                     else
@@ -928,6 +1034,7 @@ public class Player2CardScript : MonoBehaviour
         else
         {
             Debug.Log("why does " + SpawnManagerScriptableObject.CardList[CardListNumber].Name + " have no abilities?");
+            SendMessageUpwards("MiscText", "why does " + SpawnManagerScriptableObject.CardList[CardListNumber].Name + " have no abilities?");
             Ability1 = "n/a";
             Ability2 = "n/a";
             Ability3 = "n/a";
@@ -948,11 +1055,13 @@ public class Player2CardScript : MonoBehaviour
     void Stealth()
     {
         HasStealth = true;
+        IDundVisibility[1] = 0;
     }
-
+    
     void Cowardly()
     {
         HasCowardly = true;
+        IDundVisibility[1] = 0;
     }
 
     void Toxic()
@@ -960,9 +1069,19 @@ public class Player2CardScript : MonoBehaviour
         HasToxic = true;
     }
 
-    void Flying(int[] PlayerAndID)
+    void Flying()
     {
         HasFlying = true;
+    }
+    
+    void Taunt()
+    {
+        HasTaunt = true;
+    }
+
+    void Tttaunt(bool temp)
+    {
+    	FriHasTaunt = temp;
     }
 
     #endregion
@@ -992,7 +1111,11 @@ public class Player2CardScript : MonoBehaviour
     {
         AgMultiHitInt = HitAmount;
     }
-
+    
+    void AdddUnphased(int Player)
+    {
+        AgHasUnphased = true;
+    }
     #endregion
 
     void Traits()
@@ -1063,7 +1186,7 @@ public class Player2CardScript : MonoBehaviour
         else if (Inhabiting == true)
         {
             Debug.Log("It works");
-            Counter = Stats[1];
+            Counterint = Stats[1];
         }
         else
         {
@@ -1089,8 +1212,8 @@ public class Player2CardScript : MonoBehaviour
     {
         if (Stats[0] != -1 && Inhabiting == true)
         {
-            Debug.Log("MultiHit is not triggerble");
-            SendMessageUpwards("MiscText", "MultiHit is not triggerble");
+            Debug.Log("InhabMultiHit is not triggerble");
+            SendMessageUpwards("MiscText", "InhabMultiHit is not triggerble");
         }
         else if (Inhabiting == true)
         {
@@ -1110,10 +1233,10 @@ public class Player2CardScript : MonoBehaviour
     {
         if (Poisoned == true && HarmPoisonStats[1] != 0)
         {
-            Debug.Log("Dur H = " + HarmPoisonStats[1]);
+            Debug.Log("Dur P = " + HarmPoisonStats[1]);
             if (Poisoned == true && HarmPoisonStats[1] != 0)
             {
-                Debug.Log("Dur A = " + HarmPoisonStats[1]);
+                Debug.Log("Dur I = " + HarmPoisonStats[1]);
                 HeP -= HarmPoisonStats[0];
                 if (HeP < 0)
                 {
@@ -1125,7 +1248,7 @@ public class Player2CardScript : MonoBehaviour
                     Poisoned = false;
                     HarmPoisonStats[1] = 0;
                 }
-                Debug.Log("Dur B = " + HarmPoisonStats[1]);
+                Debug.Log("Dur J = " + HarmPoisonStats[1]);
             }
             // Word of note: I dont know why, but somehow all of this Debug.Log nonsence fixed a bug. so you cant remove it or poison breaks
             TempInt1 += 1;
@@ -1155,18 +1278,30 @@ public class Player2CardScript : MonoBehaviour
             PlayerAndStats[0] = Player;
             PlayerAndID[0] = Player;
         }
-
-        if (HeP == 0)
+    
+        if (HeP == 0) // this is the area for death things
         {
+            if (SpawnManagerScriptableObject.CardList[CardListNumber].Species == "CarnivorousPlant")
+            {
+                SendMessageUpwards("ChangeCarnivPlant", -1);
+            }
+
             CardListNumber = 0;
             spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[CardListNumber].Image;
-            SendMessageUpwards("Player2NotFull", id);
+            SendMessageUpwards("Player2NotFull", IDundVisibility);
+            IDundVisibility[1] = 0;
             HeP = -1;
+            
             if (OpenToRes == true)
             {
                 SendMessageUpwards("Spawn___", ResID);
                 OpenToRes = false;
                 ResID = 0;
+            }
+            
+            if (HasTaunt == true)
+            {
+                SendMessageUpwards("Ttaunt", false);
             }
         }
 
@@ -1174,11 +1309,11 @@ public class Player2CardScript : MonoBehaviour
         {
             HeP = SpawnManagerScriptableObject.CardList[CardListNumber].HealthPoints;
             Debug.Log("Cant go over max HP");
-            SendMessageUpwards("MiscText", "Cant go over max HP");
+            SendMessageUpwards("MiscText", "You can't go over max HP");
         }
 
         if (Prompt == true)
-        { 
+        {
             if (Input.GetKeyDown("y"))
             {
                 Debug.Log("Click the card you want to block with");

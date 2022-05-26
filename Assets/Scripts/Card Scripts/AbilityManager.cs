@@ -19,6 +19,7 @@ public class AbilityManager : MonoBehaviour
     bool HasRange;
     bool HasOverkill;
     bool HasBrittle;
+    bool HasUnphased;
     #endregion
 
     #region Class
@@ -56,6 +57,11 @@ public class AbilityManager : MonoBehaviour
     void Construct(int[] PlayerAndID)
     {
         //thing do
+    }
+
+    void CarnivorousPlant(int[] PlayerAndID)
+    {
+        SendMessageUpwards("ChangeCarnivPlant", 1);
     }
 
     //void Inst(int[] PlayerAndID)
@@ -136,6 +142,71 @@ public class AbilityManager : MonoBehaviour
         }
     }
 
+    void DayGainBio(int[] Stats)
+    {
+    	if (Stats[0] != -1 && CoolDown == false && MainMessageCheckpoint.Hour >= 6 && MainMessageCheckpoint.Hour <= 18)
+        {
+            Debug.Log("DayGainBio" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "DayGainBio" + " is attempting to exicute");
+            if (Ppppatience == true)
+            {
+                Ppppatience = false;
+                Stats[1] *= PatienceInt;
+                Debug.Log("You reap what you sow, and you have planted wisely");
+                SendMessageUpwards("MiscText", "Your harvest is: " + Stats[1]);
+                Debug.Log("Your harvest is: " + Stats[1]);
+                SendMessageUpwards("MiscText", "You reap what you sow, and you have planted wisely");
+                PatienceInt = 0;
+            }
+            SendMessageUpwards("ChangeBio", Stats);
+            SendMessageUpwards("PassTurn", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == false && MainMessageCheckpoint.Hour <= 6 && MainMessageCheckpoint.Hour >= 18)
+        {
+            Debug.Log("You can only trigger DayGainBio during the day");
+            SendMessageUpwards("MiscText", "You can only trigger DayGainBio during the day");
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+    }
+
+
+    void NightGainBio(int[] Stats)
+    {
+    	if (Stats[0] != -1 && CoolDown == false && MainMessageCheckpoint.Hour <= 6 && MainMessageCheckpoint.Hour >= 18)
+        {
+            Debug.Log("NightGainBio" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "NightGainBio" + " is attempting to exicute");
+            if (Ppppatience == true)
+            {
+                Ppppatience = false;
+                Stats[1] *= PatienceInt;
+                Debug.Log("You reap what you sow, and you have planted wisely");
+                SendMessageUpwards("MiscText", "Your harvest is: " + Stats[1]);
+                Debug.Log("Your harvest is: " + Stats[1]);
+                SendMessageUpwards("MiscText", "You reap what you sow, and you have planted wisely");
+                PatienceInt = 0;
+            }
+            SendMessageUpwards("ChangeBio", Stats);
+            SendMessageUpwards("PassTurn", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == false && MainMessageCheckpoint.Hour >= 6 && MainMessageCheckpoint.Hour <= 18)
+        {
+            Debug.Log("You can only trigger NightGainBio during the night");
+            SendMessageUpwards("MiscText", "You can only trigger nightGainBio during the night");
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+    }
+
+    
     void NegateAttack(int[] Stats)
     {
         if (Stats[0] != -1)
@@ -156,7 +227,29 @@ public class AbilityManager : MonoBehaviour
             int zero = 0;
             Debug.Log("SpawnWeb" + " is attempting to exicute");
             SendMessageUpwards("MiscText", "SpawnWeb" + " is attempting to exicute");
-            SendMessageUpwards("Spawn___", zero);
+            SendMessageUpwards("Spawn___", zero); // I dont remember why I need to delare this as a variable insted of directly inputing an int, but I dont question
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
+    }
+
+    void SpawnPod(int[] Stats)
+    {
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            int twentysix = 26;
+            Debug.Log("SpawnPod" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "SpawnPod" + " is attempting to exicute");
+            SendMessageUpwards("Spawn___", twentysix); 
         }
         else if (Stats[0] != -1 && CoolDown == true)
         {
@@ -275,6 +368,10 @@ public class AbilityManager : MonoBehaviour
             {
                 SendMessageUpwards("AddOverkill", Stats[0]);
             }
+            if (HasUnphased == true)
+            {
+                SendMessageUpwards("AddUnphased", Stats[0]);
+            }
             if (Ppppatience == true)
             {
                 Ppppatience = false;
@@ -373,7 +470,15 @@ public class AbilityManager : MonoBehaviour
 
     void MultiHit(int[] Stats)
     {
-        Debug.Log("MultiHit" + " is attempting to exicute");
+        if (Stats[0] != -1)
+        {
+            Debug.Log("MultiHit is not triggerble");
+            SendMessageUpwards("MiscText", "MultiHit is not triggerble");
+        }
+        else
+        {
+            Debug.Log("MultiHit" + " is attempting to exicute");
+        }
     }
 
     void TrapLay(int[] Stats)
@@ -461,7 +566,7 @@ public class AbilityManager : MonoBehaviour
             object[] temp = new object[3];
             temp[0] = Stats[2];
             temp[1] = "Spider";
-            temp[2] = 24; // dubble check if this is Spider Ball’s ID
+            temp[2] = 24; // dubble check if this is Spider Ballï¿½s ID
             SendMessageUpwards("ResSpeciesCard", temp);
             SendMessageUpwards("LazyPassTurn");
         }
@@ -533,6 +638,47 @@ public class AbilityManager : MonoBehaviour
         CoolDownint += Stats;
     }
 
+    void Heal(int[] Stats)
+    {
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            Debug.Log("Heal" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Heal" + " is attempting to exicute");
+            SendMessageUpwards("SendHeal", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
+    }
+    
+    void Resilience(int[] Stats)
+    {
+        if (Stats[0] != -1 && CoolDown == false)
+        {
+            Debug.Log("Resilience" + " is attempting to exicute");
+            SendMessageUpwards("MiscText", "Resilience" + " is attempting to exicute");
+            SendMessageUpwards("SendResilience", Stats);
+        }
+        else if (Stats[0] != -1 && CoolDown == true)
+        {
+            Debug.Log("sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+            SendMessageUpwards("MiscText", "Sorry bretheren, but you have made the fatal error of forgeting cool down timage");
+        }
+
+        if (CoolDown == false)
+        {
+            CoolDownint = Stats[2] + MainMessageCheckpoint.Hour;
+            CoolDown = true;
+        }
+    }
     #endregion
 
     #region Traits 
@@ -587,13 +733,12 @@ public class AbilityManager : MonoBehaviour
 
     void Taunt(int[] PlayerAndID)
     {
-        //thing do
+	    SendMessageUpwards("Ttaunt", true);
     }
 
     void Unphased(int[] PlayerAndID)
     {
-        //thing do
-        //thing do
+        HasUnphased = true;
     }
 
     #endregion

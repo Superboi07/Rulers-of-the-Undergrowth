@@ -140,6 +140,10 @@ public class RulerScript : MonoBehaviour
             {
                 CardListNumber = 25;
             }
+            else if (TweenSceneManager.P1Deck == "Tyrnell")
+            {
+                CardListNumber = 47;
+            }
             #endregion
         }
         else if (ID == 2)
@@ -148,6 +152,10 @@ public class RulerScript : MonoBehaviour
             if (TweenSceneManager.P2Deck == "Spindle")
             {
                 CardListNumber = 25;
+            }
+            else if (TweenSceneManager.P2Deck == "Tyrnell")
+            {
+                CardListNumber = 47;
             }
             #endregion
         }

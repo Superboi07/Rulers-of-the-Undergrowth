@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
@@ -37,11 +37,19 @@ public class Shuffle : MonoBehaviour
         {
             P1Deck = SpawnDeckList.SpindleDeck;
         }
+        else if (TweenSceneManager.P1Deck == "Tyrnell")
+        {
+            P1Deck = SpawnDeckList.TyrnellDeck;
+        }
         #endregion
         #region P2Deck
         if (TweenSceneManager.P2Deck == "Spindle")
         {
             P2Deck = SpawnDeckList.SpindleDeck;
+        }
+        else if (TweenSceneManager.P2Deck == "Tyrnell")
+        {
+            P2Deck = SpawnDeckList.TyrnellDeck;
         }
         #endregion
         #endregion
@@ -90,7 +98,7 @@ public class Shuffle : MonoBehaviour
     {
         TempStorage[1] = CardID;
 
-        #region God Hates Me
+        #region God Hates Me, He Doesn't Like Loops
             if (GooCard[0] == false)
             {
                 TempStorage[0] = 0;
@@ -117,7 +125,7 @@ public class Shuffle : MonoBehaviour
             }
         #endregion
 
-    BroadcastMessage("ReciveStats", TempStorage);
+        BroadcastMessage("ReciveStats", TempStorage);
     }
 
     // updates which GooCards are empty

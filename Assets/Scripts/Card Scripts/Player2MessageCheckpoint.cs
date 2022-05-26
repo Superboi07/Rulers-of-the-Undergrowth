@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Player2MessageCheckpoint : MonoBehaviour
 {
-    #region Trait / ability varibles
+    #region Trait / Ability varibles
     public static int VisibleCards;
+    public static int CardAmount;
+    public static int CarnivPlants;
     int ResDur;
     #endregion
 
@@ -17,7 +19,6 @@ public class Player2MessageCheckpoint : MonoBehaviour
 
     // I dont know what I am doing
     public bool[] Player2Card = new bool[120];
-    public bool[] Player2CardVisible = new bool[120];
 
     // temp
     int[] StorageTemp = new int[2];
@@ -25,6 +26,8 @@ public class Player2MessageCheckpoint : MonoBehaviour
     public static void Restart()
     {
         VisibleCards = 0;
+        CarnivPlants = 0;
+        CardAmount = 0;
     }
 
     // *REMEMBER* Awake is when the object is inzlied, so DIFFERENT from Start
@@ -32,43 +35,126 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         if (DeckChooser.P2Deck == "Spindle")
         {
-            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[0] + 1;
-            ApplyStatsP2(StorageTemp);
-            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[1] + 1;
-            ApplyStatsP2(StorageTemp);
-            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[2] + 1;
-            ApplyStatsP2(StorageTemp);
-            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[3] + 1;
-            ApplyStatsP2(StorageTemp);
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 5)
+            if (SpawnDeckList.SpindleDeckStarter.Length >= 1)
             {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[4] + 1;
+                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[0] + 1;
                 ApplyStatsP2(StorageTemp);
+                
+                if (SpawnDeckList.SpindleDeckStarter.Length >= 2)
+                {
+                    StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[1] + 1;
+                    ApplyStatsP2(StorageTemp);
+                    
+                    if (SpawnDeckList.SpindleDeckStarter.Length >= 3)
+                    {
+                        StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[2] + 1;
+                        ApplyStatsP2(StorageTemp);
+                        
+                        if (SpawnDeckList.SpindleDeckStarter.Length >= 4)
+                        {
+                            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[3] + 1;
+                            ApplyStatsP2(StorageTemp);
+                            
+                            if (SpawnDeckList.SpindleDeckStarter.Length >= 5)
+                            {
+                                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[4] + 1;
+                                ApplyStatsP2(StorageTemp);
+                                
+                                if (SpawnDeckList.SpindleDeckStarter.Length >= 6)
+                                {
+                                    StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[5] + 1;
+                                    ApplyStatsP2(StorageTemp);
+                                    
+                                    if (SpawnDeckList.SpindleDeckStarter.Length >= 7)
+                                    {
+                                        StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[6] + 1;
+                                        ApplyStatsP2(StorageTemp);
+                                        
+                                        if (SpawnDeckList.SpindleDeckStarter.Length >= 8)
+                                        {
+                                            StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[7] + 1;
+                                            ApplyStatsP2(StorageTemp);
+                                            
+                                            if (SpawnDeckList.SpindleDeckStarter.Length >= 9)
+                                            {
+                                                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[8] + 1;
+                                                ApplyStatsP2(StorageTemp);
+                                                
+                                                if (SpawnDeckList.SpindleDeckStarter.Length >= 10)
+                                                {
+                                                    StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[9] + 1;
+                                                    ApplyStatsP2(StorageTemp);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 6)
+        }
+        else if (DeckChooser.P2Deck == "Tyrnell")
+        {
+            if (SpawnDeckList.TyrnellDeckStarter.Length >= 1)
             {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[5] + 1;
+                StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[0] + 1;
                 ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 7)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[6] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 8)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[7] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 9)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[8] + 1;
-                ApplyStatsP2(StorageTemp);
-            }
-            if (SpawnDeckList.SpindleDeckStarter.Length >= 10)
-            {
-                StorageTemp[1] = SpawnDeckList.SpindleDeckStarter[4] + 1;
-                ApplyStatsP2(StorageTemp);
+
+                if (SpawnDeckList.TyrnellDeckStarter.Length >= 2)
+                {
+                    StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[1] + 1;
+                    ApplyStatsP2(StorageTemp);
+
+                    if (SpawnDeckList.TyrnellDeckStarter.Length >= 3)
+                    {
+                        StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[2] + 1;
+                        ApplyStatsP2(StorageTemp);
+
+                        if (SpawnDeckList.TyrnellDeckStarter.Length >= 4)
+                        {
+                            StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[3] + 1;
+                            ApplyStatsP2(StorageTemp);
+
+                            if (SpawnDeckList.TyrnellDeckStarter.Length >= 5)
+                            {
+                                StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[4] + 1;
+                                ApplyStatsP2(StorageTemp);
+
+                                if (SpawnDeckList.TyrnellDeckStarter.Length >= 6)
+                                {
+                                    StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[5] + 1;
+                                    ApplyStatsP2(StorageTemp);
+
+                                    if (SpawnDeckList.TyrnellDeckStarter.Length >= 7)
+                                    {
+                                        StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[6] + 1;
+                                        ApplyStatsP2(StorageTemp);
+
+                                        if (SpawnDeckList.TyrnellDeckStarter.Length >= 8)
+                                        {
+                                            StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[7] + 1;
+                                            ApplyStatsP2(StorageTemp);
+
+                                            if (SpawnDeckList.TyrnellDeckStarter.Length >= 9)
+                                            {
+                                                StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[8] + 1;
+                                                ApplyStatsP2(StorageTemp);
+
+                                                if (SpawnDeckList.TyrnellDeckStarter.Length >= 10)
+                                                {
+                                                    StorageTemp[1] = SpawnDeckList.TyrnellDeckStarter[9] + 1;
+                                                    ApplyStatsP2(StorageTemp);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -79,14 +165,15 @@ public class Player2MessageCheckpoint : MonoBehaviour
 
     }
 
-    void Player2NotFull(int ID)
+    void Player2NotFull(int[] IDundStuff)
     {
-        Player2Card[ID] = false;
-        Debug.Log("Player2Card " + ID + " is not full");
+        Player2Card[IDundStuff[0]] = false;
+        Debug.Log("Player2Card " + IDundStuff[0] + " is not full");
 
-        if (Player2CardVisible[ID] == true)
+        CardAmount -= 1;
+
+        if (IDundStuff[1] == 1)
         {
-            Player2CardVisible[ID] = false;
             VisibleCards -= 1;
         }
     }
@@ -95,7 +182,7 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         BroadcastMessage("Block", OriginID);
     }
-
+   
     void ApplyStatsP2(int[] TempStorage)
     {
         #region I am Icaurs
@@ -595,6 +682,19 @@ public class Player2MessageCheckpoint : MonoBehaviour
             BroadcastMessage("StopRes");
         }
     }
+    
+    #region Card Counting
+    void NotVisible(int[] ID)
+    {
+        VisibleCards -= 1;
+    }
+    
+    void ChangeCarnivPlant(int temp)
+    {
+        CarnivPlants += temp;
+    }
+    
+    #endregion
 
     #region Abilities
     void Spawn___(int id)
@@ -656,7 +756,7 @@ public class Player2MessageCheckpoint : MonoBehaviour
 
     void Ccccccannibalize(int HeP)
     {
-        BroadcastMessage("GainHeP", HeP);
+        BroadcastMessage("Cccccccannibalize", HeP);
     }
 
     void ResSpeciesCard(object[] Stats)
@@ -673,10 +773,10 @@ public class Player2MessageCheckpoint : MonoBehaviour
     #endregion
 
     #region Traits
-    void NotVisible(int[] ID)
+    void Ttaunt(bool temp)
     {
-        Player2CardVisible[ID[1]] = false;
-        VisibleCards -= 1;
+    	BroadcastMessage("Tttaunt", temp);
     }
+    
     #endregion
 }

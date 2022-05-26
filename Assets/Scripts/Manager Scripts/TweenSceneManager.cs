@@ -56,6 +56,8 @@ public class TweenSceneManager : MonoBehaviour
             IntroMusic.Stop();
             //ChooseMusic.Stop();
             BattleMusic.Play();
+            P1Deck = DeckChooser.P1Deck;
+            P2Deck = DeckChooser.P2Deck;
         }
         else if (MusicLevel == 3)
         {
@@ -119,16 +121,6 @@ public class TweenSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DeckChooser.P1Deck == "Spindle")
-        {
-            P1Deck = "Spindle";
-        }
-
-        if (DeckChooser.P2Deck == "Spindle")
-        {
-            P2Deck = "Spindle";
-        }
-
         if (RulerScript.P1Lost == true)
         {
             if (RulerScript.P2Lost == true)

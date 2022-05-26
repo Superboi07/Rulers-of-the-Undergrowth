@@ -57,5 +57,23 @@ public class DeckChooser : MonoBehaviour
             Debug.Log("Why and how did you choose a deck when it was nither player 1's turn nor player 2's?");
         }
     }
+    
+    void Tyrnell()
+    {
+        if (Player == 1)
+        {
+            P1Deck = "Tyrnell";
+            Player += 1;
+        }
+        else if (Player == 2)
+        {
+            P2Deck = "Tyrnell";
+            Player += 1;
+        }
+        else
+        {
+            Debug.Log("Why and how did you choose a deck when it was nither player 1's turn nor player 2's?");
+        }
+    }
     #endregion
 }

@@ -433,7 +433,7 @@ MonoBehaviour:
     BioCost: 0
     GeoCost: 0
     Class: Ruler
-    Species: Sindle
+    Species: Spindle
     Duration: -1
     HealthPoints: 10
     Abilities:
@@ -441,7 +441,360 @@ MonoBehaviour:
     - SongOfVenomWeak
     AbilityStats: 0100000001000000
     AbilityRefresh: 0500000005000000
+    Traits: []
+    Image: {fileID: 6231433686771215919, guid: d35b71ffb1836fe49bffc0e45b88d95e, type: 3}
+    RulerImage: {fileID: 9100000, guid: 764d7eb4b3a2aae4fa4bdf8e9bd9fdca, type: 2}
+  - ID: Fly Trap Pod 26
+    Name: Fly Trap Pod
+    BioCost: 0
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 5
+    Abilities:
+    - RetalStun
+    AbilityStats: 01000000
+    AbilityRefresh: 00000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Basic Trap 27
+    Name: Basic Trap
+    BioCost: 3
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 10
+    Abilities:
+    - DealDam
+    - GainBio
+    AbilityStats: 0500000002000000
+    AbilityRefresh: 0100000001000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Fly Trap Branch 28
+    Name: Fly Trap Branch
+    BioCost: 5
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 15
+    Abilities:
+    - SpawnPod
+    AbilityStats: 01000000
+    AbilityRefresh: 04000000
+    Traits:
+    - Cowardly
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Hidden Trap 29
+    Name: Hidden Trap
+    BioCost: 0
+    GeoCost: 1
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 15
+    Abilities:
+    - DealDam
+    - Counter
+    AbilityStats: 0a0000000a000000
+    AbilityRefresh: 0300000000000000
+    Traits:
+    - Stealth
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Producer Trap 30
+    Name: Producer Trap
+    BioCost: 10
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 20
+    Abilities:
+    - DayGainBio
+    - NightGainBio
+    - GainGeo
+    AbilityStats: 030000000100000001000000
+    AbilityRefresh: 010000000100000006000000
+    Traits:
+    - Cowardly
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Tall Trap 31
+    Name: Tall Trap
+    BioCost: 4
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 15
+    Abilities:
+    - DealDam
+    AbilityStats: 0a000000
+    AbilityRefresh: 02000000
+    Traits:
+    - Reaching
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Regenerative Trap 32
+    Name: Regenerative Trap
+    BioCost: 4
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 25
+    Abilities:
+    - DealDam
+    - Heal
+    AbilityStats: 050000000a000000
+    AbilityRefresh: 0200000004000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Disabling Trap 33
+    Name: Disabling Trap
+    BioCost: 4
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 15
+    Abilities:
+    - DealDam
+    - Stun
+    AbilityStats: 0a00000002000000
+    AbilityRefresh: 0200000004000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Vine Trap 34
+    Name: Vine Trap
+    BioCost: 4
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 20
+    Abilities:
+    - DealDam
+    AbilityStats: 0a000000
+    AbilityRefresh: 02000000
+    Traits:
+    - Stealth
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Lunging Trap 35
+    Name: Lunging Trap
+    BioCost: 4
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 25
+    Abilities:
+    - DealDam
+    AbilityStats: 0a000000
+    AbilityRefresh: 02000000
+    Traits:
+    - Range
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Thick Trap 36
+    Name: Thick Trap
+    BioCost: 0
+    GeoCost: 1
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 35
+    Abilities:
+    - DealDam
+    - Armor
+    AbilityStats: 050000000a000000
+    AbilityRefresh: 0200000000000000
+    Traits:
+    - Taunt
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Bold Trap 37
+    Name: Bold Trap
+    BioCost: 5
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 20
+    Abilities:
+    - DealDam
+    AbilityStats: 0f000000
+    AbilityRefresh: 02000000
+    Traits:
+    - Unphased
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Fearful Trap 38
+    Name: Fearful Trap
+    BioCost: 3
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 15
+    Abilities:
+    - DealDam
+    AbilityStats: 0a000000
+    AbilityRefresh: 02000000
+    Traits:
+    - Cowardly
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Quick Trap 39
+    Name: Quick Trap
+    BioCost: 3
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 15
+    Abilities:
+    - DealDam
+    AbilityStats: 0f000000
+    AbilityRefresh: 02000000
+    Traits:
+    - Rush
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Giant Trap 40
+    Name: Giant Trap
+    BioCost: 5
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 50
+    Abilities:
+    - DealDam
+    - MultiHit
+    AbilityStats: 0a00000003000000
+    AbilityRefresh: 0200000000000000
+    Traits:
+    - Reaching
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Powerful Trap 41
+    Name: Powerful Trap
+    BioCost: 3
+    GeoCost: 1
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 25
+    Abilities:
+    - DealDam
+    AbilityStats: 3c000000
+    AbilityRefresh: 05000000
     Traits:
     - Overkill
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Annoying Trap 42
+    Name: Annoying Trap
+    BioCost: 3
+    GeoCost: 0
+    Class: Plant
+    Species: CarnivorousPlant
+    Duration: -1
+    HealthPoints: 30
+    Abilities:
+    - DealDam
+    - TempTaunt
+    AbilityStats: 0a00000002000000
+    AbilityRefresh: 0200000004000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Feed 43
+    Name: Feed
+    BioCost: 3
+    GeoCost: 0
+    Class: Inst
+    Species: Inst
+    Duration: -1
+    HealthPoints: -1
+    Abilities:
+    - Feed
+    AbilityStats: 01000000
+    AbilityRefresh: 00000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Resilience 44
+    Name: Resilience
+    BioCost: 3
+    GeoCost: 0
+    Class: Inst
+    Species: Inst
+    Duration: -1
+    HealthPoints: -1
+    Abilities:
+    - Heal
+    AbilityStats: 03e70000
+    AbilityRefresh: 00000000
+    Traits: []
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Consume 45
+    Name: Consume
+    BioCost: 0
+    GeoCost: 1
+    Class: Inst
+    Species: Inst
+    Duration: -1
+    HealthPoints: -1
+    Abilities:
+    - DealDam
+    AbilityStats: 03200000
+    AbilityRefresh: 00000000
+    Traits:
+    - Overkill
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Lunge 46
+    Name: Lunge
+    BioCost: 5
+    GeoCost: 0
+    Class: Inst
+    Species: Inst
+    Duration: -1
+    HealthPoints: 10
+    Abilities:
+    - Lunge
+    AbilityStats: 05000000
+    AbilityRefresh: 00000000
+    Traits:
+    - Overkill
+    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    RulerImage: {fileID: 0}
+  - ID: Tyrnell 47
+    Name: Tyrnell
+    BioCost: 0
+    GeoCost: 0
+    Class: Ruler
+    Species: Trynell
+    Duration: -1
+    HealthPoints: 10
+    Abilities:
+    - Devour
+    - Iron Fist
+    AbilityStats: 0300000004000000
+    AbilityRefresh: 3000000010000000
+    Traits: []
     Image: {fileID: 6231433686771215919, guid: d35b71ffb1836fe49bffc0e45b88d95e, type: 3}
     RulerImage: {fileID: 9100000, guid: 764d7eb4b3a2aae4fa4bdf8e9bd9fdca, type: 2}

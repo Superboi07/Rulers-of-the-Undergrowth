@@ -12,9 +12,10 @@ public class SpawnDeckList : ScriptableObject
 
     // the decks
     public int[] SpindleDeck;
-    public int[] AnnahDeck;
+    public int[] TyrnellDeck;
     public int[] TestDeck;
 
     // deck starting cards
     public int[] SpindleDeckStarter;
+    public int[] TyrnellDeckStarter;
 }

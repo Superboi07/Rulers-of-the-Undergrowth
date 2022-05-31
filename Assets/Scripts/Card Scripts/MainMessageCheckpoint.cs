@@ -447,6 +447,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         MiscWords[1] = Misc2Words;
         Misc1Text.text = Misc1Words;
         Misc2Text.text = Misc2Words;
+        Debug.Log("Words is :" + Words);
     }
 
 }

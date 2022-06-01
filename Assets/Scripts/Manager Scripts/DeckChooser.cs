@@ -12,7 +12,13 @@ public class DeckChooser : MonoBehaviour
     public static string P2Deck;
     int Player = 1;
     public static bool onceonceonce = false;
-    
+    public Text AreYouSure;
+    public Text Warning;
+    public Text Choose;
+    public Text SpindleText;
+    public Text TrynellText;
+    public GameObject Background;
+
     public static void Restart()
     {
         P1Deck = "";
@@ -74,6 +80,11 @@ public class DeckChooser : MonoBehaviour
         {
             Debug.Log("Why and how did you choose a deck when it was nither player 1's turn nor player 2's?");
         }
+    }
+
+    void TyrnellWait()
+    {
+
     }
     #endregion
 }

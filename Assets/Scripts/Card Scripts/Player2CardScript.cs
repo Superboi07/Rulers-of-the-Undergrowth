@@ -70,7 +70,7 @@ public class Player2CardScript : MonoBehaviour
     bool Inhabiting;
     bool Inhabited;
     int Counterint;
-    bool Attacking = false;
+    bool Attacking;
     int PoisonDamInt;
     int PoisonDurrationInt;
     int PoisonWeakInt;
@@ -142,6 +142,9 @@ public class Player2CardScript : MonoBehaviour
         TempStats[0] = 0;
         TempStats[1] = 0;
         TempStats[2] = 0;
+        Wait = true;
+        BlockBool = false;
+        Attacking = false; // why was this in "Closing"!?
     }
 
     void Turn(int turn)
@@ -302,7 +305,7 @@ public class Player2CardScript : MonoBehaviour
                         if (OriginID == id)
                         {
                             Debug.Log("You cant block with the same card, if you misclicked [y], too bad, so sad");
-                            SendMessageUpwards("MiscText", "You cant block with the same card, if you misclicked [y], too bad, so sad");
+                            SendMessageUpwards("MiscText", "You cant block with the same card");
                         }
                         else
                         {
@@ -693,13 +696,8 @@ public class Player2CardScript : MonoBehaviour
         {
             Inhabiting = true;
             Abilities();
-            SendMessageUpwards("LazyPassTurn");
+            SendMessageUpwards("SendClosed");
         }
-    }
-
-    void Closing()
-    {
-        Attacking = false;
     }
 
     void RetalDam(int Stats)
@@ -874,7 +872,7 @@ public class Player2CardScript : MonoBehaviour
         {
             GainHeP(temp);
             Cannibalizing = false;
-            SendMessageUpwards("LazyPassTurn");
+            SendMessageUpwards("SendClosed");
         }
     }
 
@@ -1324,8 +1322,7 @@ public class Player2CardScript : MonoBehaviour
             {
                 Wait = false;
                 Prompt = false;
-                Debug.Log("click on the card again to procide");
-                SendMessageUpwards("MiscText", "click on the card again to procide");
+                OnMouseDown();
             }
         }
     }

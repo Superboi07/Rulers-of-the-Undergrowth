@@ -14,7 +14,9 @@ public class MainMessageCheckpoint : MonoBehaviour
     string Misc1Words;
     public Text Misc2Text;
     string Misc2Words;
-    string[] MiscWords = new string[2];
+    string[] MiscWords = new string[255];
+    int CurrentLogCount;
+    int CurrentLogShowing;
 
     // global variables
     public int StartingBio;
@@ -52,7 +54,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         P2Bio = 0;
         P2Geo = 0;
         Turn = 1;
-        ArrayTurn[0] = 0;
+        ArrayTurn[0] = 1;
         Hour = 12;
         HammerTime = false;
     }
@@ -95,18 +97,18 @@ public class MainMessageCheckpoint : MonoBehaviour
         {
             Turn = 2;
             Debug.Log("P1 Passed, and must learn to face the coniquenises");
-            SendMessageUpwards("MiscText", "P1 Passed, and must learn to face the coniquenises");
+            MiscText("P1 Passed, and must learn to face the coniquenises");
             PlayerTurn.text = "Player " + Turn + "'s Turn";
-            BroadcastMessage("Turn", Turn);
+            SendClosed();
         }
 
         if (P2Passed == true && Turn == 2)
         {
             Turn = 1;
             Debug.Log("P2 Passed, and must learn to face the coniquenises");
-            SendMessageUpwards("MiscText", "P2 Passed, and must learn to face the coniquenises");
+            MiscText("P2 Passed, and must learn to face the coniquenises");
             PlayerTurn.text = "Player " + Turn + "'s Turn";
-            BroadcastMessage("Turn", Turn);
+            SendClosed();
         }
 
         if (Input.GetKeyDown("return"))
@@ -114,9 +116,9 @@ public class MainMessageCheckpoint : MonoBehaviour
             if (AreThouSure == 0)
             {
                 Debug.Log("Are thou sure?");
-                SendMessageUpwards("MiscText", "Are thou sure?");
+                MiscText("Are thou sure?");
                 Debug.Log("This will make it player " + Turn + "'s turn no longer");
-                SendMessageUpwards("MiscText", "This will make it player " + Turn + "'s turn no longer");
+                MiscText("This will make it player " + Turn + "'s turn no longer");
                 AreThouSure = 1;
             }
             else if (AreThouSure == 1)
@@ -136,13 +138,23 @@ public class MainMessageCheckpoint : MonoBehaviour
 
                 TimeText.text = "It is " + Hour + "'o Clock";
                 AreThouSure = 0;
-                LazyPassTurn();
+                SendClosed();
             }
             else
             {
                 Debug.Log("Turn != 1 && Turn != 0, Woof");
             }
-            BroadcastMessage("Turn", Turn);
+            SendClosed();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Change(-1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Change(1);
         }
     }
 
@@ -166,12 +178,12 @@ public class MainMessageCheckpoint : MonoBehaviour
                 P1Bio -= 10;
                 P1Geo += 1;
                 P1BioGeo.text = "P1 Bio: " + P1Bio + "\n" + "Geo: " + P1Geo;
-                PassTurn(ArrayTurn);
+                SendClosed();
             }
             else if (P1Bio < 10)
             {
                 Debug.Log("yuo do not have enough bio");
-                SendMessageUpwards("MiscText", "You do not have enough bio");
+                MiscText("You do not have enough bio");
             }
             else
             {
@@ -185,12 +197,12 @@ public class MainMessageCheckpoint : MonoBehaviour
                 P2Bio -= 10;
                 P2Geo += 1;
                 P2BioGeo.text = "P2 Bio: " + P2Bio + "\n" + "Geo: " + P2Geo;
-                PassTurn(ArrayTurn);
+                SendClosed();
             }
             else if (P2Bio < 10)
             {
                 Debug.Log("yuo do not have enough bio");
-                SendMessageUpwards("MiscText", "You do not have enough bio");
+                MiscText("You do not have enough bio");
             }
             else
             {
@@ -199,8 +211,8 @@ public class MainMessageCheckpoint : MonoBehaviour
         }
         else
         {
-            Debug.Log("It is not player 1 turn yet not player 2 turn");
-            SendMessageUpwards("MiscText", "It is not player 1 turn yet not player 2 turn");
+            Debug.Log("It is not player 1 turn nor player 2 turn");
+            MiscText("It is not player 1 turn nor player 2 turn");
         }
     }
 
@@ -242,7 +254,6 @@ public class MainMessageCheckpoint : MonoBehaviour
     
     void PassTurn(int[] change)
     {
-
         if (change[0] == 1)
         {
             Turn = 2;
@@ -257,7 +268,7 @@ public class MainMessageCheckpoint : MonoBehaviour
         }
         else
         {
-            Debug.Log("PassTurn was sent, but they forgot to dicide player");
+            Debug.Log("PassTurn was sent, but player was not 1 or 2");
         }
     }
     #endregion
@@ -353,11 +364,6 @@ public class MainMessageCheckpoint : MonoBehaviour
         HammerTime = true;
     }
 
-    void InhabitingMessage()
-    {
-        HammerTime = false;
-    }
-
     void SendRetalDam(int Stats)
     {
         BroadcastMessage("RetalDam", Stats);
@@ -401,7 +407,9 @@ public class MainMessageCheckpoint : MonoBehaviour
         HasMultiHit = true;
         MultiHitInt = HitAmount - 1;
         Debug.Log("Attacks left: " + MultiHitInt);
-        SendMessageUpwards("MiscText", "Attacks left: " + MultiHitInt);
+        MiscText("Attacks left: " + MultiHitInt);
+        BroadcastMessage("AdddMultiHit", MultiHitInt);
+        MultiHitInt = 0;
     }
 
     void SendStun(int[] Stats)
@@ -428,25 +436,31 @@ public class MainMessageCheckpoint : MonoBehaviour
     }
     #endregion
 
-    void Skip()
-    {
-        SendClosed();
-        LazyPassTurn();
-    }
-
-    void LazyPassTurn()
-    {
-        PassTurn(ArrayTurn);
-    }
-
-    void MiscText(string Words) // do not disturb
+    void MiscText(string Words)
     {
         Misc2Words = Misc1Words;
         Misc1Words = Words;
-        MiscWords[0] = Misc1Words;
-        MiscWords[1] = Misc2Words;
+        MiscWords[CurrentLogCount] = Words;
+        Misc1Text.text = Misc1Words;
+        Misc2Text.text = Misc2Words;
+        CurrentLogCount += 1;
+        CurrentLogShowing = CurrentLogCount;
+    }
+    
+    void Change(int temp)
+    {
+        if (CurrentLogShowing == 0 && temp == -1)
+        {
+            Debug.Log("Can't go under 0");
+        }
+        else
+        {
+            CurrentLogShowing += temp;
+        }
+        
+        Misc2Words = MiscWords[CurrentLogShowing + 1];
+        Misc1Words = MiscWords[CurrentLogShowing];
         Misc1Text.text = Misc1Words;
         Misc2Text.text = Misc2Words;
     }
-
 }

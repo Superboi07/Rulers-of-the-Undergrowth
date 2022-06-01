@@ -9,6 +9,8 @@ public class Player2MessageCheckpoint : MonoBehaviour
     public static int VisibleCards;
     public static int CardAmount;
     public static int CarnivPlants;
+    public int DebugCardAmount;
+    public int DebugCarnivPlants;
     int ResDur;
     #endregion
 
@@ -162,7 +164,8 @@ public class Player2MessageCheckpoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        DebugCardAmount = CardAmount;
+        DebugCarnivPlants = CarnivPlants;
     }
 
     void Player2NotFull(int[] IDundStuff)
@@ -669,6 +672,7 @@ public class Player2MessageCheckpoint : MonoBehaviour
         #endregion
 
         Player2Card[TempStorage[0]] = true;
+        CardAmount += 1;
         VisibleCards += 1;
 
         BroadcastMessage("ReciveGooStats", TempStorage);
@@ -701,7 +705,7 @@ public class Player2MessageCheckpoint : MonoBehaviour
     {
         StorageTemp[1] = id + 1;
         ApplyStatsP2(StorageTemp);
-        SendMessageUpwards("LazyPassTurn");
+        SendMessageUpwards("SendClosed");
     }
 
     void Inhabit___(int id)

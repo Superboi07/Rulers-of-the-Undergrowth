@@ -12,12 +12,10 @@ public class DeckChooser : MonoBehaviour
     public static string P2Deck;
     int Player = 1;
     public static bool onceonceonce = false;
-    public Text AreYouSure;
-    public Text Warning;
-    public Text Choose;
-    public Text SpindleText;
-    public Text TrynellText;
-    public GameObject Background;
+    public GameObject AreYouSure;
+    public GameObject Warning;
+    public GameObject ContinueButton;
+    public GameObject ReturnButton;
 
     public static void Restart()
     {
@@ -29,13 +27,16 @@ public class DeckChooser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        AreYouSure.gameObject.SetActive(false);
+        Warning.gameObject.SetActive(false);
+        ContinueButton.gameObject.SetActive(false);
+        ReturnButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerInfo.text = "Player " + Player + " choose";
+        PlayerInfo.text = "Player " + Player + ": choose your Ruler";
         if (Player == 3)
         {
             TweenSceneManager.AdvanceMusic();
@@ -84,7 +85,18 @@ public class DeckChooser : MonoBehaviour
 
     void TyrnellWait()
     {
+        AreYouSure.gameObject.SetActive(true);
+        Warning.gameObject.SetActive(true);
+        ContinueButton.gameObject.SetActive(true);
+        ReturnButton.gameObject.SetActive(true);
+    }
 
+    void Return()
+    {
+        AreYouSure.gameObject.SetActive(false);
+        Warning.gameObject.SetActive(false);
+        ContinueButton.gameObject.SetActive(false);
+        ReturnButton.gameObject.SetActive(false);
     }
     #endregion
 }

@@ -333,7 +333,7 @@ MonoBehaviour:
     AbilityRefresh: 03000000
     Traits:
     - Cowardly
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 9fa7d1b2db61d8e49b7c9d48bd6eded5, type: 3}
     RulerImage: {fileID: 0}
   - ID: Poison Spit 19
     Name: Poison Spit
@@ -380,7 +380,7 @@ MonoBehaviour:
     AbilityStats: 01000000
     AbilityRefresh: 01000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 250f5cadb2cecb246b1156028bd184b3, type: 3}
     RulerImage: {fileID: 0}
   - ID: Sticker Spider 22
     Name: Sticker Spider
@@ -395,7 +395,7 @@ MonoBehaviour:
     AbilityStats: 03000000
     AbilityRefresh: 03000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 4c9b7ee50987b1f4ab2dd02a054b3c0f, type: 3}
     RulerImage: {fileID: 0}
   - ID: Patience 23
     Name: Patience

@@ -108,7 +108,7 @@ MonoBehaviour:
     AbilityRefresh: 000000000000000000000000
     Traits:
     - Stealth
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 353e99a63019e434dafe77c16c7c8186, type: 3}
     RulerImage: {fileID: 0}
   - ID: Digger Spider 5
     Name: Digger Spider
@@ -317,7 +317,7 @@ MonoBehaviour:
     AbilityStats: 01000000
     AbilityRefresh: 00000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: f39e702c4f093f2468dbff6dadecb22e, type: 3}
     RulerImage: {fileID: 0}
   - ID: Trapper Spider 18
     Name: Trapper Spider
@@ -350,7 +350,7 @@ MonoBehaviour:
     AbilityStats: 010000000100000005000000
     AbilityRefresh: 000000000500000005000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 61e3ff3911c12cd49bdfe2d64bfff289, type: 3}
     RulerImage: {fileID: 0}
   - ID: Swarm 20
     Name: Swarm
@@ -410,7 +410,7 @@ MonoBehaviour:
     AbilityStats: 02000000
     AbilityRefresh: 04000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: da74e3da645ea5741867fac47c226a08, type: 3}
     RulerImage: {fileID: 0}
   - ID: Spider Ball 24
     Name: Spider Ball

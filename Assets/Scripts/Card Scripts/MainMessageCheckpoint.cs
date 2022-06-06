@@ -311,7 +311,6 @@ public class MainMessageCheckpoint : MonoBehaviour
     void SendClosed()
     {
         BroadcastMessage("Closed");
-        BroadcastMessage("Closing");
         PassTurn(ArrayTurn);
         HammerTime = false;
     }

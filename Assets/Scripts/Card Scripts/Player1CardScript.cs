@@ -1264,6 +1264,7 @@ public class Player1CardScript : MonoBehaviour
     void Awake()
     {
         PlayerAndID[1] = id;
+        IDundVisibility[0] = id;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = SpawnManagerScriptableObject.CardList[CardListNumber].Image;
     }

@@ -9,6 +9,10 @@ public class AbilityManager : MonoBehaviour
     bool CoolDownJr;
     int CoolDownint = MainMessageCheckpoint.Hour + 1;
 
+    // Indicators
+    bool ShowingReady;
+    public GameObject ReadyGlow;
+
     #region Ability vars
     bool Ppppatience;
     int PatienceInt;
@@ -748,6 +752,23 @@ public class AbilityManager : MonoBehaviour
         if (CoolDownint == MainMessageCheckpoint.Hour)
         {
             CoolDown = false;
+        }
+
+        if (ShowingReady == false)
+        {
+            if (CoolDown == false)
+            {
+                ShowingReady = true;
+                Instantiate(ReadyGlow, new Vector3(this.transform.position.x, this.transform.position.y, -0.1f), this.transform.rotation, this.transform);
+            }
+        }
+        else
+        {
+            if (CoolDown == true)
+            {
+                ShowingReady = false;
+                BroadcastMessage("RemoveReady");
+            }
         }
     }
 }

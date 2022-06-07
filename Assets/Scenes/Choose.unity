@@ -1062,7 +1062,7 @@ MonoBehaviour:
   SpawnManagerScriptableObject: {fileID: 11400000, guid: 8fac826ba66b1f643bd68ddc12504b21, type: 2}
   spriteRenderer: {fileID: 0}
   Anim: {fileID: 0}
-  CardListNumber: 25
+  CardListNumber: 47
 --- !u!212 &1415251702
 SpriteRenderer:
   m_ObjectHideFlags: 0

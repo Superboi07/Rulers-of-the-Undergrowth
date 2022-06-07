@@ -1280,6 +1280,8 @@ public class Player1CardScript : MonoBehaviour
     
         if (HeP == 0) // this is the area for death things
         {
+            BroadcastMessage("RemoveAll");
+
             if (SpawnManagerScriptableObject.CardList[CardListNumber].Species == "CarnivorousPlant")
             {
                 SendMessageUpwards("ChangeCarnivPlant", -1);

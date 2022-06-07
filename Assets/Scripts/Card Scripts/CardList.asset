@@ -59,7 +59,7 @@ MonoBehaviour:
     AbilityRefresh: 0100000000000000
     Traits:
     - Stealth
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 4f4429a57d1079e4a939065cd882fcfc, type: 3}
     RulerImage: {fileID: 0}
   - ID: Basic Spider 2
     Name: Basic Spider
@@ -155,7 +155,7 @@ MonoBehaviour:
     AbilityStats: 0a000000
     AbilityRefresh: 02000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 8a032df9cceaa524695d788c6bfa916e, type: 3}
     RulerImage: {fileID: 0}
   - ID: Toxic Spider 8
     Name: Toxic Spider
@@ -189,7 +189,7 @@ MonoBehaviour:
     AbilityRefresh: 03000000
     Traits:
     - Flying
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 27a2f4d855803f147b841efe06261b37, type: 3}
     RulerImage: {fileID: 0}
   - ID: Shooter Spider 10
     Name: Shooter Spider
@@ -286,7 +286,7 @@ MonoBehaviour:
     AbilityRefresh: 000000000200000000000000
     Traits:
     - Reaching
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 45b5f32d6c7d23e408df88f65a9a1146, type: 3}
     RulerImage: {fileID: 0}
   - ID: Baller Spider 16
     Name: Baller Spider
@@ -796,5 +796,5 @@ MonoBehaviour:
     AbilityStats: 0300000004000000
     AbilityRefresh: 3000000010000000
     Traits: []
-    Image: {fileID: 6231433686771215919, guid: d35b71ffb1836fe49bffc0e45b88d95e, type: 3}
-    RulerImage: {fileID: 9100000, guid: 764d7eb4b3a2aae4fa4bdf8e9bd9fdca, type: 2}
+    Image: {fileID: 21300000, guid: a15dbefb5d4b07f44a059ae887afb85e, type: 3}
+    RulerImage: {fileID: 0}

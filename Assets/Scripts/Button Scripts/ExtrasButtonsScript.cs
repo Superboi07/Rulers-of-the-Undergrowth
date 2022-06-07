@@ -36,6 +36,7 @@ public class ExtrasButtonsScript : MonoBehaviour
         }
         else
         {
+            TextOnScreen = false;
             ReadMe.gameObject.SetActive(false);
             Tut.gameObject.SetActive(true);
             Vid.gameObject.SetActive(true);

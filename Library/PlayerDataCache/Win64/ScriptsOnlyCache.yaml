@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - EndTextScript
     - ExtrasButtonsScript
     - GooCardScript
+    - IndecatorScript
     - MainMessageCheckpoint
     - MoveCamra
     - Player1CardScript
@@ -118,21 +119,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5210}
     - Class: 114
-      Script: {instanceID: 5974}
+      Script: {instanceID: 5220}
     - Class: 114
-      Script: {instanceID: 6080}
+      Script: {instanceID: 5976}
     - Class: 114
-      Script: {instanceID: 6396}
+      Script: {instanceID: 6082}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6398}
     - Class: 114
-      Script: {instanceID: 6520}
+      Script: {instanceID: 6482}
     - Class: 114
-      Script: {instanceID: 6786}
+      Script: {instanceID: 6522}
     - Class: 114
-      Script: {instanceID: 6804}
+      Script: {instanceID: 6788}
     - Class: 114
-      Script: {instanceID: 6852}
+      Script: {instanceID: 6806}
+    - Class: 114
+      Script: {instanceID: 6854}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -191,7 +194,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 6900}
+      Script: {instanceID: 6902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -397,7 +400,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4622}
     - Class: 114
-      Script: {instanceID: 5464}
+      Script: {instanceID: 5466}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1015,6 +1018,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IndecatorScript
+  - hash:
+      serializedVersion: 2
       Hash: 6663435805926faf16934aed992cd26b
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1213,7 +1222,7 @@ ScriptsOnlyBuild:
     className: MainMessageCheckpoint
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: bb14ba6020af2e520f829948da1ea74c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AbilityManager

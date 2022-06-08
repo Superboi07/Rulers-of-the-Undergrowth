@@ -26,6 +26,5 @@ public class EndButtonScript : MonoBehaviour
         Player1MessageCheckpoint.Restart();
         Player1MessageCheckpoint.Restart();
         SceneManager.LoadScene("TweenScene");
-        SceneManager.LoadScene("Start", LoadSceneMode.Additive);
     }
 }

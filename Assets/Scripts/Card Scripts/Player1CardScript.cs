@@ -1227,6 +1227,16 @@ public class Player1CardScript : MonoBehaviour
     }
     #endregion
 
+    #region Indecators
+    void CheckIfZero()
+    {
+        if (CardListNumber == 0)
+        {
+            BroadcastMessage("RemoveAll");
+        }
+    }
+    #endregion
+
     void TimePassing()
     {
         if (Poisoned == true && HarmPoisonStats[1] != 0)

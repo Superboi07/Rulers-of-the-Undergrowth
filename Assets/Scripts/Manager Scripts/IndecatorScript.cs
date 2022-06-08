@@ -17,10 +17,13 @@ public class IndecatorScript : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    // *REMEMBER* Awake is when the object is inzlied, so DIFFERENT from Start
+    void Awake()
     {
-        
+        if (this.gameObject.name == "Ready Glow(Clone)")
+        {
+            SendMessageUpwards("CheckIfZero");
+        }
     }
 
     // Update is called once per frame

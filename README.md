@@ -5,4 +5,4 @@
  
  Lead Sound Design, Lead Card Designer, and Quality Checker - Dominick P. Agron
  
- Lead Artist, Lead Quality Checker, and Moral Suport -	Carl Wallenburg
+ Lead Artist, Lead Quality Checker, and Moral Suport - Carl C. Wallenburg

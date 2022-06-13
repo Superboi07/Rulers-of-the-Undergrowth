@@ -70,47 +70,51 @@ public class TweenSceneManager : MonoBehaviour
         }
     }
 
-    public static void PauseMusic()
+    public static void StopMusic()
     {
-        if (MusicLevel == 0)
-        {
-            IntroMusic.Pause();
-        }
-        else if (MusicLevel == 1)
-        {
-            //ChooseMusic.Pause();
-        }
-        else if (MusicLevel == 2)
-        {
-            BattleMusic.Pause();
-        }
-        else if (MusicLevel == 3)
-        {
-            EndingMusic.Pause();
-        }
-        else
-        {
-            Debug.Log("MusicLevel == " + MusicLevel);
-        }
+        IntroMusic.Stop();
+        //ChooseMusic.Stop();
+        BattleMusic.Stop();
+        EndingMusic.Stop();
+    }
+
+    public static void PlayStart()
+    {
+        StopMusic();
+        IntroMusic.Play();
+    }
+
+    public static void PlayBattle()
+    {
+        StopMusic();
+        BattleMusic.Play();
+    }
+
+    public static void PlayEnd()
+    {
+        StopMusic();
+        EndingMusic.Play();
     }
 
     public static void ResumeMusic()
     {
+        StopMusic();
+
         if (MusicLevel == 0)
         {
-            IntroMusic.UnPause();
+            IntroMusic.Play();
         }
         else if (MusicLevel == 1)
         {
-            //ChooseMusic.UnPause();
+            //ChooseMusic.Play();
         }
         else if (MusicLevel == 2)
         {
-            BattleMusic.UnPause();
+            BattleMusic.Play();
         }
         else if (MusicLevel == 3)
         {
-            EndingMusic.UnPause();
+            EndingMusic.Play();
         }
         else
         {

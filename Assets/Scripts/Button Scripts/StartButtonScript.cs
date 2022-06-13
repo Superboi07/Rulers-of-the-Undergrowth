@@ -33,7 +33,7 @@ public class StartButtonScript : MonoBehaviour
 
     void Extras()
     {
-        TweenSceneManager.PauseMusic();
+        TweenSceneManager.StopMusic();
         SceneManager.LoadScene("Extras", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Start");
     }

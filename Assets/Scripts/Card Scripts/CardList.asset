@@ -268,7 +268,7 @@ MonoBehaviour:
     AbilityStats: 01000000
     AbilityRefresh: 00000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: b2c5aee2d4e56474788f59a4f8404269, type: 3}
     RulerImage: {fileID: 0}
   - ID: Daddy Long Legs 15
     Name: Daddy Long Legs

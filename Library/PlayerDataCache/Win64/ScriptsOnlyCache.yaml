@@ -242,13 +242,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4492}
     - Class: 114
-      Script: {instanceID: 4622}
-    - Class: 114
       Script: {instanceID: 4852}
     - Class: 114
       Script: {instanceID: 5096}
-    - Class: 114
-      Script: {instanceID: 5210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -307,6 +303,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -857,7 +855,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: 98ea3017b896f3aa13a9736afed18d24
+      Hash: a87bc31aecd08589a5b776d1490fcbd9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ExtrasButtonsScript

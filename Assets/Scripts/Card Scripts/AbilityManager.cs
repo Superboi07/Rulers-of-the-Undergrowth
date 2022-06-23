@@ -40,7 +40,7 @@ public class AbilityManager : MonoBehaviour
 
     void Fungi(int[] PlayerAndID)
     {
-        // dpp thing
+        // do thing
     }
 
     void Inst(int[] PlayerAndID)

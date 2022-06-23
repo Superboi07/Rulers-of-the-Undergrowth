@@ -8,12 +8,14 @@ public class IndecatorScript : MonoBehaviour
     {
         if (this.gameObject.name == "Ready Glow(Clone)")
         {
+            SendMessageUpwards("IndecatorStatus", false);
             Destroy(this.gameObject);
         }
     }
 
     void RemoveAll()
     {
+        SendMessageUpwards("IndecatorStatus", false);
         Destroy(this.gameObject);
     }
 
@@ -22,6 +24,7 @@ public class IndecatorScript : MonoBehaviour
     {
         if (this.gameObject.name == "Ready Glow(Clone)")
         {
+            SendMessageUpwards("IndecatorStatus", true);
             SendMessageUpwards("CheckIfZero");
         }
     }

@@ -17,18 +17,18 @@ public class EndTextScript : MonoBehaviour
         P2 = TweenSceneManager.P2Deck;
         if (TweenSceneManager.Loser == 0) // this doesn't work, and I am in no mood to fix it
         {
-            WinInfo.text = "It's a tie!";
-            RulerInfo.text = "That's wicked!";
+            RulerInfo.text = "It's a tie!";
+            WinInfo.text = "That's wicked!";
         }
         else if (TweenSceneManager.Loser == 1)
         {
-            WinInfo.text = "Player 2 Wins!!!";
-            RulerInfo.text = "Good job " + P2 + " for beating " + P1 + "!";
+            RulerInfo.text = P2 + " has defeated " + P1 + "!";
+            WinInfo.text = "Congradulations to player 2!";
         }
         else if (TweenSceneManager.Loser == 2)
         {
-            WinInfo.text = "Player 1 Wins!!!";
-            RulerInfo.text = "Good job " + P1 + " for beating " + P2 + "!";
+            RulerInfo.text = P1 + " has defeated " + P2 + "!";
+            WinInfo.text = "Congradulations to player 1!";
         }
         else
         {

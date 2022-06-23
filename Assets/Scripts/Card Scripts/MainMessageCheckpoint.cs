@@ -95,20 +95,18 @@ public class MainMessageCheckpoint : MonoBehaviour
 
         if (P1Passed == true && Turn == 1)
         {
-            Turn = 2;
-            Debug.Log("P1 Passed, and must learn to face the coniquenises");
-            MiscText("P1 Passed, and must learn to face the coniquenises");
-            PlayerTurn.text = "Player " + Turn + "'s Turn";
             SendClosed();
+            Debug.Log("P1 Passed, and must learn to face the coniquenises");
+            MiscText("P1 Passed, and must learn to face the consequences");
+            PlayerTurn.text = "Player " + Turn + "'s Turn";
         }
 
         if (P2Passed == true && Turn == 2)
         {
-            Turn = 1;
-            Debug.Log("P2 Passed, and must learn to face the coniquenises");
-            MiscText("P2 Passed, and must learn to face the coniquenises");
-            PlayerTurn.text = "Player " + Turn + "'s Turn";
             SendClosed();
+            Debug.Log("P2 Passed, and must learn to face the coniquenises");
+            MiscText("P2 Passed, and must learn to face the consequences");
+            PlayerTurn.text = "Player " + Turn + "'s Turn";
         }
 
         if (Input.GetKeyDown("return"))
@@ -144,7 +142,6 @@ public class MainMessageCheckpoint : MonoBehaviour
             {
                 Debug.Log("Turn != 1 && Turn != 0, Woof");
             }
-            SendClosed();
         }
         
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -313,6 +310,11 @@ public class MainMessageCheckpoint : MonoBehaviour
         BroadcastMessage("Closed");
         PassTurn(ArrayTurn);
         HammerTime = false;
+    }
+
+    void LazyPassTurn() // Legacy code
+    {
+        SendClosed();
     }
 
     void Again(int Stats)

@@ -8,6 +8,13 @@ using UnityEngine.Video;
 public class ExtrasButtonsScript : MonoBehaviour
 {
     public Text ReadMe;
+    public Text Rob;
+    public Button RobIm;
+    public GameObject RobDebug1;
+    public GameObject RobDebug2;
+    public GameObject RobDebug3;
+    public Button RobVidButt;
+    public VideoPlayer RobVid;
     public Text Dom;
     public Button DomIm;
     public GameObject DomDebug1;
@@ -22,13 +29,6 @@ public class ExtrasButtonsScript : MonoBehaviour
     public GameObject CarlDebug3;
     public Button CarlVidButt;
     public VideoPlayer CarlVid;
-    public Text Rob;
-    public Button RobIm;
-    public GameObject RobDebug1;
-    public GameObject RobDebug2;
-    public GameObject RobDebug3;
-    public Button RobVidButt;
-    public VideoPlayer RobVid;
     public Button Me;
     bool TextOnScreen = false;
     bool ShowingIm = false;
@@ -47,6 +47,11 @@ public class ExtrasButtonsScript : MonoBehaviour
         ShowingIm = false;
         PlayingVid = false;
         ReadMe.gameObject.SetActive(false);
+        RobIm.gameObject.SetActive(false);
+        RobDebug1.gameObject.SetActive(false);
+        RobDebug2.gameObject.SetActive(false);
+        RobDebug3.gameObject.SetActive(false);
+        RobVidButt.gameObject.SetActive(false);
         Dom.gameObject.SetActive(false);
         DomIm.gameObject.SetActive(false);
         DomDebug1.gameObject.SetActive(false);
@@ -60,25 +65,20 @@ public class ExtrasButtonsScript : MonoBehaviour
         CarlDebug3.gameObject.SetActive(false);
         CarlVidButt.gameObject.SetActive(false);
         Rob.gameObject.SetActive(false);
-        RobIm.gameObject.SetActive(false);
-        RobDebug1.gameObject.SetActive(false);
-        RobDebug2.gameObject.SetActive(false);
-        RobDebug3.gameObject.SetActive(false);
-        RobVidButt.gameObject.SetActive(false);
         Me.gameObject.SetActive(false);
     }
 
     void ShowImport()
     {
+        Rob.gameObject.SetActive(true);
+        RobIm.gameObject.SetActive(true);
+        RobVidButt.gameObject.SetActive(true);
         Dom.gameObject.SetActive(true);
         DomIm.gameObject.SetActive(true);
         DomVidButt.gameObject.SetActive(true);
         Carl.gameObject.SetActive(true);
         CarlIm.gameObject.SetActive(true);
         CarlVidButt.gameObject.SetActive(true);
-        Rob.gameObject.SetActive(true);
-        RobIm.gameObject.SetActive(true);
-        RobVidButt.gameObject.SetActive(true);
         Me.gameObject.SetActive(true);
     }
 
@@ -104,11 +104,46 @@ public class ExtrasButtonsScript : MonoBehaviour
         ReadMe.gameObject.SetActive(true);
     }
 
+    void PlayRobVid()
+    {
+        SendStop();
+        PlayingVid = true;
+        RobVid.Play();
+        RobVid.loopPointReached += EndReached;
+    }
+
     void PlayDomVid()
     {
+        SendStop();
         PlayingVid = true;
         DomVid.Play();
         DomVid.loopPointReached += EndReached;
+    }
+
+    void PlayCarlVid()
+    {
+        SendStop();
+        PlayingVid = true;
+        CarlVid.Play();
+        CarlVid.loopPointReached += EndReached;
+    }
+
+    void ShowRobIm()
+    {
+        HideMost();
+        ShowingIm = true;
+        RobDebug1.gameObject.SetActive(true);
+        RobDebug2.gameObject.SetActive(true);
+        RobDebug3.gameObject.SetActive(true);
+    }
+
+    void ShowDomIm()
+    {
+        HideMost();
+        ShowingIm = true;
+        DomDebug1.gameObject.SetActive(true);
+        DomDebug2.gameObject.SetActive(true);
+        DomDebug3.gameObject.SetActive(true);
     }
 
     void ShowCarlIm()
@@ -118,6 +153,11 @@ public class ExtrasButtonsScript : MonoBehaviour
         CarlDebug1.gameObject.SetActive(true);
         CarlDebug2.gameObject.SetActive(true);
         CarlDebug3.gameObject.SetActive(true);
+    }
+
+    void SendStop()
+    {
+        TweenSceneManager.StopMusic();
     }
 
     void PlayStartSong()

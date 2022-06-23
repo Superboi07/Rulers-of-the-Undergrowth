@@ -99,7 +99,7 @@ MonoBehaviour:
     Class: Animal
     Species: Construct
     Duration: -1
-    HealthPoints: 25
+    HealthPoints: 10
     Abilities:
     - Armor
     - InhabitBasicSpider
@@ -140,7 +140,7 @@ MonoBehaviour:
     AbilityRefresh: 03000000
     Traits:
     - Reaching
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 4bf0fa77978f0694ca0f40cceb44a2b4, type: 3}
     RulerImage: {fileID: 0}
   - ID: Hunter Spider 7
     Name: Hunter Spider
@@ -205,7 +205,7 @@ MonoBehaviour:
     AbilityRefresh: 03000000
     Traits:
     - Range
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 5cc4930a5122b794aa30b331a85de93c, type: 3}
     RulerImage: {fileID: 0}
   - ID: Rocker Spider 11
     Name: Rocker Spider
@@ -221,7 +221,7 @@ MonoBehaviour:
     AbilityStats: 1e0000000a000000
     AbilityRefresh: 0300000000000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: c5de10a31eaf57446851b96ff9b6cdfa, type: 3}
     RulerImage: {fileID: 0}
   - ID: Spotter Spider 12
     Name: Spotter Spider
@@ -237,7 +237,7 @@ MonoBehaviour:
     AbilityStats: 0a00000001000000
     AbilityRefresh: 0300000006000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 1911c9a40f841284f8ae80ed8c4f1868, type: 3}
     RulerImage: {fileID: 0}
   - ID: Suicider Spider 13
     Name: Suicider Spider
@@ -253,7 +253,7 @@ MonoBehaviour:
     AbilityStats: 0a0000003c000000
     AbilityRefresh: 0300000006000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: b379177f0504e6643bc279908e3a81df, type: 3}
     RulerImage: {fileID: 0}
   - ID: Cannibalism 14
     Name: Cannibalism
@@ -365,7 +365,7 @@ MonoBehaviour:
     AbilityStats: 01000000
     AbilityRefresh: 00000000
     Traits: []
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: e2c1a2035c65c6c4b8b01d0fcf427aab, type: 3}
     RulerImage: {fileID: 0}
   - ID: Ball Curling 21
     Name: Ball Curling
@@ -426,7 +426,7 @@ MonoBehaviour:
     AbilityRefresh: 00000000
     Traits:
     - Overkill
-    Image: {fileID: 21300000, guid: c31cd06646d18014dbf0d433215bf585, type: 3}
+    Image: {fileID: 21300000, guid: 9ea012672287686499ac0df0933663eb, type: 3}
     RulerImage: {fileID: 0}
   - ID: Spindle 25
     Name: Spindle

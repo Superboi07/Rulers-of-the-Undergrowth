@@ -12,6 +12,7 @@ public class Player2CardScript : MonoBehaviour
 
     // vanity stuff
     public SpriteRenderer spriteRenderer;
+    bool HasIndecator;
 
     // calls my text boxes
     public Text CurentCard;
@@ -156,7 +157,7 @@ public class Player2CardScript : MonoBehaviour
     {
         if (Stats[0] == id)
         {
-            // insert code to apply sprite
+            // The code that applies sprite is somewhere else
             Debug.Log("Player2Card (" + id + ") is " + SpawnManagerScriptableObject.CardList[Stats[1]].Name);
             CardListNumber = Stats[1];
             HeP = SpawnManagerScriptableObject.CardList[Stats[1]].HealthPoints;
@@ -1230,10 +1231,15 @@ public class Player2CardScript : MonoBehaviour
     #region Indecators
     void CheckIfZero()
     {
-        if (CardListNumber == 0)
+        if (CardListNumber == 0 && HasIndecator == true)
         {
             BroadcastMessage("RemoveAll");
         }
+    }
+
+    void IndecatorStatus(bool temp)
+    {
+        HasIndecator = temp;
     }
     #endregion
 
@@ -1290,7 +1296,10 @@ public class Player2CardScript : MonoBehaviour
     
         if (HeP == 0) // this is the area for death things
         {
-            BroadcastMessage("RemoveAll");
+            if (HasIndecator == true)
+            {
+                BroadcastMessage("RemoveAll");
+            }
 
             if (SpawnManagerScriptableObject.CardList[CardListNumber].Species == "CarnivorousPlant")
             {

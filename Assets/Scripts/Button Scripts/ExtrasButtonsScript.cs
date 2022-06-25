@@ -7,6 +7,10 @@ using UnityEngine.Video;
 
 public class ExtrasButtonsScript : MonoBehaviour
 {
+    public Button StartSongButt;
+    public Button BattleSongButt;
+    public Button EndSongButt;
+    public Button StopSongsButt;
     public Text ReadMe;
     public Text Rob;
     public Button RobIm;
@@ -38,6 +42,7 @@ public class ExtrasButtonsScript : MonoBehaviour
     void Start()
     {
         HideMost();
+        StopSongsButt.gameObject.SetActive(false);
         ShowImport();
     }
 
@@ -155,24 +160,43 @@ public class ExtrasButtonsScript : MonoBehaviour
         CarlDebug3.gameObject.SetActive(true);
     }
 
-    void SendStop()
-    {
-        TweenSceneManager.StopMusic();
-    }
-
     void PlayStartSong()
     {
+        StartSongButt.gameObject.SetActive(false);
+        BattleSongButt.gameObject.SetActive(true);
+        EndSongButt.gameObject.SetActive(true);
+        StopSongsButt.gameObject.SetActive(true);
+        StopSongsButt.transform.position = new Vector3(-176, 480, 0);
         TweenSceneManager.PlayStart();
     }
 
     void PlayBattleSong()
     {
+        StartSongButt.gameObject.SetActive(true);
+        BattleSongButt.gameObject.SetActive(false);
+        EndSongButt.gameObject.SetActive(true);
+        StopSongsButt.gameObject.SetActive(true);
+        StopSongsButt.transform.position = new Vector3(-128, 151, 0);
         TweenSceneManager.PlayBattle();
     }
 
     void PlayEndSong()
     {
+        StartSongButt.gameObject.SetActive(true);
+        BattleSongButt.gameObject.SetActive(true);
+        EndSongButt.gameObject.SetActive(false);
+        StopSongsButt.gameObject.SetActive(true);
+        StopSongsButt.transform.position = new Vector3(-80, 151, 0);
         TweenSceneManager.PlayEnd();
+    }
+
+    void SendStop()
+    {
+        StartSongButt.gameObject.SetActive(true);
+        BattleSongButt.gameObject.SetActive(true);
+        EndSongButt.gameObject.SetActive(true);
+        StopSongsButt.gameObject.SetActive(false);
+        TweenSceneManager.StopMusic();
     }
 
     // Update is called once per frame

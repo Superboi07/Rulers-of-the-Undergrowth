@@ -12,6 +12,7 @@ public class AbilityManager : MonoBehaviour
     // Indicators
     bool ShowingReady;
     public GameObject ReadyGlow;
+    bool HasIndecator;
 
     #region Ability vars
     bool Ppppatience;
@@ -767,8 +768,18 @@ public class AbilityManager : MonoBehaviour
             if (CoolDown == true)
             {
                 ShowingReady = false;
-                BroadcastMessage("RemoveReady");
+
+                if (HasIndecator == true)
+                {
+                    BroadcastMessage("RemoveReady");
+                }
             }
         }
+    }
+
+    void IndecatorStatus(bool temp)
+    {
+        HasIndecator = temp;
+        ShowingReady = temp;
     }
 }

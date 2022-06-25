@@ -855,7 +855,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: a87bc31aecd08589a5b776d1490fcbd9
+      Hash: 4f02fb2c94bca445b0f6ea2035b0b8c2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ExtrasButtonsScript

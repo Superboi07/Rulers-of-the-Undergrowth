@@ -166,7 +166,7 @@ public class ExtrasButtonsScript : MonoBehaviour
         BattleSongButt.gameObject.SetActive(true);
         EndSongButt.gameObject.SetActive(true);
         StopSongsButt.gameObject.SetActive(true);
-        StopSongsButt.transform.position = new Vector3(-176, 480, 0);
+        StopSongsButt.transform.position = new Vector3(-176, 151, 0);
         TweenSceneManager.PlayStart();
     }
 

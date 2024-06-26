@@ -13,7 +13,7 @@
  Link to all National level winners from PA:
  https://www.dropbox.com/s/w1mxrhsg61jn93j/22%20NLC%20Award%20Winners--Chicago.pdf?e=1&dl=0
 
-————————————————————————————————————————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————
 
 
 Google drive link for Web Weaponry, a VR game that takes place in the RoTU world:
